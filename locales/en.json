@@ -1,0 +1,6 @@
+{
+    "welcome": "Welcome",
+    "error.not_found": "Not found",
+    "error.invalid_input": "Invalid input",
+    "success.saved": "Successfully saved"
+} 

@@ -1,0 +1,6 @@
+{
+    "welcome": "Bienvenido",
+    "error.not_found": "No encontrado",
+    "error.invalid_input": "Entrada inválida",
+    "success.saved": "Guardado exitosamente"
+} 
