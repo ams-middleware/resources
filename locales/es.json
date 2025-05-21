@@ -12,5 +12,10 @@
     "error.product.invalid_image": "La imagen del producto es inválida",
     "error.product.invalid_image_url": "La URL de la imagen del producto es inválida",
     "error.product.invalid_image_url_format": "La URL de la imagen del producto no tiene un formato válido",
-    "error.not_implemented": "No implementado"
+    "error.not_implemented": "No implementado",
+    "error.product.invalid_multimedia": "El producto tiene multimedia inválida",
+    "error.product.invalid_attributes": "Los atributos del producto son inválidos",
+    "error.product.invalid_variations": "Las variaciones del producto son inválidas",
+    "error.product.variant_without_attributes": "La variación del producto no tiene atributos",
+    "error.product.variant_missing_attribute": "La variación del producto está faltando un atributo"
 }

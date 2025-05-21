@@ -12,5 +12,10 @@
     "error.product.invalid_image": "Product has invalid image",
     "error.product.invalid_image_url": "Product has invalid image URL",
     "error.product.invalid_image_url_format": "Product has invalid image URL format",
-    "error.not_implemented": "Not implemented"
+    "error.not_implemented": "Not implemented",
+    "error.product.invalid_multimedia": "Product has invalid multimedia",
+    "error.product.invalid_attributes": "Product has invalid attributes",
+    "error.product.invalid_variations": "Product has invalid variations",
+    "error.product.variant_without_attributes": "Variant without attributes",
+    "error.product.variant_missing_attribute": "Variant missing attribute"
 } 
