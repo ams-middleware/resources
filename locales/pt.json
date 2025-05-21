@@ -1,0 +1,15 @@
+{
+    "error.not_found": "Não encontrado",
+    "error.invalid_input": "Entrada inválida", 
+    "success.saved": "Salvo com sucesso",
+    "error.permission.no_push_product": "Você não tem permissão para enviar produtos",
+    "error.product.no_sku": "O produto não tem um SKU",
+    "error.product.no_name": "O produto não tem um nome",
+    "error.product.invalid_price": "O preço do produto é inválido",
+    "error.product.invalid_stock": "O estoque do produto é inválido",
+    "error.product.invalid_category": "A categoria do produto é inválida",
+    "error.product.invalid_description": "A descrição do produto é inválida",
+    "error.product.invalid_image": "A imagem do produto é inválida",
+    "error.product.invalid_image_url": "A URL da imagem do produto é inválida",
+    "error.product.invalid_image_url_format": "A URL da imagem do produto não tem um formato válido"
+}

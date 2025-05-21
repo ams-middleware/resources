@@ -1,6 +1,15 @@
 {
-    "welcome": "Welcome",
     "error.not_found": "Not found",
     "error.invalid_input": "Invalid input",
-    "success.saved": "Successfully saved"
+    "success.saved": "Successfully saved",
+    "error.permission.no_push_product": "No permission to push product",
+    "error.product.no_sku": "Product has no SKU",
+    "error.product.no_name": "Product has no name",
+    "error.product.invalid_price": "Product has invalid price",
+    "error.product.invalid_stock": "Product has invalid stock",
+    "error.product.invalid_category": "Product has invalid category",
+    "error.product.invalid_description": "Product has invalid description",
+    "error.product.invalid_image": "Product has invalid image",
+    "error.product.invalid_image_url": "Product has invalid image URL",
+    "error.product.invalid_image_url_format": "Product has invalid image URL format"
 } 
