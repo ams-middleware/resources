@@ -11,5 +11,6 @@
     "error.product.invalid_description": "Product has invalid description",
     "error.product.invalid_image": "Product has invalid image",
     "error.product.invalid_image_url": "Product has invalid image URL",
-    "error.product.invalid_image_url_format": "Product has invalid image URL format"
+    "error.product.invalid_image_url_format": "Product has invalid image URL format",
+    "error.not_implemented": "Not implemented"
 } 

@@ -11,5 +11,6 @@
     "error.product.invalid_description": "La descripción del producto es inválida",
     "error.product.invalid_image": "La imagen del producto es inválida",
     "error.product.invalid_image_url": "La URL de la imagen del producto es inválida",
-    "error.product.invalid_image_url_format": "La URL de la imagen del producto no tiene un formato válido"
+    "error.product.invalid_image_url_format": "La URL de la imagen del producto no tiene un formato válido",
+    "error.not_implemented": "No implementado"
 }
