@@ -47,5 +47,7 @@
     "error.validate_product": "error validating product",
     "success.operation": "Operation successful",
     "success.push_order_shipping": "Order shipping pushed successfully",
-    "success.saved": "Successfully saved"
+    "success.saved": "Successfully saved",
+    "error.product.variation_attributes_code_empty": "no attributes assigned to generate variations",
+    "error.product.no_variations": "Product has no variations"
 }

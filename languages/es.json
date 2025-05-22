@@ -47,5 +47,7 @@
     "error.validate_product": "el producto tiene datos no válidos",
     "success.operation": "Operación completada",
     "success.push_order_shipping": "Información de envío enviada correctamente",
-    "success.saved": "Se guardó correctamente"
+    "success.saved": "Se guardó correctamente",
+    "error.product.variation_attributes_code_empty": "no hay atributos asignados para generar las variantes",
+    "error.product.no_variations": "El producto no tiene variaciones"
 }
