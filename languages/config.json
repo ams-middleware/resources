@@ -1,0 +1,20 @@
+{
+  "availableLanguages": {
+    "es": {
+      "name": "Español",
+      "code": "es",
+      "flag": "🇪🇸"
+    },
+    "en": {
+      "name": "English", 
+      "code": "en",
+      "flag": "🇺🇸"
+    },
+    "pt": {
+      "name": "Português",
+      "code": "pt",
+      "flag": "🇧🇷"
+    }
+  },
+  "defaultLanguage": "es"
+} 
