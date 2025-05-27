@@ -30,7 +30,7 @@
     "error.product.invalid_variations": "Las variaciones no son válidas",
     "error.product.no_name": "Falta el nombre del producto",
     "error.product.no_sku": "Falta el SKU del producto",
-    "error.product.variant_missing_attribute": "Falta un atributo en la variación",
+    "error.product.variant_missing_attribute": "Falta el atributo: %v en la variación: %v",
     "error.product.variant_without_attributes": "La variación no tiene atributos",
     "error.pull_order": "Error al obtener la orden: %v",
     "error.pull_orders": "Error al obtener las órdenes: %v",
