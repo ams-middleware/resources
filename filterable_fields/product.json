@@ -5,6 +5,7 @@
       "type": "string",
       "display_name": "ID",
       "translation_key": "ID",
+      "input_type": "text",
       "operators": [
         "eq",
         "like"
