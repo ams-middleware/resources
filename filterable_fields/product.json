@@ -1,7 +1,7 @@
 {
   "fields": [
     {
-      "name": "_id",
+      "field": "_id",
       "type": "string",
       "display_name": "ID",
       "translation_key": "ID",
@@ -11,7 +11,7 @@
       ]
     },
     {
-      "name": "SKU",
+      "field": "SKU",
       "type": "string",
       "display_name": "SKU",
       "translation_key": "SKU",
@@ -23,7 +23,7 @@
       ]
     },
     {
-      "name": "ref_code.EAN",
+      "field": "ref_code.EAN",
       "type": "string",
       "display_name": "EAN",
       "translation_key": "EAN",
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "name": "ref_code.UPC",
+      "field": "ref_code.UPC",
       "type": "string",
       "display_name": "UPC",
       "translation_key": "UPC",
@@ -47,7 +47,7 @@
       ]
     },
     {
-      "name": "tags",
+      "field": "tags",
       "type": "[]string",
       "display_name": "Tags",
       "translation_key": "Tags",
@@ -65,7 +65,7 @@
       ]
     },
     {
-      "name": "custom_tags",
+      "field": "custom_tags",
       "type": "[]string",
       "display_name": "Custom Tags",
       "translation_key": "Custom Tags",
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "name": "type",
+      "field": "type",
       "type": "string",
       "display_name": "Type",
       "translation_key": "Type",
