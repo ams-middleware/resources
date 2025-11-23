@@ -2,9 +2,9 @@
   "fields": [
     {
       "field": "_id",
-      "type": "string",
-      "display_name": "ID",
-      "translation_key": "ID",
+      "data_type": "string",
+      "display_name": "id",
+      "translation_key": "id",
       "operators": [
         "eq",
         "like"
@@ -12,9 +12,9 @@
     },
     {
       "field": "ref_code",
-      "type": "string",
-      "display_name": "Reference Code",
-      "translation_key": "Reference Code",
+      "data_type": "string",
+      "display_name": "reference code",
+      "translation_key": "reference code",
       "operators": [
         "eq",
         "ne",
@@ -24,9 +24,9 @@
     },
     {
       "field": "tags",
-      "type": "[]string",
-      "display_name": "Tags",
-      "translation_key": "Tags",
+      "data_type": "[]string",
+      "display_name": "tags",
+      "translation_key": "tags",
       "operators": [
         "eq",
         "ne",
@@ -42,9 +42,9 @@
     },
     {
       "field": "custom_tags",
-      "type": "[]string",
-      "display_name": "Custom Tags",
-      "translation_key": "Custom Tags",
+      "data_type": "[]string",
+      "display_name": "custom tags",
+      "translation_key": "custom tags",
       "operators": [
         "eq",
         "ne",
@@ -60,9 +60,9 @@
     },
     {
       "field": "sequence_nro",
-      "type": "int",
-      "display_name": "Sequence Number",
-      "translation_key": "Sequence Number",
+      "data_type": "int",
+      "display_name": "sequence number",
+      "translation_key": "sequence number",
       "operators": [
         "eq",
         "ne",
@@ -79,9 +79,9 @@
     },
     {
       "field": "parent.uid",
-      "type": "string",
-      "display_name": "Parent ID (parent)",
-      "translation_key": "Parent ID (parent)",
+      "data_type": "string",
+      "display_name": "parent id (parent)",
+      "translation_key": "parent id (parent)",
       "operators": [
         "eq",
         "ne",
@@ -95,9 +95,9 @@
     },
     {
       "field": "version",
-      "type": "int",
-      "display_name": "Version",
-      "translation_key": "Version",
+      "data_type": "int",
+      "display_name": "version",
+      "translation_key": "version",
       "operators": [
         "eq",
         "ne",
@@ -114,9 +114,9 @@
     },
     {
       "field": "type",
-      "type": "string",
-      "display_name": "Type",
-      "translation_key": "Type",
+      "data_type": "string",
+      "display_name": "type",
+      "translation_key": "type",
       "operators": [
         "eq",
         "ne",
@@ -136,9 +136,9 @@
     },
     {
       "field": "status",
-      "type": "string",
-      "display_name": "Status",
-      "translation_key": "Status",
+      "data_type": "string",
+      "display_name": "status",
+      "translation_key": "status",
       "operators": [
         "eq",
         "ne",
@@ -152,9 +152,9 @@
     },
     {
       "field": "observation",
-      "type": "string",
-      "display_name": "Observations",
-      "translation_key": "Observations",
+      "data_type": "string",
+      "display_name": "observations",
+      "translation_key": "observations",
       "operators": [
         "eq",
         "ne",
@@ -168,9 +168,9 @@
     },
     {
       "field": "billing.customer.document_type",
-      "type": "string",
-      "display_name": "DocumentType (billing.customer)",
-      "translation_key": "DocumentType (billing.customer)",
+      "data_type": "string",
+      "display_name": "documenttype (billing.customer)",
+      "translation_key": "documenttype (billing.customer)",
       "operators": [
         "eq",
         "ne",
@@ -184,9 +184,9 @@
     },
     {
       "field": "billing.customer.document_id",
-      "type": "string",
-      "display_name": "DocumentID (billing.customer)",
-      "translation_key": "DocumentID (billing.customer)",
+      "data_type": "string",
+      "display_name": "documentid (billing.customer)",
+      "translation_key": "documentid (billing.customer)",
       "operators": [
         "eq",
         "ne",
@@ -200,9 +200,9 @@
     },
     {
       "field": "billing.customer.first_name",
-      "type": "string",
-      "display_name": "FirstName (billing.customer)",
-      "translation_key": "FirstName (billing.customer)",
+      "data_type": "string",
+      "display_name": "firstname (billing.customer)",
+      "translation_key": "firstname (billing.customer)",
       "operators": [
         "eq",
         "ne",
@@ -216,9 +216,9 @@
     },
     {
       "field": "billing.customer.last_name",
-      "type": "string",
-      "display_name": "LastName (billing.customer)",
-      "translation_key": "LastName (billing.customer)",
+      "data_type": "string",
+      "display_name": "lastname (billing.customer)",
+      "translation_key": "lastname (billing.customer)",
       "operators": [
         "eq",
         "ne",
@@ -232,9 +232,9 @@
     },
     {
       "field": "billing.customer.email",
-      "type": "string",
-      "display_name": "Email (billing.customer)",
-      "translation_key": "Email (billing.customer)",
+      "data_type": "string",
+      "display_name": "email (billing.customer)",
+      "translation_key": "email (billing.customer)",
       "operators": [
         "eq",
         "ne",
@@ -248,9 +248,9 @@
     },
     {
       "field": "billing.customer.phone",
-      "type": "string",
-      "display_name": "Phone (billing.customer)",
-      "translation_key": "Phone (billing.customer)",
+      "data_type": "string",
+      "display_name": "phone (billing.customer)",
+      "translation_key": "phone (billing.customer)",
       "operators": [
         "eq",
         "ne",
@@ -264,9 +264,9 @@
     },
     {
       "field": "billing.address.region",
-      "type": "string",
-      "display_name": "Region (billing.address)",
-      "translation_key": "Region (billing.address)",
+      "data_type": "string",
+      "display_name": "region (billing.address)",
+      "translation_key": "region (billing.address)",
       "operators": [
         "eq",
         "ne",
@@ -280,9 +280,9 @@
     },
     {
       "field": "billing.address.region_code",
-      "type": "string",
-      "display_name": "RegionCode (billing.address)",
-      "translation_key": "RegionCode (billing.address)",
+      "data_type": "string",
+      "display_name": "regioncode (billing.address)",
+      "translation_key": "regioncode (billing.address)",
       "operators": [
         "eq",
         "ne",
@@ -296,9 +296,9 @@
     },
     {
       "field": "billing.address.city",
-      "type": "string",
-      "display_name": "City (billing.address)",
-      "translation_key": "City (billing.address)",
+      "data_type": "string",
+      "display_name": "city (billing.address)",
+      "translation_key": "city (billing.address)",
       "operators": [
         "eq",
         "ne",
@@ -312,9 +312,9 @@
     },
     {
       "field": "billing.address.city_code",
-      "type": "string",
-      "display_name": "CityCode (billing.address)",
-      "translation_key": "CityCode (billing.address)",
+      "data_type": "string",
+      "display_name": "citycode (billing.address)",
+      "translation_key": "citycode (billing.address)",
       "operators": [
         "eq",
         "ne",
@@ -328,9 +328,9 @@
     },
     {
       "field": "billing.address.zip_code",
-      "type": "string",
-      "display_name": "ZipCode (billing.address)",
-      "translation_key": "ZipCode (billing.address)",
+      "data_type": "string",
+      "display_name": "zipcode (billing.address)",
+      "translation_key": "zipcode (billing.address)",
       "operators": [
         "eq",
         "ne",
@@ -344,9 +344,9 @@
     },
     {
       "field": "billing.address.street",
-      "type": "string",
-      "display_name": "Street (billing.address)",
-      "translation_key": "Street (billing.address)",
+      "data_type": "string",
+      "display_name": "street (billing.address)",
+      "translation_key": "street (billing.address)",
       "operators": [
         "eq",
         "ne",
@@ -360,9 +360,9 @@
     },
     {
       "field": "billing.address.street_number",
-      "type": "string",
-      "display_name": "StreetNumber (billing.address)",
-      "translation_key": "StreetNumber (billing.address)",
+      "data_type": "string",
+      "display_name": "streetnumber (billing.address)",
+      "translation_key": "streetnumber (billing.address)",
       "operators": [
         "eq",
         "ne",
@@ -376,9 +376,9 @@
     },
     {
       "field": "billing.address.floor",
-      "type": "string",
-      "display_name": "Floor (billing.address)",
-      "translation_key": "Floor (billing.address)",
+      "data_type": "string",
+      "display_name": "floor (billing.address)",
+      "translation_key": "floor (billing.address)",
       "operators": [
         "eq",
         "ne",
@@ -392,9 +392,9 @@
     },
     {
       "field": "billing.address.apartment",
-      "type": "string",
-      "display_name": "Apartment (billing.address)",
-      "translation_key": "Apartment (billing.address)",
+      "data_type": "string",
+      "display_name": "apartment (billing.address)",
+      "translation_key": "apartment (billing.address)",
       "operators": [
         "eq",
         "ne",
@@ -408,9 +408,9 @@
     },
     {
       "field": "billing.address.reference",
-      "type": "string",
-      "display_name": "Reference (billing.address)",
-      "translation_key": "Reference (billing.address)",
+      "data_type": "string",
+      "display_name": "reference (billing.address)",
+      "translation_key": "reference (billing.address)",
       "operators": [
         "eq",
         "ne",
@@ -424,9 +424,9 @@
     },
     {
       "field": "billing.address.full_address",
-      "type": "string",
-      "display_name": "FullAddress (billing.address)",
-      "translation_key": "FullAddress (billing.address)",
+      "data_type": "string",
+      "display_name": "fulladdress (billing.address)",
+      "translation_key": "fulladdress (billing.address)",
       "operators": [
         "eq",
         "ne",
@@ -440,9 +440,9 @@
     },
     {
       "field": "courier.name",
-      "type": "string",
-      "display_name": "Courier Name (courier)",
-      "translation_key": "Courier Name (courier)",
+      "data_type": "string",
+      "display_name": "courier name (courier)",
+      "translation_key": "courier name (courier)",
       "operators": [
         "eq",
         "ne",
@@ -456,9 +456,9 @@
     },
     {
       "field": "courier.ref_code",
-      "type": "string",
-      "display_name": "Ref Code (courier)",
-      "translation_key": "Ref Code (courier)",
+      "data_type": "string",
+      "display_name": "ref code (courier)",
+      "translation_key": "ref code (courier)",
       "operators": [
         "eq",
         "ne",
@@ -472,9 +472,9 @@
     },
     {
       "field": "courier.type",
-      "type": "string",
-      "display_name": "Shipping Type (courier)",
-      "translation_key": "Shipping Type (courier)",
+      "data_type": "string",
+      "display_name": "shipping type (courier)",
+      "translation_key": "shipping type (courier)",
       "operators": [
         "eq",
         "ne",
@@ -488,9 +488,9 @@
     },
     {
       "field": "courier.same_day",
-      "type": "bool",
-      "display_name": "Same Day (courier)",
-      "translation_key": "Same Day (courier)",
+      "data_type": "bool",
+      "display_name": "same day (courier)",
+      "translation_key": "same day (courier)",
       "operators": [
         "eq",
         "ne",
@@ -502,9 +502,9 @@
     },
     {
       "field": "courier.tracking",
-      "type": "string",
-      "display_name": "Tracking Number (courier)",
-      "translation_key": "Tracking Number (courier)",
+      "data_type": "string",
+      "display_name": "tracking number (courier)",
+      "translation_key": "tracking number (courier)",
       "operators": [
         "eq",
         "ne",
@@ -518,9 +518,9 @@
     },
     {
       "field": "courier.tracking_link",
-      "type": "string",
-      "display_name": "Tracking Link (courier)",
-      "translation_key": "Tracking Link (courier)",
+      "data_type": "string",
+      "display_name": "tracking link (courier)",
+      "translation_key": "tracking link (courier)",
       "operators": [
         "eq",
         "ne",
@@ -534,9 +534,9 @@
     },
     {
       "field": "courier.ticket_link",
-      "type": "string",
-      "display_name": "Ticket Link (courier)",
-      "translation_key": "Ticket Link (courier)",
+      "data_type": "string",
+      "display_name": "ticket link (courier)",
+      "translation_key": "ticket link (courier)",
       "operators": [
         "eq",
         "ne",
@@ -550,9 +550,9 @@
     },
     {
       "field": "courier.connector.integration.name",
-      "type": "string",
-      "display_name": "Name (courier.connector.integration)",
-      "translation_key": "Name (courier.connector.integration)",
+      "data_type": "string",
+      "display_name": "name (courier.connector.integration)",
+      "translation_key": "name (courier.connector.integration)",
       "operators": [
         "eq",
         "ne",
@@ -566,9 +566,9 @@
     },
     {
       "field": "courier.connector.store.name",
-      "type": "string",
-      "display_name": "Name (courier.connector.store)",
-      "translation_key": "Name (courier.connector.store)",
+      "data_type": "string",
+      "display_name": "name (courier.connector.store)",
+      "translation_key": "name (courier.connector.store)",
       "operators": [
         "eq",
         "ne",
@@ -582,9 +582,9 @@
     },
     {
       "field": "workflow.status",
-      "type": "string",
-      "display_name": "Status (workflow)",
-      "translation_key": "Status (workflow)",
+      "data_type": "string",
+      "display_name": "status (workflow)",
+      "translation_key": "status (workflow)",
       "operators": [
         "eq",
         "ne",
@@ -598,9 +598,9 @@
     },
     {
       "field": "emitted_by.ref_code",
-      "type": "string",
-      "display_name": "Ref Code (emitted_by)",
-      "translation_key": "Ref Code (emitted_by)",
+      "data_type": "string",
+      "display_name": "ref code (emitted_by)",
+      "translation_key": "ref code (emitted_by)",
       "operators": [
         "eq",
         "ne",
@@ -614,9 +614,9 @@
     },
     {
       "field": "emitted_at",
-      "type": "datetime",
-      "display_name": "Emitted At",
-      "translation_key": "Emitted At",
+      "data_type": "datetime",
+      "display_name": "emitted at",
+      "translation_key": "emitted at",
       "operators": [
         "eq",
         "ne",
@@ -633,9 +633,9 @@
     },
     {
       "field": "created_at",
-      "type": "datetime",
-      "display_name": "Created At",
-      "translation_key": "Created At",
+      "data_type": "datetime",
+      "display_name": "created at",
+      "translation_key": "created at",
       "operators": [
         "eq",
         "ne",
@@ -652,9 +652,9 @@
     },
     {
       "field": "updated_at",
-      "type": "datetime",
-      "display_name": "Updated At",
-      "translation_key": "Updated At",
+      "data_type": "datetime",
+      "display_name": "updated at",
+      "translation_key": "updated at",
       "operators": [
         "eq",
         "ne",
@@ -671,9 +671,9 @@
     },
     {
       "field": "store_uid",
-      "type": "string",
-      "display_name": "Store ID",
-      "translation_key": "Store ID",
+      "data_type": "string",
+      "display_name": "store id",
+      "translation_key": "store id",
       "operators": [
         "eq",
         "ne",

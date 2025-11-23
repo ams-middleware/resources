@@ -1,0 +1,67 @@
+{
+  "fields": [
+    {
+      "field": "tags",
+      "data_type": "[]string",
+      "input_type": "tags",
+      "display_name": "tags",
+      "translation_key": "tags"
+    },
+    {
+      "field": "custom_tags",
+      "data_type": "[]string",
+      "input_type": "tags",
+      "display_name": "custom tags",
+      "translation_key": "custom tags"
+    },
+    {
+      "field": "name",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "name",
+      "translation_key": "name"
+    },
+    {
+      "field": "attributes.BRAND.value.text",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "attr brand",
+      "translation_key": "attributes.brand"
+    },
+    {
+      "field": "attributes.COLOR.value.text",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "attr color",
+      "translation_key": "attributes.color"
+    },
+    {
+      "field": "attributes.SIZE.value.text",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "attr size",
+      "translation_key": "attributes.size"
+    },
+    {
+      "field": "attributes.GENDER.value.text",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "attr gender",
+      "translation_key": "attributes.gender"
+    },
+    {
+      "field": "price.available",
+      "data_type": "string",
+      "input_type": "float",
+      "display_name": "price available",
+      "translation_key": "price available"
+    },
+    {
+      "field": "stock.available",
+      "data_type": "string",
+      "input_type": "int",
+      "display_name": "stock available",
+      "translation_key": "stock available"
+    }
+  ]
+}

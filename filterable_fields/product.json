@@ -2,20 +2,21 @@
   "fields": [
     {
       "field": "_id",
-      "type": "string",
-      "display_name": "ID",
-      "translation_key": "ID",
+      "data_type": "string",
       "input_type": "text",
+      "display_name": "id",
+      "translation_key": "id",
       "operators": [
         "eq",
         "like"
       ]
     },
     {
-      "field": "SKU",
-      "type": "string",
-      "display_name": "SKU",
-      "translation_key": "SKU",
+      "field": "sku",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "sku",
+      "translation_key": "sku",
       "operators": [
         "eq",
         "ne",
@@ -24,10 +25,11 @@
       ]
     },
     {
-      "field": "ref_code.EAN",
-      "type": "string",
-      "display_name": "EAN",
-      "translation_key": "EAN",
+      "field": "ref_code.ean",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "ean",
+      "translation_key": "ean",
       "operators": [
         "eq",
         "ne",
@@ -36,10 +38,11 @@
       ]
     },
     {
-      "field": "ref_code.UPC",
-      "type": "string",
-      "display_name": "UPC",
-      "translation_key": "UPC",
+      "field": "ref_code.upc",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "upc",
+      "translation_key": "upc",
       "operators": [
         "eq",
         "ne",
@@ -49,9 +52,10 @@
     },
     {
       "field": "tags",
-      "type": "[]string",
-      "display_name": "Tags",
-      "translation_key": "Tags",
+      "data_type": "[]string",
+      "input_type": "tags",
+      "display_name": "tags",
+      "translation_key": "tags",
       "operators": [
         "eq",
         "ne",
@@ -67,9 +71,10 @@
     },
     {
       "field": "custom_tags",
-      "type": "[]string",
-      "display_name": "Custom Tags",
-      "translation_key": "Custom Tags",
+      "data_type": "[]string",
+      "input_type": "tags",
+      "display_name": "custom tags",
+      "translation_key": "custom tags",
       "operators": [
         "eq",
         "ne",
@@ -85,9 +90,10 @@
     },
     {
       "field": "type",
-      "type": "string",
-      "display_name": "Type",
-      "translation_key": "Type",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "type",
+      "translation_key": "type",
       "operators": [
         "eq",
         "ne",
