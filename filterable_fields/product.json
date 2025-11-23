@@ -93,7 +93,7 @@
         "ne",
         "like"
       ],
-      "values": [
+      "options": [
         "simple",
         "base"
       ]
