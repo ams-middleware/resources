@@ -1,0 +1,641 @@
+{
+  "fields": [
+    {
+      "name": "_id",
+      "type": "string",
+      "display_name": "ID",
+      "operators": [
+        "eq",
+        "like"
+      ]
+    },
+    {
+      "name": "ref_code",
+      "type": "string",
+      "display_name": "Reference Code",
+      "operators": [
+        "eq",
+        "ne",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "tags",
+      "type": "[]string",
+      "display_name": "Tags",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "in",
+        "nin",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "custom_tags",
+      "type": "[]string",
+      "display_name": "Custom Tags",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "in",
+        "nin",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "sequence_nro",
+      "type": "int",
+      "display_name": "Sequence Number",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "gt",
+        "gte",
+        "lt",
+        "lte",
+        "range"
+      ]
+    },
+    {
+      "name": "parent.uid",
+      "type": "string",
+      "display_name": "Parent ID (parent)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "version",
+      "type": "int",
+      "display_name": "Version",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "gt",
+        "gte",
+        "lt",
+        "lte",
+        "range"
+      ]
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "display_name": "Type",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "display_name": "Status",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "observation",
+      "type": "string",
+      "display_name": "Observations",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "billing.customer.document_type",
+      "type": "string",
+      "display_name": "DocumentType (billing.customer)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "billing.customer.document_id",
+      "type": "string",
+      "display_name": "DocumentID (billing.customer)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "billing.customer.first_name",
+      "type": "string",
+      "display_name": "FirstName (billing.customer)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "billing.customer.last_name",
+      "type": "string",
+      "display_name": "LastName (billing.customer)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "billing.customer.email",
+      "type": "string",
+      "display_name": "Email (billing.customer)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "billing.customer.phone",
+      "type": "string",
+      "display_name": "Phone (billing.customer)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "billing.address.region",
+      "type": "string",
+      "display_name": "Region (billing.address)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "billing.address.region_code",
+      "type": "string",
+      "display_name": "RegionCode (billing.address)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "billing.address.city",
+      "type": "string",
+      "display_name": "City (billing.address)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "billing.address.city_code",
+      "type": "string",
+      "display_name": "CityCode (billing.address)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "billing.address.zip_code",
+      "type": "string",
+      "display_name": "ZipCode (billing.address)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "billing.address.street",
+      "type": "string",
+      "display_name": "Street (billing.address)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "billing.address.street_number",
+      "type": "string",
+      "display_name": "StreetNumber (billing.address)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "billing.address.floor",
+      "type": "string",
+      "display_name": "Floor (billing.address)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "billing.address.apartment",
+      "type": "string",
+      "display_name": "Apartment (billing.address)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "billing.address.reference",
+      "type": "string",
+      "display_name": "Reference (billing.address)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "billing.address.full_address",
+      "type": "string",
+      "display_name": "FullAddress (billing.address)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "courier.name",
+      "type": "string",
+      "display_name": "Courier Name (courier)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "courier.ref_code",
+      "type": "string",
+      "display_name": "Ref Code (courier)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "courier.type",
+      "type": "string",
+      "display_name": "Shipping Type (courier)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "courier.same_day",
+      "type": "bool",
+      "display_name": "Same Day (courier)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null"
+      ]
+    },
+    {
+      "name": "courier.tracking",
+      "type": "string",
+      "display_name": "Tracking Number (courier)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "courier.tracking_link",
+      "type": "string",
+      "display_name": "Tracking Link (courier)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "courier.ticket_link",
+      "type": "string",
+      "display_name": "Ticket Link (courier)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "courier.connector.integration.name",
+      "type": "string",
+      "display_name": "Name (courier.connector.integration)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "courier.connector.store.name",
+      "type": "string",
+      "display_name": "Name (courier.connector.store)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "workflow.status",
+      "type": "string",
+      "display_name": "Status (workflow)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "emitted_by.ref_code",
+      "type": "string",
+      "display_name": "Ref Code (emitted_by)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "emitted_at",
+      "type": "datetime",
+      "display_name": "Emitted At",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "gt",
+        "gte",
+        "lt",
+        "lte",
+        "range"
+      ]
+    },
+    {
+      "name": "created_at",
+      "type": "datetime",
+      "display_name": "Created At",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "gt",
+        "gte",
+        "lt",
+        "lte",
+        "range"
+      ]
+    },
+    {
+      "name": "updated_at",
+      "type": "datetime",
+      "display_name": "Updated At",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "gt",
+        "gte",
+        "lt",
+        "lte",
+        "range"
+      ]
+    },
+    {
+      "name": "store_uid",
+      "type": "string",
+      "display_name": "Store ID",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    }
+  ]
+}

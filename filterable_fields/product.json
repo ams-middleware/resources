@@ -1,0 +1,101 @@
+{
+  "fields": [
+    {
+      "name": "_id",
+      "type": "string",
+      "display_name": "ID",
+      "translation_key": "ID",
+      "operators": [
+        "eq",
+        "like"
+      ]
+    },
+    {
+      "name": "SKU",
+      "type": "string",
+      "display_name": "SKU",
+      "translation_key": "SKU",
+      "operators": [
+        "eq",
+        "ne",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "ref_code.EAN",
+      "type": "string",
+      "display_name": "EAN",
+      "translation_key": "EAN",
+      "operators": [
+        "eq",
+        "ne",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "ref_code.UPC",
+      "type": "string",
+      "display_name": "UPC",
+      "translation_key": "UPC",
+      "operators": [
+        "eq",
+        "ne",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "tags",
+      "type": "[]string",
+      "display_name": "Tags",
+      "translation_key": "Tags",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "in",
+        "nin",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "custom_tags",
+      "type": "[]string",
+      "display_name": "Custom Tags",
+      "translation_key": "Custom Tags",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "in",
+        "nin",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "display_name": "Type",
+      "translation_key": "Type",
+      "operators": [
+        "eq",
+        "ne",
+        "like"
+      ],
+      "values": [
+        "simple",
+        "base"
+      ]
+    }
+  ]
+}
