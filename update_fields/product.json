@@ -22,28 +22,28 @@
       "translation_key": "name"
     },
     {
-      "field": "attributes.BRAND.value.text",
+      "field": "attributes.brand.value.text",
       "data_type": "string",
       "input_type": "text",
       "display_name": "attr brand",
       "translation_key": "attributes.brand"
     },
     {
-      "field": "attributes.COLOR.value.text",
+      "field": "attributes.color.value.text",
       "data_type": "string",
       "input_type": "text",
       "display_name": "attr color",
       "translation_key": "attributes.color"
     },
     {
-      "field": "attributes.SIZE.value.text",
+      "field": "attributes.size.value.text",
       "data_type": "string",
       "input_type": "text",
       "display_name": "attr size",
       "translation_key": "attributes.size"
     },
     {
-      "field": "attributes.GENDER.value.text",
+      "field": "attributes.gender.value.text",
       "data_type": "string",
       "input_type": "text",
       "display_name": "attr gender",
