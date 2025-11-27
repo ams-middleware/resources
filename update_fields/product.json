@@ -5,63 +5,76 @@
       "data_type": "[]string",
       "input_type": "tags",
       "display_name": "tags",
-      "translation_key": "tags"
+      "translation_key": "tags",
+      "dynamic_field": false
     },
     {
       "field": "custom_tags",
       "data_type": "[]string",
       "input_type": "tags",
       "display_name": "custom tags",
-      "translation_key": "custom tags"
+      "translation_key": "custom tags",
+      "dynamic_field": false
     },
     {
       "field": "name",
       "data_type": "string",
       "input_type": "text",
       "display_name": "name",
-      "translation_key": "name"
+      "translation_key": "name",
+      "dynamic_field": false
     },
     {
       "field": "attributes.brand.value.text",
       "data_type": "string",
       "input_type": "text",
       "display_name": "attr brand",
-      "translation_key": "attributes.brand"
+      "translation_key": "attributes.brand",
+      "dynamic_field": true,
+      "dynamic_field_endpoint": "https://control-api.e-middleware.dev/v3/product/attribute/mapping/search?attribute_uid=BRAND"
     },
     {
       "field": "attributes.color.value.text",
       "data_type": "string",
       "input_type": "text",
       "display_name": "attr color",
-      "translation_key": "attributes.color"
+      "translation_key": "attributes.color",
+      "dynamic_field": true,
+      "dynamic_field_endpoint": "https://control-api.e-middleware.dev/v3/product/attribute/mapping/search?attribute_uid=COLOR"
     },
     {
       "field": "attributes.size.value.text",
       "data_type": "string",
       "input_type": "text",
       "display_name": "attr size",
-      "translation_key": "attributes.size"
+      "translation_key": "attributes.size",
+      "dynamic_field": true,
+      "dynamic_field_endpoint": "https://control-api.e-middleware.dev/v3/product/attribute/mapping/search?attribute_uid=SIZE"
     },
     {
       "field": "attributes.gender.value.text",
       "data_type": "string",
       "input_type": "text",
       "display_name": "attr gender",
-      "translation_key": "attributes.gender"
+      "translation_key": "attributes.gender",
+      "dynamic_field": true,
+      "dynamic_field_endpoint": "https://control-api.e-middleware.dev/v3/product/attribute/mapping/search?attribute_uid=GENDER"
     },
     {
       "field": "price.available",
       "data_type": "string",
       "input_type": "float",
       "display_name": "price available",
-      "translation_key": "price available"
+      "translation_key": "price available",
+      "dynamic_field": false
     },
     {
       "field": "stock.available",
       "data_type": "string",
       "input_type": "int",
       "display_name": "stock available",
-      "translation_key": "stock available"
+      "translation_key": "stock available",
+      "dynamic_field": false
     }
   ]
 }
