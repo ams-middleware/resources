@@ -75,6 +75,14 @@
       "display_name": "stock available",
       "translation_key": "stock available",
       "dynamic_field": false
+    },
+    {
+      "field": "category_uid",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "category uid",
+      "translation_key": "category uid",
+      "dynamic_field": false
     }
   ]
 }
