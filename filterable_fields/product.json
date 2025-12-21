@@ -114,10 +114,6 @@
         "eq",
         "ne",
         "like"
-      ],
-      "options": [
-        "simple",
-        "base"
       ]
     }
   ]
