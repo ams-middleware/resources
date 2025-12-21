@@ -103,6 +103,22 @@
         "simple",
         "base"
       ]
+    },
+    {
+      "field": "brand",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "brand",
+      "translation_key": "brand",
+      "operators": [
+        "eq",
+        "ne",
+        "like"
+      ],
+      "options": [
+        "simple",
+        "base"
+      ]
     }
   ]
 }
