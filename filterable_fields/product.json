@@ -105,7 +105,7 @@
       ]
     },
     {
-      "field": "brand",
+      "field": "attributes.brand",
       "data_type": "string",
       "input_type": "text",
       "display_name": "brand",
