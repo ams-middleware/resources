@@ -115,6 +115,30 @@
         "ne",
         "like"
       ]
+    },
+        {
+      "field": "stock.available",
+      "data_type": "number",
+      "input_type": "number",
+      "display_name": "stock available",
+      "translation_key": "stock available",
+      "operators": [
+        "eq",
+        "ne",
+        "like"
+      ]
+    },
+            {
+      "field": "stock.real",
+      "data_type": "number",
+      "input_type": "number",
+      "display_name": "stock real",
+      "translation_key": "stock real",
+      "operators": [
+        "eq",
+        "ne",
+        "like"
+      ]
     }
   ]
 }
