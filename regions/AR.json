@@ -1,0 +1,159 @@
+{
+  "name": "Argentina",
+  "iso": "AR",
+  "flag": "🇦🇷",
+  "currency": "ARS",
+  "locale": "es-AR",
+  "regions": [
+    {
+      "code": "BA",
+      "name": "Buenos Aires",
+      "isoCode": "AR-B",
+      "aliases": ["buenos aires", "provincia de buenos aires"]
+    },
+    {
+      "code": "CA",
+      "name": "Catamarca",
+      "isoCode": "AR-K",
+      "aliases": ["catamarca"]
+    },
+    {
+      "code": "CH",
+      "name": "Chaco",
+      "isoCode": "AR-H",
+      "aliases": ["chaco"]
+    },
+    {
+      "code": "CT",
+      "name": "Chubut",
+      "isoCode": "AR-U",
+      "aliases": ["chubut"]
+    },
+    {
+      "code": "CABA",
+      "name": "Ciudad Autónoma de Buenos Aires",
+      "isoCode": "AR-C",
+      "aliases": [
+        "ciudad autonoma de buenos aires",
+        "capital federal",
+        "caba",
+        "capital",
+        "aep"
+      ]
+    },
+    {
+      "code": "CR",
+      "name": "Corrientes",
+      "isoCode": "AR-W",
+      "aliases": ["corrientes"]
+    },
+    {
+      "code": "CB",
+      "name": "Córdoba",
+      "isoCode": "AR-X",
+      "aliases": ["cordoba"]
+    },
+    {
+      "code": "ER",
+      "name": "Entre Ríos",
+      "isoCode": "AR-E",
+      "aliases": ["entre rios"]
+    },
+    {
+      "code": "FO",
+      "name": "Formosa",
+      "isoCode": "AR-P",
+      "aliases": ["formosa"]
+    },
+    {
+      "code": "JY",
+      "name": "Jujuy",
+      "isoCode": "AR-Y",
+      "aliases": ["jujuy"]
+    },
+    {
+      "code": "LP",
+      "name": "La Pampa",
+      "isoCode": "AR-L",
+      "aliases": ["la pampa"]
+    },
+    {
+      "code": "LR",
+      "name": "La Rioja",
+      "isoCode": "AR-F",
+      "aliases": ["la rioja"]
+    },
+    {
+      "code": "MZ",
+      "name": "Mendoza",
+      "isoCode": "AR-M",
+      "aliases": ["mendoza"]
+    },
+    {
+      "code": "MI",
+      "name": "Misiones",
+      "isoCode": "AR-N",
+      "aliases": ["misiones"]
+    },
+    {
+      "code": "NQN",
+      "name": "Neuquén",
+      "isoCode": "AR-Q",
+      "aliases": ["neuquen"]
+    },
+    {
+      "code": "RN",
+      "name": "Río Negro",
+      "isoCode": "AR-R",
+      "aliases": ["rio negro"]
+    },
+    {
+      "code": "SA",
+      "name": "Salta",
+      "isoCode": "AR-A",
+      "aliases": ["salta"]
+    },
+    {
+      "code": "SJ",
+      "name": "San Juan",
+      "isoCode": "AR-J",
+      "aliases": ["san juan"]
+    },
+    {
+      "code": "SL",
+      "name": "San Luis",
+      "isoCode": "AR-D",
+      "aliases": ["san luis"]
+    },
+    {
+      "code": "SC",
+      "name": "Santa Cruz",
+      "isoCode": "AR-Z",
+      "aliases": ["santa cruz"]
+    },
+    {
+      "code": "SF",
+      "name": "Santa Fe",
+      "isoCode": "AR-S",
+      "aliases": ["santa fe"]
+    },
+    {
+      "code": "SE",
+      "name": "Santiago del Estero",
+      "isoCode": "AR-G",
+      "aliases": ["santiago del estero"]
+    },
+    {
+      "code": "TF",
+      "name": "Tierra del Fuego",
+      "isoCode": "AR-V",
+      "aliases": ["tierra del fuego"]
+    },
+    {
+      "code": "TU",
+      "name": "Tucumán",
+      "isoCode": "AR-T",
+      "aliases": ["tucuman"]
+    }
+  ]
+}
