@@ -24,6 +24,14 @@
       "translation_key": "name",
       "dynamic_field": false
     },
+        {
+      "field": "multimedia_uid",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "multimedia",
+      "translation_key": "multimedia",
+      "dynamic_field": false
+    },
     {
       "field": "attributes.brand.value.text",
       "data_type": "string",
