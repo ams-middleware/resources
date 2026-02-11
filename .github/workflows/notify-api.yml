@@ -1,0 +1,22 @@
+name: Notify external system
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  notify-api:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Call external API
+        env:
+          API_URL: ${{ secrets.NOTIFY_API_URL }}
+          APP_KEY: ${{ secrets.NOTIFY_APP_KEY }}
+        run: |
+          curl -X 'POST' \
+            "$API_URL" \
+            -H 'accept: application/json' \
+            -H "app_key: $APP_KEY" \
+            -d ''
