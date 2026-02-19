@@ -24,7 +24,7 @@
       "translation_key": "name",
       "dynamic_field": false
     },
-        {
+    {
       "field": "multimedia_uid",
       "data_type": "string",
       "input_type": "text",

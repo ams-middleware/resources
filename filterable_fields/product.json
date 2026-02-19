@@ -125,7 +125,10 @@
       "operators": [
         "eq",
         "ne",
-        "like"
+        "gt",
+        "gte",
+        "lt",
+        "lte"
       ]
     },
             {
@@ -137,7 +140,104 @@
       "operators": [
         "eq",
         "ne",
+        "gt",
+        "gte",
+        "lt",
+        "lte"
+      ]
+    },
+    {
+      "field": "name",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "name",
+      "translation_key": "name",
+      "operators": [
+        "eq",
+        "ne",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "field": "uid",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "uid",
+      "translation_key": "uid",
+      "operators": [
+        "eq",
+        "ne",
         "like"
+      ]
+    },
+    {
+      "field": "category.uid",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "category",
+      "translation_key": "category",
+      "operators": [
+        "eq",
+        "ne",
+        "in",
+        "nin"
+      ]
+    },
+    {
+      "field": "multimedia_uid",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "multimedia",
+      "translation_key": "multimedia",
+      "operators": [
+        "eq"
+      ]
+    },
+    {
+      "field": "parents_uid",
+      "data_type": "[]string",
+      "input_type": "text",
+      "display_name": "parents",
+      "translation_key": "parents",
+      "operators": [
+        "eq",
+        "ne",
+        "in",
+        "nin"
+      ]
+    },
+    {
+      "field": "attributes.color.value.text",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "color",
+      "translation_key": "color",
+      "operators": [
+        "eq",
+        "ne"
+      ]
+    },
+    {
+      "field": "attributes.size.value.text",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "size",
+      "translation_key": "size",
+      "operators": [
+        "eq",
+        "ne"
+      ]
+    },
+    {
+      "field": "attributes.gender.value.text",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "gender",
+      "translation_key": "gender",
+      "operators": [
+        "eq",
+        "ne"
       ]
     }
   ]
