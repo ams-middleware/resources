@@ -85,7 +85,7 @@
       "dynamic_field": false
     },
     {
-      "field": "category_uid",
+      "field": "category.uid",
       "data_type": "string",
       "input_type": "text",
       "display_name": "category uid",
