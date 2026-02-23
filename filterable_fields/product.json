@@ -252,8 +252,8 @@
       "field": "attributes.technology.value.text",
       "data_type": "string",
       "input_type": "text",
-      "display_name": "gender",
-      "translation_key": "gender",
+      "display_name": "technology",
+      "translation_key": "technology",
       "operators": [
         "eq",
         "ne",
