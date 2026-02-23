@@ -116,7 +116,7 @@
         "like"
       ]
     },
-        {
+    {
       "field": "stock.available",
       "data_type": "number",
       "input_type": "number",
@@ -131,7 +131,7 @@
         "lte"
       ]
     },
-            {
+    {
       "field": "stock.real",
       "data_type": "number",
       "input_type": "number",
@@ -204,7 +204,9 @@
         "eq",
         "ne",
         "in",
-        "nin"
+        "nin",
+        "exists",
+        "not_exists"
       ]
     },
     {
@@ -215,7 +217,9 @@
       "translation_key": "color",
       "operators": [
         "eq",
-        "ne"
+        "ne",
+        "exists",
+        "not_exists"
       ]
     },
     {
@@ -226,7 +230,9 @@
       "translation_key": "size",
       "operators": [
         "eq",
-        "ne"
+        "ne",
+        "exists",
+        "not_exists"
       ]
     },
     {
@@ -237,7 +243,22 @@
       "translation_key": "gender",
       "operators": [
         "eq",
-        "ne"
+        "ne",
+        "exists",
+        "not_exists"
+      ]
+    },
+    {
+      "field": "attributes.technology.value.text",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "gender",
+      "translation_key": "gender",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists"
       ]
     }
   ]
