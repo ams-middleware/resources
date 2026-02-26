@@ -223,11 +223,50 @@
       ]
     },
     {
+      "field": "attributes.color_code.value.text",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "color code",
+      "translation_key": "color_code",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists"
+      ]
+    },
+    {
       "field": "attributes.size.value.text",
       "data_type": "string",
       "input_type": "text",
       "display_name": "size",
       "translation_key": "size",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists"
+      ]
+    },
+    {
+      "field": "attributes.size_code.value.text",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "size code",
+      "translation_key": "size_code",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists"
+      ]
+    },
+    {
+      "field": "attributes.size_ar.value.text",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "size ar",
+      "translation_key": "size_ar",
       "operators": [
         "eq",
         "ne",
