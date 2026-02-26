@@ -260,6 +260,19 @@
         "exists",
         "not_exists"
       ]
+    },
+        {
+      "field": "connectors.uid",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "connectors uid",
+      "translation_key": "connectors",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists"
+      ]
     }
   ]
 }
