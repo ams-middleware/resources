@@ -60,6 +60,24 @@
       "dynamic_field_endpoint": "https://control-api.e-middleware.dev/v3/product/attribute/mapping/search?attribute_uid=SIZE"
     },
     {
+      "field": "attributes.color_code.value.text",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "attr color_code",
+      "translation_key": "attributes.color",
+      "dynamic_field": true,
+      "dynamic_field_endpoint": "https://control-api.e-middleware.dev/v3/product/attribute/mapping/search?attribute_uid=COLOR_CODE"
+    },
+    {
+      "field": "attributes.size_code.value.text",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "attr size_code",
+      "translation_key": "attributes.size",
+      "dynamic_field": true,
+      "dynamic_field_endpoint": "https://control-api.e-middleware.dev/v3/product/attribute/mapping/search?attribute_uid=SIZE_CODE"
+    },
+    {
       "field": "attributes.gender.value.text",
       "data_type": "string",
       "input_type": "text",
