@@ -1,0 +1,34 @@
+{
+  "rules": [
+    {
+      "match": "/auth/login",
+      "mode": "exact",
+      "title": "Login"
+    },
+    {
+      "match": "/auth/generate-password",
+      "mode": "prefix",
+      "title": "Contraseña"
+    },
+    {
+      "match": "/profile",
+      "mode": "exact",
+      "title": "Profile"
+    },
+    {
+      "match": "/",
+      "mode": "exact",
+      "title": "Dashboard 2"
+    },
+    {
+      "match": "/dashboard",
+      "mode": "exact",
+      "title": "Dashboard 2"
+    },
+    {
+      "match": "/help",
+      "mode": "exact",
+      "title": "Manual de usuario"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "selector": "label[for=\"multiclients-select\"]",
+      "url": "/multi-tienda",
+      "title": "Ayuda: multiclientes y multi-tienda",
+      "placement": "inside-end",
+      "emphasis": true
+    },
+    {
+      "selector": "#layout-wrapper > div.main-content > div > div.container-fluid > div > div > h2",
+      "url": "/multi-tienda",
+      "title": "Bienvenido a la plataforma de gestión de tiendas",
+      "placement": "inside-end",
+      "emphasis": false
+    }
+  ]
+}
