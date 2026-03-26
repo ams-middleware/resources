@@ -113,7 +113,9 @@
       "operators": [
         "eq",
         "ne",
-        "like"
+        "like",
+        "exists",
+        "not_exists"
       ]
     },
     {
