@@ -191,7 +191,12 @@
       "display_name": "multimedia",
       "translation_key": "multimedia",
       "operators": [
-        "eq"
+        "eq",
+        "ne",
+        "in",
+        "nin",
+        "exists",
+        "not_exists"
       ]
     },
     {
