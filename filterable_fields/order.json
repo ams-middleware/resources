@@ -614,7 +614,8 @@
       "translation_key": "current_step.status (workflow)",
       "operators": [
         "eq",
-        "ne"
+        "ne",
+        "in"
       ]
     },
     {
