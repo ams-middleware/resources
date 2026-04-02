@@ -10,9 +10,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Call external API
+      - name: Update dev environment
         env:
-          API_URL: ${{ secrets.NOTIFY_API_URL }}
+          API_URL: "https://control-api.e-middleware.dev/v1/notify"
+          APP_KEY: ${{ secrets.NOTIFY_APP_KEY }}
+        run: |
+          curl -X 'POST' \
+            "$API_URL" \
+            -H 'accept: application/json' \
+            -H "app_key: $APP_KEY" \
+            -d ''
+
+      - name: Update prod environment
+        env:
+          API_URL: "https://jmc-control-api.e-middleware.ar/v1/notify"
           APP_KEY: ${{ secrets.NOTIFY_APP_KEY }}
         run: |
           curl -X 'POST' \
