@@ -1,0 +1,15 @@
+{
+  "success": "inv_push_ok",
+  "outcomes": "inv_push_ok,inv_push_err_permission,inv_push_err_connector_disabled,inv_push_err_not_implemented,inv_push_err_integration,inv_push_err_product_not_found,inv_push_err_rate_limit,inv_push_err_network,inv_push_err_unknown",
+  "fallback_error": "inv_push_err_unknown",
+  "fallback_api_message": "inv_push_err_integration",
+  "inv_push_ok": "Last inventory push (stock/price) completed successfully on the integration.",
+  "inv_push_err_permission": "The integration or connector does not allow this action.",
+  "inv_push_err_connector_disabled": "Connector disabled on the external platform.",
+  "inv_push_err_not_implemented": "The integration does not implement inventory updates for this connector.",
+  "inv_push_err_integration": "Generic error returned by the integration API.",
+  "inv_push_err_product_not_found": "The product does not exist on the external platform.",
+  "inv_push_err_rate_limit": "Rate limit or throttling reported by the integration.",
+  "inv_push_err_network": "Network failure calling the integration service (timeout, DNS, connection, etc.).",
+  "inv_push_err_unknown": "Unclassified error; check logs."
+}
