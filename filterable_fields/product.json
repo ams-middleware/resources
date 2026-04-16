@@ -269,7 +269,7 @@
       ]
     },
     {
-      "field": "attributes.size_ar.value.text",
+      "field": "attributes.size_arg.value.text",
       "data_type": "string",
       "input_type": "text",
       "display_name": "size ar",
