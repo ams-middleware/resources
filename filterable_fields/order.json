@@ -722,6 +722,39 @@
         "like",
         "regex"
       ]
+    },
+    {
+      "field": "chat.mode",
+      "data_type": "string",
+      "display_name": "chat mode",
+      "translation_key": "chat mode",
+      "operators": [
+        "eq",
+        "ne",
+        "like",
+        "regex"
+      ],
+      "values": [
+        "ai",
+        "handoff",
+        "operator"
+      ]
+    },
+    {
+      "field": "chat.status",
+      "data_type": "string",
+      "display_name": "chat status",
+      "translation_key": "chat status",
+      "operators": [
+        "eq",
+        "ne",
+        "like",
+        "regex"
+      ],
+      "values": [
+        "active",
+        "closed"
+      ]
     }
   ]
 }

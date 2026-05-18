@@ -1,0 +1,42 @@
+{
+  "SUC200": {
+    "name": "success",
+    "message_key": "api.success"
+  },
+  "ERR000": {
+    "name": "not_found",
+    "message_key": "api.not_found"
+  },
+  "ERR001": {
+    "name": "conflict",
+    "message_key": "api.conflict"
+  },
+  "ERR400": {
+    "name": "bad_request",
+    "message_key": "api.bad_request"
+  },
+  "ERR401": {
+    "name": "unauthorized",
+    "message_key": "api.unauthorized"
+  },
+  "ERR403": {
+    "name": "forbidden",
+    "message_key": "api.forbidden"
+  },
+  "ERR404": {
+    "name": "not_found",
+    "message_key": "api.not_found"
+  },
+  "ERR409": {
+    "name": "conflict",
+    "message_key": "api.conflict"
+  },
+  "ERR422": {
+    "name": "unprocessable_entity",
+    "message_key": "api.unprocessable_entity"
+  },
+  "ERR500": {
+    "name": "internal_error",
+    "message_key": "api.internal_error"
+  }
+}
