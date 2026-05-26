@@ -1,0 +1,40 @@
+{
+  "fields": [
+    {
+      "field": "shipping.zip_code",
+      "data_type": "string",
+      "display_name": "Código postal"
+    },
+    {
+      "field": "shipping.region_code",
+      "data_type": "string",
+      "display_name": "Provincia (código)"
+    },
+    {
+      "field": "shipping.city",
+      "data_type": "string",
+      "display_name": "Ciudad"
+    },
+    {
+      "field": "order.type",
+      "data_type": "string",
+      "display_name": "Tipo de orden",
+      "values": ["standard", "change", "return", "cancel"]
+    },
+    {
+      "field": "order.grand_total",
+      "data_type": "float",
+      "display_name": "Total"
+    },
+    {
+      "field": "order.sub_total",
+      "data_type": "float",
+      "display_name": "Subtotal"
+    },
+    {
+      "field": "order.items_count",
+      "data_type": "int",
+      "display_name": "Cantidad de artículos"
+    }
+  ]
+}

@@ -105,7 +105,7 @@
       ]
     },
     {
-      "field": "attributes.brand.value.text",
+      "field": "attributes.brand.value",
       "data_type": "string",
       "input_type": "text",
       "display_name": "brand",
@@ -217,7 +217,7 @@
       ]
     },
     {
-      "field": "attributes.color.value.text",
+      "field": "attributes.color.value",
       "data_type": "string",
       "input_type": "text",
       "display_name": "color",
@@ -230,7 +230,7 @@
       ]
     },
     {
-      "field": "attributes.color_code.value.text",
+      "field": "attributes.color_code.value",
       "data_type": "string",
       "input_type": "text",
       "display_name": "color code",
@@ -243,7 +243,7 @@
       ]
     },
     {
-      "field": "attributes.size.value.text",
+      "field": "attributes.size.value",
       "data_type": "string",
       "input_type": "text",
       "display_name": "size",
@@ -256,7 +256,7 @@
       ]
     },
     {
-      "field": "attributes.size_code.value.text",
+      "field": "attributes.size_code.value",
       "data_type": "string",
       "input_type": "text",
       "display_name": "size code",
@@ -269,7 +269,7 @@
       ]
     },
     {
-      "field": "attributes.size_arg.value.text",
+      "field": "attributes.size_ar.value",
       "data_type": "string",
       "input_type": "text",
       "display_name": "size ar",
@@ -282,7 +282,7 @@
       ]
     },
     {
-      "field": "attributes.gender.value.text",
+      "field": "attributes.gender.value",
       "data_type": "string",
       "input_type": "text",
       "display_name": "gender",
@@ -295,7 +295,7 @@
       ]
     },
     {
-      "field": "attributes.technology.value.text",
+      "field": "attributes.technology.value",
       "data_type": "string",
       "input_type": "text",
       "display_name": "technology",
@@ -307,7 +307,7 @@
         "not_exists"
       ]
     },
-        {
+    {
       "field": "connectors.uid",
       "data_type": "string",
       "input_type": "text",

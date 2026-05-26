@@ -40,5 +40,13 @@
     "operator.field_not_exists": "campo não existe",
     "operator.field_is_null": "campo é nulo",
     "operator.field_is_not_null": "campo não é nulo",
-    "Understood": "Entendido"
+    "Understood": "Entendido",
+    "api.success": "Operação bem-sucedida",
+    "api.not_found": "Recurso não encontrado",
+    "api.conflict": "Conflito com o estado atual",
+    "api.bad_request": "Requisição inválida",
+    "api.unauthorized": "Não autorizado",
+    "api.forbidden": "Acesso negado",
+    "api.unprocessable_entity": "Entidade não processável",
+    "api.internal_error": "Erro interno do servidor"
 }

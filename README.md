@@ -29,7 +29,7 @@ La organización debe ser **idéntica** a la de:
 
 En **despliegue** (Docker, Kubernetes, etc.) se puede **montar un volumen** apuntando al contenido de este directorio `resources/` sobre `public/resources` del contenedor de control-web. Así se actualizan breadcrumbs y ayuda contextual sin rebuild, solo cambiando archivos en el volumen.
 
-En **desarrollo local**, mantén esta misma jerarquía dentro de `control-web/public/resources` (copia o enlace simbólico desde el monorepo) para que las rutas coincidan con producción.
+En **desarrollo local**, mantén esta misma jerarquía dentro de `control-web/public/resources` (copia o enlace simbólico desde el repo **`resources`** del workspace) para que las rutas coincidan con producción.
 
 ## Rutas HTTP de ejemplo
 
