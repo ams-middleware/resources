@@ -1,0 +1,20 @@
+name: prod
+
+on:
+  push:
+    branches: [prod]
+
+jobs:
+  notify-api:
+    name: Notificar a control-api (prod) para refrescar recursos
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update resources (prod)
+        env:
+          API_URL: "https://jmc-control-api.e-middleware.ar/notify/update-resources"
+          APP_KEY: ${{ secrets.NOTIFY_APP_KEY }}
+        run: |
+          curl -X POST "$API_URL" \
+            -H 'accept: application/json' \
+            -H "app_key: $APP_KEY" \
+            -d ''
