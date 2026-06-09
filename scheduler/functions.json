@@ -1,0 +1,82 @@
+[
+  {
+    "name": "migrate_database",
+    "description": "Migra/sincroniza datos de un MongoDB a otro (incremental, parametrizable)",
+    "args": [
+      { "name": "source_uri", "label": "URI origen", "type": "string", "required": true, "description": "URI Mongo origen. Soporta ${ENV_VAR} para credenciales." },
+      { "name": "source_db", "label": "DB origen", "type": "string", "required": true },
+      { "name": "target_uri", "label": "URI destino", "type": "string", "required": true, "description": "URI Mongo destino. Soporta ${ENV_VAR}." },
+      { "name": "target_db", "label": "DB destino", "type": "string", "required": true },
+      { "name": "collections", "label": "Colecciones", "type": "csv", "required": false, "description": "Lista separada por coma. Vacío = todas." },
+      { "name": "mode", "label": "Modo", "type": "enum", "required": false, "default": "incremental", "options": ["incremental", "full"] },
+      { "name": "watermark_field", "label": "Campo watermark", "type": "string", "required": false, "default": "updated_at" },
+      { "name": "batch_size", "label": "Tamaño de lote", "type": "int", "required": false, "default": "1000" }
+    ]
+  },
+  {
+    "name": "orders_pull",
+    "description": "Trae órdenes desde integration-api",
+    "args": [
+      { "name": "client_uid", "label": "Cliente (UID)", "type": "string", "required": false, "description": "Procesar solo este cliente. Vacío = todos." },
+      { "name": "connector_uid", "label": "Connector (UID)", "type": "string", "required": false },
+      { "name": "from_date", "label": "Desde", "type": "date", "required": false },
+      { "name": "to_date", "label": "Hasta", "type": "date", "required": false },
+      { "name": "force", "label": "Forzar", "type": "bool", "required": false },
+      { "name": "language", "label": "Idioma", "type": "string", "required": false }
+    ]
+  },
+  {
+    "name": "reconcile_reserved_stock",
+    "description": "Reconcilia stock reservado de productos desde las órdenes",
+    "default_cron": "*/15 * * * *",
+    "args": [ { "name": "client_uid", "label": "Cliente (UID)", "type": "string", "required": false, "description": "Procesar solo este cliente. Vacío = todos." } ]
+  },
+  {
+    "name": "sync_stock_weekly",
+    "description": "Sync stock semanal",
+    "default_cron": "0 2 * * 1",
+    "args": [
+      { "name": "client_uid", "label": "Cliente (UID)", "type": "string", "required": false, "description": "Procesar solo este cliente. Vacío = todos." },
+      { "name": "days", "label": "Días", "type": "int", "required": false }
+    ]
+  },
+  {
+    "name": "archive_orders",
+    "description": "Archiva órdenes antiguas (>1 año) a BD por año",
+    "default_cron": "0 3 1 * *",
+    "args": [ { "name": "client_uid", "label": "Cliente (UID)", "type": "string", "required": false, "description": "Procesar solo este cliente. Vacío = todos." } ]
+  },
+  {
+    "name": "invoice_reminders",
+    "description": "Envía recordatorios de facturas pendientes/vencidas y actualiza estados",
+    "default_cron": "0 9 * * *",
+    "args": [ { "name": "client_uid", "label": "Cliente (UID)", "type": "string", "required": false, "description": "Procesar solo este cliente. Vacío = todos." } ]
+  },
+  {
+    "name": "optimize_product_media",
+    "description": "Optimiza imágenes de product_media pendientes",
+    "default_cron": "0 22 * * 0",
+    "args": [
+      { "name": "client_uid", "label": "Cliente (UID)", "type": "string", "required": false, "description": "Procesar solo este cliente. Vacío = todos." },
+      { "name": "limit", "label": "Límite", "type": "int", "required": false }
+    ]
+  },
+  {
+    "name": "cleanup_product_logs",
+    "description": "Limpieza de product_logs",
+    "default_cron": "0 4 */14 * *",
+    "args": [
+      { "name": "client_uid", "label": "Cliente (UID)", "type": "string", "required": false, "description": "Procesar solo este cliente. Vacío = todos." },
+      { "name": "months", "label": "Meses a conservar", "type": "int", "required": false }
+    ]
+  },
+  {
+    "name": "cleanup_bulk_processor",
+    "description": "Limpieza de bulk_processor",
+    "default_cron": "0 3 * * 0",
+    "args": [
+      { "name": "client_uid", "label": "Cliente (UID)", "type": "string", "required": false, "description": "Procesar solo este cliente. Vacío = todos." },
+      { "name": "months", "label": "Meses a conservar", "type": "int", "required": false }
+    ]
+  }
+]
