@@ -1,0 +1,222 @@
+{
+  "navigations": [
+    {
+      "id": "dashboard",
+      "title": "Dashboard",
+      "icon": "ri-dashboard-2-line",
+      "link": "/",
+      "description": "Resumen general y métricas del sistema."
+    },
+    {
+      "id": "orders",
+      "title": "Órdenes",
+      "icon": "ri-shopping-bag-3-line",
+      "link": "/orders",
+      "permission": "ORDER_LIST",
+      "children": [
+        {
+          "id": "orders-list",
+          "title": "Órdenes",
+          "link": "/orders",
+          "permission": "ORDER_LIST",
+          "icon": "ri-shopping-bag-3-line",
+          "description": "Pedidos de todas las tiendas: seguimiento, edición y gestión.",
+          "help_url": "https://docs.e-middleware.com/operativa/ordenes"
+        },
+        {
+          "id": "orders-create",
+          "title": "Crear orden",
+          "link": "/orders/new",
+          "permission": "ORDER_CREATE"
+        },
+        {
+          "id": "orders-custom-fields",
+          "title": "Campos personalizados de orden",
+          "link": "/orders/custom-fields",
+          "permission": "ORDER_UPDATE",
+          "icon": "ri-list-settings-line",
+          "description": "Campos adicionales que se solicitan al crear o editar órdenes.",
+          "help_url": "https://docs.e-middleware.com/operativa/campos-personalizados"
+        }
+      ]
+    },
+    {
+      "id": "products",
+      "title": "Productos",
+      "icon": "ri-box-3-line",
+      "link": "/products",
+      "permission": "PRODUCT_LIST",
+      "children": [
+        {
+          "id": "products-list",
+          "title": "Productos",
+          "link": "/products",
+          "permission": "PRODUCT_LIST",
+          "icon": "ri-box-3-line",
+          "description": "Catálogo de productos: carga, edición y publicación por conector.",
+          "help_url": "https://docs.e-middleware.com/operativa/productos"
+        },
+        {
+          "id": "products-attribute-values",
+          "title": "Atributos",
+          "link": "/products/attributes",
+          "permission": "PRODUCT_UPDATE",
+          "icon": "ri-price-tag-3-line",
+          "description": "Definí los atributos y sus valores para describir los productos.",
+          "help_url": "https://docs.e-middleware.com/operativa/atributos"
+        },
+        {
+          "id": "products-category-mapping",
+          "title": "Mapeos de categoría",
+          "link": "/products/category-mapping",
+          "permission": "PRODUCT_UPDATE",
+          "icon": "ri-git-merge-line",
+          "description": "Relacioná tus categorías con las de cada plataforma.",
+          "help_url": "https://docs.e-middleware.com/operativa/mapeo-de-categorias"
+        },
+        {
+          "id": "products-multimedia",
+          "title": "Multimedia",
+          "link": "/products/multimedia",
+          "permission": "PRODUCT_UPDATE",
+          "icon": "ri-image-line",
+          "description": "Sets multimedia reutilizables (imágenes y videos) por producto.",
+          "help_url": "https://docs.e-middleware.com/operativa/multimedia"
+        }
+      ]
+    },
+    {
+      "id": "crm",
+      "title": "CRM",
+      "icon": "ri-team-line",
+      "link": "/crm/customers",
+      "permission": "ORDER_LIST",
+      "children": [
+        {
+          "id": "crm-customers",
+          "title": "Clientes",
+          "link": "/crm/customers",
+          "permission": "ORDER_LIST",
+          "icon": "ri-user-3-line",
+          "description": "Clientes finales y su historial de órdenes.",
+          "help_url": "https://docs.e-middleware.com/operativa/clientes"
+        },
+        {
+          "id": "crm-postal-codes",
+          "title": "Códigos postales",
+          "link": "/crm/postal-codes",
+          "permission": "ORDER_LIST",
+          "icon": "ri-map-pin-line",
+          "description": "Códigos postales y regiones para envíos.",
+          "help_url": "https://docs.e-middleware.com/operativa/codigos-postales"
+        }
+      ]
+    },
+    {
+      "id": "bulk",
+      "title": "Cargas masivas",
+      "icon": "ri-stack-line",
+      "link": "/bulk",
+      "permission": "ORDER_LIST",
+      "description": "Importá y exportá datos de forma masiva con plantillas.",
+      "help_url": "https://docs.e-middleware.com/operativa/cargas-masivas"
+    },
+    {
+      "id": "connectors",
+      "title": "Conectores",
+      "icon": "ri-plug-line",
+      "link": "/connectors",
+      "permission": "CONNECTOR_LIST",
+      "description": "Integraciones por tienda: configuración, sincronización y autorización.",
+      "help_url": "https://docs.e-middleware.com/operativa/conectores"
+    },
+    {
+      "id": "ai-config",
+      "title": "Configuración de IA",
+      "icon": "ri-robot-line",
+      "link": "/ai-config",
+      "permission": "BACKOFFICE_ACCESS",
+      "description": "Configura el proveedor LLM y prompts del asistente virtual. Podés definir una config base por cliente y sobreescribirla por tienda.",
+      "help_url": "https://docs.e-middleware.com/configuracion/ia"
+    },
+    {
+      "id": "scheduler",
+      "title": "Scheduler",
+      "icon": "ri-time-line",
+      "link": "/scheduler",
+      "permission": "BACKOFFICE_ACCESS",
+      "description": "Tareas cron gestionadas desde la base de datos.",
+      "help_url": "https://docs.e-middleware.com/configuracion/scheduler"
+    },
+    {
+      "id": "system",
+      "title": "Sistema",
+      "icon": "ri-settings-3-line",
+      "link": "/invoices",
+      "children": [
+        {
+          "id": "invoices",
+          "title": "Facturas",
+          "link": "/invoices",
+          "permission": "INVOICE_LIST",
+          "icon": "ri-bill-line",
+          "description": "Facturas emitidas y pendientes.",
+          "help_url": "https://docs.e-middleware.com/operativa/facturas"
+        },
+        {
+          "id": "rules",
+          "title": "Reglas",
+          "permission": "STORE_LIST",
+          "icon": "ri-git-branch-line",
+          "children": [
+            {
+              "id": "rules-list",
+              "title": "Reglas",
+              "link": "/rules",
+              "permission": "STORE_LIST",
+              "icon": "ri-git-branch-line",
+              "description": "Reglas que se disparan automáticamente. Ordená por prioridad.",
+              "help_url": "https://docs.e-middleware.com/configuracion/reglas"
+            },
+            {
+              "id": "rules-new",
+              "title": "Nueva regla",
+              "link": "/rules/new",
+              "permission": "STORE_UPDATE"
+            }
+          ]
+        },
+        {
+          "id": "stores",
+          "title": "Tiendas",
+          "link": "/stores",
+          "permission": "STORE_LIST",
+          "icon": "ri-store-2-line",
+          "description": "Tiendas configuradas. Cada una agrupa conectores y usuarios.",
+          "help_url": "https://docs.e-middleware.com/configuracion/tiendas"
+        },
+        {
+          "id": "workflows",
+          "title": "Workflow",
+          "link": "/workflows",
+          "permission": "ORDER_LIST",
+          "icon": "ri-git-merge-line",
+          "description": "Definí qué proceso BPM se ejecuta al inicializar un workflow.",
+          "help_url": "https://docs.e-middleware.com/configuracion/workflows"
+        }
+      ]
+    },
+    {
+      "id": "profile",
+      "title": "Perfil",
+      "link": "/profile",
+      "hidden": true
+    },
+    {
+      "id": "help",
+      "title": "Ayuda",
+      "link": "/help",
+      "hidden": true
+    }
+  ]
+}
