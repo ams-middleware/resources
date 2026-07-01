@@ -31,12 +31,21 @@
         },
         {
           "id": "orders-custom-fields",
-          "title": "Campos personalizados de orden",
+          "title": "Campos personalizados",
           "link": "/orders/custom-fields",
           "permission": "ORDER_UPDATE",
           "icon": "ri-list-settings-line",
           "description": "Campos adicionales que se solicitan al crear o editar órdenes.",
           "help_url": "https://docs.e-middleware.com/operativa/campos-personalizados"
+        },
+        {
+          "id": "workflows",
+          "title": "Workflow",
+          "link": "/workflows",
+          "permission": "ORDER_LIST",
+          "icon": "ri-git-merge-line",
+          "description": "Definí qué proceso BPM se ejecuta al inicializar un workflow.",
+          "help_url": "https://docs.e-middleware.com/configuracion/workflows"
         }
       ]
     },
@@ -166,25 +175,11 @@
         {
           "id": "rules",
           "title": "Reglas",
-          "permission": "STORE_LIST",
+          "link": "/rules",
+          "permission": "RULE_LIST",
           "icon": "ri-git-branch-line",
-          "children": [
-            {
-              "id": "rules-list",
-              "title": "Reglas",
-              "link": "/rules",
-              "permission": "STORE_LIST",
-              "icon": "ri-git-branch-line",
-              "description": "Reglas que se disparan automáticamente. Ordená por prioridad.",
-              "help_url": "https://docs.e-middleware.com/configuracion/reglas"
-            },
-            {
-              "id": "rules-new",
-              "title": "Nueva regla",
-              "link": "/rules/new",
-              "permission": "STORE_UPDATE"
-            }
-          ]
+          "description": "Reglas que se disparan automáticamente. Ordená por prioridad.",
+          "help_url": "https://docs.e-middleware.com/configuracion/reglas"
         },
         {
           "id": "stores",
@@ -194,15 +189,6 @@
           "icon": "ri-store-2-line",
           "description": "Tiendas configuradas. Cada una agrupa conectores y usuarios.",
           "help_url": "https://docs.e-middleware.com/configuracion/tiendas"
-        },
-        {
-          "id": "workflows",
-          "title": "Workflow",
-          "link": "/workflows",
-          "permission": "ORDER_LIST",
-          "icon": "ri-git-merge-line",
-          "description": "Definí qué proceso BPM se ejecuta al inicializar un workflow.",
-          "help_url": "https://docs.e-middleware.com/configuracion/workflows"
         }
       ]
     },
