@@ -10,7 +10,8 @@
       "title": "Dashboard",
       "icon": "ri-dashboard-2-line",
       "link": "/",
-      "description": "Resumen y estado del backoffice de administración."
+      "description": "Resumen y estado del backoffice de administración.",
+      "keywords": ["inicio", "home", "tablero", "resumen"]
     },
     {
       "id": "h-notificaciones",
@@ -57,6 +58,7 @@
       "icon": "ri-building-line",
       "link": "/administration/clients",
       "description": "Alta y configuración de clientes del sistema.",
+      "keywords": ["clients", "empresas", "cuentas"],
       "help_url": "https://docs.e-middleware.com/administracion/clientes"
     },
     {
@@ -65,6 +67,7 @@
       "icon": "ri-user-settings-line",
       "link": "/administration/users",
       "description": "Usuarios del sistema y su asignación.",
+      "keywords": ["users", "operadores", "cuentas"],
       "help_url": "https://docs.e-middleware.com/administracion/usuarios"
     },
     {
@@ -73,6 +76,7 @@
       "icon": "ri-shield-user-line",
       "link": "/administration/roles",
       "description": "Roles y permisos (RBAC).",
+      "keywords": ["roles", "permisos", "rbac", "accesos"],
       "help_url": "https://docs.e-middleware.com/administracion/roles"
     },
     {
@@ -107,6 +111,7 @@
       "icon": "ri-apps-2-line",
       "link": "/administration/integrations",
       "description": "Integraciones disponibles y su configuración base.",
+      "keywords": ["integrations", "conectores", "marketplaces", "erp"],
       "help_url": "https://docs.e-middleware.com/administracion/integraciones"
     },
     {
@@ -121,12 +126,6 @@
       "id": "profile",
       "title": "Perfil",
       "link": "/profile",
-      "hidden": true
-    },
-    {
-      "id": "help",
-      "title": "Ayuda",
-      "link": "/help",
       "hidden": true
     }
   ]

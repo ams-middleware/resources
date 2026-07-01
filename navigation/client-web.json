@@ -5,7 +5,8 @@
       "title": "Dashboard",
       "icon": "ri-dashboard-2-line",
       "link": "/",
-      "description": "Resumen general y métricas del sistema."
+      "description": "Resumen general y métricas del sistema.",
+      "keywords": ["inicio", "home", "tablero", "metricas", "resumen"]
     },
     {
       "id": "orders",
@@ -21,13 +22,15 @@
           "permission": "ORDER_LIST",
           "icon": "ri-shopping-bag-3-line",
           "description": "Pedidos de todas las tiendas: seguimiento, edición y gestión.",
+          "keywords": ["pedidos", "ventas", "orders"],
           "help_url": "https://docs.e-middleware.com/operativa/ordenes"
         },
         {
           "id": "orders-create",
           "title": "Crear orden",
           "link": "/orders/new",
-          "permission": "ORDER_CREATE"
+          "permission": "ORDER_CREATE",
+          "keywords": ["nueva orden", "nuevo pedido", "alta orden"]
         },
         {
           "id": "orders-custom-fields",
@@ -63,6 +66,7 @@
           "permission": "PRODUCT_LIST",
           "icon": "ri-box-3-line",
           "description": "Catálogo de productos: carga, edición y publicación por conector.",
+          "keywords": ["articulos", "catalogo", "products", "items"],
           "help_url": "https://docs.e-middleware.com/operativa/productos"
         },
         {
@@ -108,6 +112,7 @@
           "permission": "ORDER_LIST",
           "icon": "ri-user-3-line",
           "description": "Clientes finales y su historial de órdenes.",
+          "keywords": ["compradores", "customers", "contactos"],
           "help_url": "https://docs.e-middleware.com/operativa/clientes"
         },
         {
@@ -137,6 +142,7 @@
       "link": "/connectors",
       "permission": "CONNECTOR_LIST",
       "description": "Integraciones por tienda: configuración, sincronización y autorización.",
+      "keywords": ["integraciones", "connectors", "marketplaces", "erp"],
       "help_url": "https://docs.e-middleware.com/operativa/conectores"
     },
     {
@@ -170,6 +176,7 @@
           "permission": "INVOICE_LIST",
           "icon": "ri-bill-line",
           "description": "Facturas emitidas y pendientes.",
+          "keywords": ["facturacion", "invoices", "comprobantes"],
           "help_url": "https://docs.e-middleware.com/operativa/facturas"
         },
         {
@@ -196,12 +203,6 @@
       "id": "profile",
       "title": "Perfil",
       "link": "/profile",
-      "hidden": true
-    },
-    {
-      "id": "help",
-      "title": "Ayuda",
-      "link": "/help",
       "hidden": true
     }
   ]
