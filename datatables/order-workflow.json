@@ -1,0 +1,23 @@
+{
+  "columns": [
+    { "id": "store_uid", "labelKey": "Tienda", "renderer": "wfStore", "path": "store_uid", "width": 220 },
+    {
+      "id": "type",
+      "labelKey": "Tipo",
+      "renderer": "badge",
+      "path": "type",
+      "width": 120,
+      "center": true,
+      "badge": {
+        "variants": {
+          "order": { "label": "Orden", "color": "primary" },
+          "product": { "label": "Producto", "color": "success" }
+        },
+        "default": { "color": "success" }
+      }
+    },
+    { "id": "process", "labelKey": "Proceso BPM", "renderer": "wfProcess", "path": "definition_name" },
+    { "id": "definition_key", "labelKey": "Definition Key", "renderer": "wfKey", "path": "definition_key" },
+    { "id": "actions", "labelKey": "Acciones", "renderer": "wfActions", "displayColumn": true, "hideable": false, "width": 140, "center": true }
+  ]
+}

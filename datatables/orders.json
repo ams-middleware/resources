@@ -1,0 +1,325 @@
+{
+  "columns": [
+    {
+      "id": "uid",
+      "labelKey": "Order col uid",
+      "renderer": "clipboardStrong",
+      "fields": [
+        "uid",
+        "order_uid"
+      ],
+      "sortable": true,
+      "hideable": false
+    },
+    {
+      "id": "ref_code",
+      "labelKey": "Order col code",
+      "renderer": "clipboard",
+      "fields": [
+        "ref_code",
+        "refCode"
+      ],
+      "sortable": true
+    },
+    {
+      "id": "status",
+      "labelKey": "Order col status",
+      "renderer": "badge",
+      "fields": [
+        "status",
+        "order_status"
+      ],
+      "sortable": true,
+      "width": 120,
+      "badge": {
+        "variants": {
+          "processing": { "color": "primary" },
+          "pending": { "color": "warning" },
+          "retrying": { "color": "warning" },
+          "canceled": { "color": "danger" },
+          "completed": { "color": "success" },
+          "failed": { "color": "danger" },
+          "deleted": { "color": "danger" },
+          "paid": { "color": "success" },
+          "reserved": { "color": "success" },
+          "not_paid": { "color": "danger" },
+          "success": { "color": "success" },
+          "error": { "color": "danger" }
+        },
+        "default": { "color": "secondary" }
+      }
+    },
+    {
+      "id": "grand_total",
+      "labelKey": "Order col grand total",
+      "renderer": "currency",
+      "fields": [
+        "grand_total",
+        "total"
+      ],
+      "width": 120
+    },
+    {
+      "id": "payment",
+      "labelKey": "Order col payment",
+      "renderer": "badge",
+      "requestOnlyFields": [
+        "paid",
+        "tags"
+      ],
+      "width": 100,
+      "center": true,
+      "badge": {
+        "value": {
+          "cases": [
+            {
+              "when": {
+                "path": "tags",
+                "contains": "paid"
+              },
+              "then": "paid"
+            }
+          ]
+        },
+        "variants": {
+          "paid": {
+            "label": "paid",
+            "color": "success"
+          }
+        },
+        "default": {
+          "label": "not paid",
+          "color": "danger"
+        }
+      }
+    },
+    {
+      "id": "stock",
+      "labelKey": "Order col stock",
+      "renderer": "badge",
+      "requestOnlyFields": [
+        "stock_reserved",
+        "tags"
+      ],
+      "width": 90,
+      "center": true,
+      "defaultHidden": true,
+      "badge": {
+        "value": {
+          "cases": [
+            {
+              "when": {
+                "path": "tags",
+                "contains": "reserved"
+              },
+              "then": "reserved"
+            }
+          ]
+        },
+        "variants": {
+          "reserved": {
+            "label": "reserved",
+            "color": "info"
+          }
+        }
+      }
+    },
+    {
+      "id": "customer",
+      "labelKey": "Order col customer",
+      "renderer": "customer",
+      "path": "billing.customer.full_name",
+      "requestOnlyFields": [
+        "billing.customer._id",
+        "billing.customer.uid",
+        "billing.customer.email",
+        "billing.customer.phone",
+        "billing.customer.document_type",
+        "billing.customer.sequence_nro",
+        "billing.customer.observation"
+      ]
+    },
+    {
+      "id": "document_id",
+      "labelKey": "Order col dni",
+      "renderer": "clipboard",
+      "path": "billing.customer.document_id",
+      "width": 130
+    },
+    {
+      "id": "tracking",
+      "labelKey": "Order col tracking",
+      "renderer": "tracking",
+      "fields": [
+        "courier"
+      ],
+      "width": 160
+    },
+    {
+      "id": "workflow_status",
+      "labelKey": "Order col wf status",
+      "renderer": "badge",
+      "path": "workflow.status",
+      "width": 110,
+      "center": true,
+      "badge": {
+        "variants": {
+          "processing": { "color": "primary" },
+          "pending": { "color": "warning" },
+          "retrying": { "color": "warning" },
+          "canceled": { "color": "danger" },
+          "completed": { "color": "success" },
+          "failed": { "color": "danger" },
+          "deleted": { "color": "danger" },
+          "success": { "color": "success" },
+          "error": { "color": "danger" }
+        },
+        "default": { "color": "secondary" }
+      }
+    },
+    {
+      "id": "workflow_step",
+      "labelKey": "Order col wf step",
+      "renderer": "workflowStep",
+      "path": "workflow.current_step",
+      "width": 140
+    },
+    {
+      "id": "store.name",
+      "labelKey": "Order col store",
+      "renderer": "text",
+      "path": "store.name",
+      "width": 140
+    },
+    {
+      "id": "emitted_by",
+      "labelKey": "Order col emitted by",
+      "renderer": "emittedBy",
+      "fields": [
+        "emitted_by"
+      ],
+      "requestOnlyFields": [
+        "created_by"
+      ],
+      "width": 160
+    },
+    {
+      "id": "emitted_at",
+      "labelKey": "Order col emitted at",
+      "renderer": "datetime",
+      "fields": [
+        "emitted_at"
+      ],
+      "sortable": true,
+      "width": 160,
+      "center": true,
+      "defaultHidden": true
+    },
+    {
+      "id": "created_at",
+      "labelKey": "Order col created",
+      "renderer": "datetime",
+      "fields": [
+        "created_at"
+      ],
+      "sortable": true,
+      "width": 160,
+      "center": true,
+      "defaultHidden": true
+    },
+    {
+      "id": "updated_at",
+      "labelKey": "Order col updated",
+      "renderer": "datetime",
+      "fields": [
+        "updated_at"
+      ],
+      "width": 160,
+      "defaultHidden": true
+    },
+    {
+      "id": "chat_status",
+      "labelKey": "Chat",
+      "renderer": "badge",
+      "requestOnlyFields": [
+        "chat.mode",
+        "chat.status"
+      ],
+      "width": 120,
+      "center": true,
+      "badge": {
+        "value": {
+          "cases": [
+            {
+              "when": {
+                "path": "chat.status",
+                "equals": "closed"
+              },
+              "then": "closed"
+            },
+            {
+              "when": {
+                "path": "chat.status",
+                "equals": "active"
+              },
+              "thenPath": "chat.mode"
+            }
+          ]
+        },
+        "variants": {
+          "handoff": {
+            "label": "Esperando",
+            "icon": "ri-time-line",
+            "variant": "warning-pulse"
+          },
+          "operator": {
+            "label": "En atención",
+            "icon": "ri-customer-service-2-line",
+            "variant": "success"
+          },
+          "ai": {
+            "label": "IA activa",
+            "icon": "ri-robot-line",
+            "variant": "info"
+          },
+          "closed": {
+            "label": "Cerrado",
+            "icon": "ri-chat-off-line",
+            "variant": "muted"
+          }
+        }
+      }
+    },
+    {
+      "id": "actions",
+      "labelKey": "Order col actions",
+      "renderer": "rowActions",
+      "requestOnlyFields": [
+        "sequence_nro",
+        "uid",
+        "order_uid"
+      ],
+      "displayColumn": true,
+      "hideable": false,
+      "width": 200,
+      "center": true,
+      "actions": [
+        {
+          "tooltip": "Ver pedido",
+          "style": "primary btn-sm",
+          "renderer": "button-view",
+          "url": "/orders/{id}",
+          "external_url": false,
+          "permission": "ORDER_SHOW"
+        },
+        {
+          "tooltip": "Editar pedido",
+          "renderer": "button-edit",
+          "url": "/orders/edit/{id}",
+          "external_url": false,
+          "permission": "ORDER_UPDATE"
+        }
+      ]
+    }
+  ]
+}

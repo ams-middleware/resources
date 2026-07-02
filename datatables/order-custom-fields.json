@@ -1,0 +1,40 @@
+{
+  "columns": [
+    { "id": "position", "labelKey": "Pos", "renderer": "text", "path": "position", "width": 60, "center": true, "hideable": false },
+    { "id": "key", "labelKey": "Key", "renderer": "cfKey", "path": "key", "width": 160 },
+    { "id": "label", "labelKey": "Label", "renderer": "text", "path": "label" },
+    {
+      "id": "type",
+      "labelKey": "Tipo",
+      "renderer": "badge",
+      "path": "type",
+      "width": 120,
+      "center": true,
+      "badge": {
+        "variants": {
+          "text": { "label": "Texto", "color": "info" },
+          "select": { "label": "Lista fija", "color": "warning" },
+          "number": { "label": "Número", "color": "success" }
+        }
+      }
+    },
+    { "id": "store_uid", "labelKey": "Tienda", "renderer": "cfStore", "path": "store_uid", "width": 140 },
+    { "id": "options", "labelKey": "Opciones", "renderer": "cfOptions", "path": "options" },
+    { "id": "required", "labelKey": "Req.", "renderer": "cfRequired", "path": "required", "width": 70, "center": true },
+    {
+      "id": "active",
+      "labelKey": "Estado",
+      "renderer": "badge",
+      "path": "active",
+      "width": 110,
+      "center": true,
+      "badge": {
+        "variants": {
+          "true": { "label": "Activo", "color": "success" },
+          "false": { "label": "Inactivo", "color": "secondary" }
+        }
+      }
+    },
+    { "id": "actions", "labelKey": "Acciones", "renderer": "cfActions", "displayColumn": true, "hideable": false, "width": 180, "center": true }
+  ]
+}

@@ -44,7 +44,7 @@
         {
           "id": "workflows",
           "title": "Workflow",
-          "link": "/workflows",
+          "link": "/orders/workflow",
           "permission": "ORDER_LIST",
           "icon": "ri-git-merge-line",
           "description": "Definí qué proceso BPM se ejecuta al inicializar un workflow.",
