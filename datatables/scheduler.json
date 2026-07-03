@@ -1,0 +1,11 @@
+{
+  "columns": [
+    { "id": "name", "labelKey": "Nombre", "renderer": "taskName", "fields": ["name"], "requestOnlyFields": ["description"], "hideable": false },
+    { "id": "function", "labelKey": "Función", "renderer": "funcName", "requestOnlyFields": ["function"], "width": 200 },
+    { "id": "cron", "labelKey": "Cron", "renderer": "cron", "path": "cron_expression", "width": 140 },
+    { "id": "status", "labelKey": "Estado", "renderer": "taskStatus", "requestOnlyFields": ["status"], "width": 120 },
+    { "id": "last_run", "labelKey": "Última ejecución", "renderer": "lastRun", "path": "last_run", "width": 150 },
+    { "id": "active", "labelKey": "Activa", "renderer": "taskActive", "requestOnlyFields": ["active", "uid"], "displayColumn": true, "hideable": false, "width": 80, "center": true },
+    { "id": "actions", "labelKey": "", "renderer": "taskActions", "requestOnlyFields": ["uid"], "displayColumn": true, "hideable": false, "width": 90, "center": true }
+  ]
+}

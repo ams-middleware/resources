@@ -1,0 +1,9 @@
+{
+  "columns": [
+    { "id": "category_uid", "labelKey": "Categoría interna", "renderer": "internalCategory", "fields": ["category_uid"], "width": 200 },
+    { "id": "connector", "labelKey": "Conector", "renderer": "connector", "requestOnlyFields": ["connector.name", "connector.uid"], "width": 180 },
+    { "id": "external", "labelKey": "Categoría externa", "renderer": "externalCategory", "fields": ["name"], "requestOnlyFields": ["ref_code"] },
+    { "id": "attributes", "labelKey": "Atributos", "renderer": "attrsCount", "requestOnlyFields": ["attributes"], "displayColumn": true, "width": 100, "center": true },
+    { "id": "actions", "labelKey": "Acciones", "renderer": "mappingActions", "requestOnlyFields": ["uid", "connector.uid"], "displayColumn": true, "hideable": false, "width": 120, "center": true }
+  ]
+}
