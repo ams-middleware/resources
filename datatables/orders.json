@@ -33,20 +33,46 @@
       "width": 120,
       "badge": {
         "variants": {
-          "processing": { "color": "primary" },
-          "pending": { "color": "warning" },
-          "retrying": { "color": "warning" },
-          "canceled": { "color": "danger" },
-          "completed": { "color": "success" },
-          "failed": { "color": "danger" },
-          "deleted": { "color": "danger" },
-          "paid": { "color": "success" },
-          "reserved": { "color": "success" },
-          "not_paid": { "color": "danger" },
-          "success": { "color": "success" },
-          "error": { "color": "danger" }
+          "processing": {
+            "color": "primary"
+          },
+          "pending": {
+            "color": "warning"
+          },
+          "retrying": {
+            "color": "warning"
+          },
+          "canceled": {
+            "color": "danger"
+          },
+          "completed": {
+            "color": "success"
+          },
+          "failed": {
+            "color": "danger"
+          },
+          "deleted": {
+            "color": "danger"
+          },
+          "paid": {
+            "color": "success"
+          },
+          "reserved": {
+            "color": "success"
+          },
+          "not_paid": {
+            "color": "danger"
+          },
+          "success": {
+            "color": "success"
+          },
+          "error": {
+            "color": "danger"
+          }
         },
-        "default": { "color": "secondary" }
+        "default": {
+          "color": "secondary"
+        }
       }
     },
     {
@@ -164,17 +190,37 @@
       "center": true,
       "badge": {
         "variants": {
-          "processing": { "color": "primary" },
-          "pending": { "color": "warning" },
-          "retrying": { "color": "warning" },
-          "canceled": { "color": "danger" },
-          "completed": { "color": "success" },
-          "failed": { "color": "danger" },
-          "deleted": { "color": "danger" },
-          "success": { "color": "success" },
-          "error": { "color": "danger" }
+          "processing": {
+            "color": "primary"
+          },
+          "pending": {
+            "color": "warning"
+          },
+          "retrying": {
+            "color": "warning"
+          },
+          "canceled": {
+            "color": "danger"
+          },
+          "completed": {
+            "color": "success"
+          },
+          "failed": {
+            "color": "danger"
+          },
+          "deleted": {
+            "color": "danger"
+          },
+          "success": {
+            "color": "success"
+          },
+          "error": {
+            "color": "danger"
+          }
         },
-        "default": { "color": "secondary" }
+        "default": {
+          "color": "secondary"
+        }
       }
     },
     {

@@ -1,0 +1,169 @@
+{
+  "fields": [
+    {
+      "field": "_id",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "uid",
+      "translation_key": "uid",
+      "operators": [
+        "eq",
+        "like"
+      ]
+    },
+    {
+      "field": "sequence_nro",
+      "data_type": "number",
+      "input_type": "number",
+      "display_name": "sequence nro",
+      "translation_key": "sequence_nro",
+      "operators": [
+        "eq",
+        "ne",
+        "gt",
+        "gte",
+        "lt",
+        "lte"
+      ]
+    },
+    {
+      "field": "document_type",
+      "data_type": "string",
+      "input_type": "select",
+      "display_name": "document type",
+      "translation_key": "document_type",
+      "operators": [
+        "eq",
+        "ne",
+        "in",
+        "nin"
+      ]
+    },
+    {
+      "field": "document_id",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "document id",
+      "translation_key": "document_id",
+      "operators": [
+        "eq",
+        "ne",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "field": "first_name",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "first name",
+      "translation_key": "first_name",
+      "operators": [
+        "eq",
+        "ne",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "field": "last_name",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "last name",
+      "translation_key": "last_name",
+      "operators": [
+        "eq",
+        "ne",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "field": "full_name",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "full name",
+      "translation_key": "full_name",
+      "operators": [
+        "eq",
+        "ne",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "field": "email",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "email",
+      "translation_key": "email",
+      "operators": [
+        "eq",
+        "ne",
+        "like",
+        "regex",
+        "exists",
+        "not_exists"
+      ]
+    },
+    {
+      "field": "phone",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "phone",
+      "translation_key": "phone",
+      "operators": [
+        "eq",
+        "ne",
+        "like",
+        "exists",
+        "not_exists"
+      ]
+    },
+    {
+      "field": "observation",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "observation",
+      "translation_key": "observation",
+      "operators": [
+        "like",
+        "regex",
+        "exists",
+        "not_exists"
+      ]
+    },
+    {
+      "field": "created_at",
+      "data_type": "datetime",
+      "input_type": "date",
+      "display_name": "created at",
+      "translation_key": "created_at",
+      "operators": [
+        "eq",
+        "ne",
+        "gt",
+        "gte",
+        "lt",
+        "lte",
+        "range"
+      ]
+    },
+    {
+      "field": "updated_at",
+      "data_type": "datetime",
+      "input_type": "date",
+      "display_name": "updated at",
+      "translation_key": "updated_at",
+      "operators": [
+        "eq",
+        "ne",
+        "gt",
+        "gte",
+        "lt",
+        "lte",
+        "range"
+      ]
+    }
+  ]
+}

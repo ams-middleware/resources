@@ -1,0 +1,125 @@
+{
+  "fields": [
+    {
+      "field": "_id",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "uid",
+      "translation_key": "uid",
+      "operators": [
+        "eq",
+        "like"
+      ]
+    },
+    {
+      "field": "name",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "name",
+      "translation_key": "name",
+      "operators": [
+        "eq",
+        "ne",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "field": "version",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "version",
+      "translation_key": "version",
+      "operators": [
+        "eq",
+        "ne",
+        "like"
+      ]
+    },
+    {
+      "field": "active",
+      "data_type": "bool",
+      "input_type": "select",
+      "display_name": "active",
+      "translation_key": "active",
+      "operators": [
+        "eq",
+        "ne"
+      ]
+    },
+    {
+      "field": "tags",
+      "data_type": "[]string",
+      "input_type": "select",
+      "display_name": "tags",
+      "translation_key": "tags",
+      "operators": [
+        "eq",
+        "ne",
+        "in",
+        "nin",
+        "like",
+        "regex",
+        "exists",
+        "not_exists"
+      ]
+    },
+    {
+      "field": "integration.name",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "integration",
+      "translation_key": "integration",
+      "operators": [
+        "eq",
+        "ne",
+        "like"
+      ]
+    },
+    {
+      "field": "store.uid",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "store",
+      "translation_key": "store",
+      "operators": [
+        "eq",
+        "ne",
+        "in",
+        "nin"
+      ]
+    },
+    {
+      "field": "created_at",
+      "data_type": "datetime",
+      "input_type": "date",
+      "display_name": "created at",
+      "translation_key": "created_at",
+      "operators": [
+        "eq",
+        "ne",
+        "gt",
+        "gte",
+        "lt",
+        "lte",
+        "range"
+      ]
+    },
+    {
+      "field": "updated_at",
+      "data_type": "datetime",
+      "input_type": "date",
+      "display_name": "updated at",
+      "translation_key": "updated_at",
+      "operators": [
+        "eq",
+        "ne",
+        "gt",
+        "gte",
+        "lt",
+        "lte",
+        "range"
+      ]
+    }
+  ]
+}

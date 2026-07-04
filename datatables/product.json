@@ -4,8 +4,15 @@
       "id": "product",
       "labelKey": "Producto",
       "renderer": "product",
-      "fields": ["name", "sku"],
-      "requestOnlyFields": ["uid", "created_at", "multimedia_uid"],
+      "fields": [
+        "name",
+        "sku"
+      ],
+      "requestOnlyFields": [
+        "uid",
+        "created_at",
+        "multimedia_uid"
+      ],
       "sortable": true,
       "sortField": "name",
       "hideable": false,
@@ -15,7 +22,9 @@
       "id": "brand",
       "labelKey": "Marca",
       "renderer": "text",
-      "fields": ["attributes.brand.value.text"],
+      "fields": [
+        "attributes.brand.value.text"
+      ],
       "sortable": true,
       "sortField": "attributes.brand.value.text",
       "width": 140
@@ -24,27 +33,38 @@
       "id": "category_name",
       "labelKey": "Categoría",
       "renderer": "categoryName",
-      "requestOnlyFields": ["category.uid", "category.name"],
+      "requestOnlyFields": [
+        "category.uid",
+        "category.name"
+      ],
       "width": 160
     },
     {
       "id": "type",
       "labelKey": "Tipo",
       "renderer": "badge",
-      "fields": ["type"],
+      "fields": [
+        "type"
+      ],
       "sortable": true,
       "width": 90,
       "center": true,
       "badge": {
         "variants": {},
-        "default": { "color": "info", "uppercase": true }
+        "default": {
+          "color": "info",
+          "uppercase": true
+        }
       }
     },
     {
       "id": "price",
       "labelKey": "Precio",
       "renderer": "price",
-      "requestOnlyFields": ["price.available", "price.special"],
+      "requestOnlyFields": [
+        "price.available",
+        "price.special"
+      ],
       "width": 120,
       "center": true
     },
@@ -52,7 +72,11 @@
       "id": "stock_real",
       "labelKey": "Stock",
       "renderer": "stockReal",
-      "requestOnlyFields": ["stock.real", "stock.available", "stock.reserved"],
+      "requestOnlyFields": [
+        "stock.real",
+        "stock.available",
+        "stock.reserved"
+      ],
       "width": 110,
       "center": true
     },
@@ -60,7 +84,9 @@
       "id": "connectors",
       "labelKey": "Conectores",
       "renderer": "connectors",
-      "fields": ["connectors"],
+      "fields": [
+        "connectors"
+      ],
       "displayColumn": false,
       "width": 90,
       "center": true
@@ -69,7 +95,9 @@
       "id": "updated_at",
       "labelKey": "Actualizado",
       "renderer": "datetime",
-      "fields": ["updated_at"],
+      "fields": [
+        "updated_at"
+      ],
       "sortable": true,
       "width": 160,
       "center": true,
@@ -79,7 +107,9 @@
       "id": "actions",
       "labelKey": "Acciones",
       "renderer": "productActions",
-      "requestOnlyFields": ["uid"],
+      "requestOnlyFields": [
+        "uid"
+      ],
       "displayColumn": true,
       "hideable": false,
       "width": 80,

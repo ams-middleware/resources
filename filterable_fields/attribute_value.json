@@ -1,0 +1,56 @@
+{
+  "fields": [
+    {
+      "field": "_id",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "uid",
+      "translation_key": "uid",
+      "operators": [
+        "eq",
+        "like"
+      ]
+    },
+    {
+      "field": "attribute.uid",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "attribute",
+      "translation_key": "attribute",
+      "operators": [
+        "eq",
+        "ne",
+        "in",
+        "nin"
+      ]
+    },
+    {
+      "field": "category_uid",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "category",
+      "translation_key": "category",
+      "operators": [
+        "eq",
+        "ne",
+        "in",
+        "nin",
+        "exists",
+        "not_exists"
+      ]
+    },
+    {
+      "field": "value",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "value",
+      "translation_key": "value",
+      "operators": [
+        "eq",
+        "ne",
+        "like",
+        "regex"
+      ]
+    }
+  ]
+}

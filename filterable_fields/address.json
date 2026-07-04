@@ -1,0 +1,82 @@
+{
+  "fields": [
+    {
+      "field": "_id",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "uid",
+      "translation_key": "uid",
+      "operators": [
+        "eq",
+        "like"
+      ]
+    },
+    {
+      "field": "region",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "region",
+      "translation_key": "region",
+      "operators": [
+        "eq",
+        "ne",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "field": "region_code",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "region code",
+      "translation_key": "region_code",
+      "operators": [
+        "eq",
+        "ne",
+        "in",
+        "nin"
+      ]
+    },
+    {
+      "field": "city",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "city",
+      "translation_key": "city",
+      "operators": [
+        "eq",
+        "ne",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "field": "city_code",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "city code",
+      "translation_key": "city_code",
+      "operators": [
+        "eq",
+        "ne",
+        "in",
+        "nin"
+      ]
+    },
+    {
+      "field": "zip_code",
+      "data_type": "number",
+      "input_type": "number",
+      "display_name": "zip code",
+      "translation_key": "zip_code",
+      "operators": [
+        "eq",
+        "ne",
+        "gt",
+        "gte",
+        "lt",
+        "lte"
+      ]
+    }
+  ]
+}

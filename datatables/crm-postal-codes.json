@@ -1,8 +1,33 @@
 {
   "columns": [
-    { "id": "uid", "labelKey": "UID", "renderer": "pcUid", "fields": ["uid"], "hideable": false },
-    { "id": "zip_code", "labelKey": "CP", "renderer": "zip", "path": "zip_code", "width": 100 },
-    { "id": "region", "labelKey": "Región", "renderer": "text", "path": "region" },
-    { "id": "region_code", "labelKey": "Código de región", "renderer": "text", "path": "region_code", "width": 160 }
+    {
+      "id": "uid",
+      "labelKey": "UID",
+      "renderer": "pcUid",
+      "fields": [
+        "uid"
+      ],
+      "hideable": false
+    },
+    {
+      "id": "zip_code",
+      "labelKey": "CP",
+      "renderer": "zip",
+      "path": "zip_code",
+      "width": 100
+    },
+    {
+      "id": "region",
+      "labelKey": "Región",
+      "renderer": "text",
+      "path": "region"
+    },
+    {
+      "id": "region_code",
+      "labelKey": "Código de región",
+      "renderer": "text",
+      "path": "region_code",
+      "width": 160
+    }
   ]
 }

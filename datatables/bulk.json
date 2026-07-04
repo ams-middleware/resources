@@ -1,39 +1,124 @@
 {
   "columns": [
-    { "id": "file", "labelKey": "Archivo", "renderer": "file", "requestOnlyFields": ["file.extension"], "displayColumn": true, "width": 70, "center": true },
-    { "id": "name", "labelKey": "Nombre", "renderer": "bulkName", "fields": ["name"] },
+    {
+      "id": "file",
+      "labelKey": "Archivo",
+      "renderer": "file",
+      "requestOnlyFields": [
+        "file.extension"
+      ],
+      "displayColumn": true,
+      "width": 70,
+      "center": true
+    },
+    {
+      "id": "name",
+      "labelKey": "Nombre",
+      "renderer": "bulkName",
+      "fields": [
+        "name"
+      ]
+    },
     {
       "id": "collection",
       "labelKey": "Colección",
       "renderer": "badge",
-      "fields": ["collection"],
+      "fields": [
+        "collection"
+      ],
       "width": 110,
       "badge": {
         "variants": {
-          "product": { "color": "info" },
-          "order": { "color": "secondary" }
+          "product": {
+            "color": "info"
+          },
+          "order": {
+            "color": "secondary"
+          }
         },
-        "default": { "color": "secondary" }
+        "default": {
+          "color": "secondary"
+        }
       }
     },
     {
       "id": "type",
       "labelKey": "Tipo",
       "renderer": "badge",
-      "fields": ["type"],
+      "fields": [
+        "type"
+      ],
       "width": 90,
       "badge": {
         "variants": {
-          "upload": { "color": "primary", "uppercase": true },
-          "download": { "color": "info", "uppercase": true }
+          "upload": {
+            "color": "primary",
+            "uppercase": true
+          },
+          "download": {
+            "color": "info",
+            "uppercase": true
+          }
         },
-        "default": { "color": "secondary", "uppercase": true }
+        "default": {
+          "color": "secondary",
+          "uppercase": true
+        }
       }
     },
-    { "id": "status", "labelKey": "Estado", "renderer": "bulkStatus", "fields": ["status"], "requestOnlyFields": ["message"], "width": 140 },
-    { "id": "resultado", "labelKey": "Resultado", "renderer": "bulkDownload", "requestOnlyFields": ["download.url", "download.status"], "displayColumn": true, "width": 120 },
-    { "id": "created_by", "labelKey": "Creado por", "renderer": "createdBy", "requestOnlyFields": ["created_by.full_name"], "displayColumn": true, "width": 140 },
-    { "id": "created_at", "labelKey": "Fecha", "renderer": "datetime", "fields": ["created_at"], "width": 150 },
-    { "id": "actions", "labelKey": "Acciones", "renderer": "bulkActions", "requestOnlyFields": ["uid"], "displayColumn": true, "hideable": false, "width": 80, "center": true }
+    {
+      "id": "status",
+      "labelKey": "Estado",
+      "renderer": "bulkStatus",
+      "fields": [
+        "status"
+      ],
+      "requestOnlyFields": [
+        "message"
+      ],
+      "width": 140
+    },
+    {
+      "id": "resultado",
+      "labelKey": "Resultado",
+      "renderer": "bulkDownload",
+      "requestOnlyFields": [
+        "download.url",
+        "download.status"
+      ],
+      "displayColumn": true,
+      "width": 120
+    },
+    {
+      "id": "created_by",
+      "labelKey": "Creado por",
+      "renderer": "createdBy",
+      "requestOnlyFields": [
+        "created_by.full_name"
+      ],
+      "displayColumn": true,
+      "width": 140
+    },
+    {
+      "id": "created_at",
+      "labelKey": "Fecha",
+      "renderer": "datetime",
+      "fields": [
+        "created_at"
+      ],
+      "width": 150
+    },
+    {
+      "id": "actions",
+      "labelKey": "Acciones",
+      "renderer": "bulkActions",
+      "requestOnlyFields": [
+        "uid"
+      ],
+      "displayColumn": true,
+      "hideable": false,
+      "width": 80,
+      "center": true
+    }
   ]
 }

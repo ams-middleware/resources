@@ -1,0 +1,133 @@
+{
+  "fields": [
+    {
+      "field": "_id",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "uid",
+      "translation_key": "uid",
+      "operators": [
+        "eq",
+        "like"
+      ]
+    },
+    {
+      "field": "name",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "name",
+      "translation_key": "name",
+      "operators": [
+        "eq",
+        "ne",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "field": "collection",
+      "data_type": "string",
+      "input_type": "select",
+      "display_name": "collection",
+      "translation_key": "collection",
+      "operators": [
+        "eq",
+        "ne",
+        "in",
+        "nin"
+      ],
+      "options": [
+        "order",
+        "product"
+      ]
+    },
+    {
+      "field": "type",
+      "data_type": "string",
+      "input_type": "select",
+      "display_name": "type",
+      "translation_key": "type",
+      "operators": [
+        "eq",
+        "ne",
+        "in",
+        "nin"
+      ]
+    },
+    {
+      "field": "status",
+      "data_type": "string",
+      "input_type": "select",
+      "display_name": "status",
+      "translation_key": "status",
+      "operators": [
+        "eq",
+        "ne",
+        "in",
+        "nin"
+      ]
+    },
+    {
+      "field": "total_data",
+      "data_type": "number",
+      "input_type": "number",
+      "display_name": "total data",
+      "translation_key": "total_data",
+      "operators": [
+        "eq",
+        "ne",
+        "gt",
+        "gte",
+        "lt",
+        "lte"
+      ]
+    },
+    {
+      "field": "processed_data",
+      "data_type": "number",
+      "input_type": "number",
+      "display_name": "processed data",
+      "translation_key": "processed_data",
+      "operators": [
+        "eq",
+        "ne",
+        "gt",
+        "gte",
+        "lt",
+        "lte"
+      ]
+    },
+    {
+      "field": "created_at",
+      "data_type": "datetime",
+      "input_type": "date",
+      "display_name": "created at",
+      "translation_key": "created_at",
+      "operators": [
+        "eq",
+        "ne",
+        "gt",
+        "gte",
+        "lt",
+        "lte",
+        "range"
+      ]
+    },
+    {
+      "field": "completed_at",
+      "data_type": "datetime",
+      "input_type": "date",
+      "display_name": "completed at",
+      "translation_key": "completed_at",
+      "operators": [
+        "gt",
+        "gte",
+        "lt",
+        "lte",
+        "range",
+        "exists",
+        "not_exists"
+      ]
+    }
+  ]
+}

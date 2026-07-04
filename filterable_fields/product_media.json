@@ -1,0 +1,130 @@
+{
+  "fields": [
+    {
+      "field": "_id",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "uid",
+      "translation_key": "uid",
+      "operators": [
+        "eq",
+        "like"
+      ]
+    },
+    {
+      "field": "relative_path",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "relative path",
+      "translation_key": "relative_path",
+      "operators": [
+        "eq",
+        "ne",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "field": "cdn",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "cdn",
+      "translation_key": "cdn",
+      "operators": [
+        "eq",
+        "ne",
+        "like"
+      ]
+    },
+    {
+      "field": "tags",
+      "data_type": "[]string",
+      "input_type": "select",
+      "display_name": "tags",
+      "translation_key": "tags",
+      "operators": [
+        "eq",
+        "ne",
+        "in",
+        "nin",
+        "like",
+        "regex",
+        "exists",
+        "not_exists"
+      ]
+    },
+    {
+      "field": "custom_tags",
+      "data_type": "[]string",
+      "input_type": "select",
+      "display_name": "custom tags",
+      "translation_key": "custom_tags",
+      "operators": [
+        "eq",
+        "ne",
+        "in",
+        "nin",
+        "like",
+        "regex",
+        "exists",
+        "not_exists"
+      ]
+    },
+    {
+      "field": "optimized",
+      "data_type": "bool",
+      "input_type": "select",
+      "display_name": "optimized",
+      "translation_key": "optimized",
+      "operators": [
+        "eq",
+        "ne"
+      ]
+    },
+    {
+      "field": "created_by.uid",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "created by",
+      "translation_key": "created_by",
+      "operators": [
+        "eq",
+        "ne",
+        "in",
+        "nin"
+      ]
+    },
+    {
+      "field": "created_at",
+      "data_type": "datetime",
+      "input_type": "date",
+      "display_name": "created at",
+      "translation_key": "created_at",
+      "operators": [
+        "eq",
+        "ne",
+        "gt",
+        "gte",
+        "lt",
+        "lte",
+        "range"
+      ]
+    },
+    {
+      "field": "updated_at",
+      "data_type": "datetime",
+      "input_type": "date",
+      "display_name": "updated at",
+      "translation_key": "updated_at",
+      "operators": [
+        "eq",
+        "ne",
+        "gt",
+        "gte",
+        "lt",
+        "lte",
+        "range"
+      ]
+    }
+  ]
+}

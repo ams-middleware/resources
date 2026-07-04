@@ -1,10 +1,46 @@
 {
   "columns": [
-    { "id": "scope", "labelKey": "Alcance", "renderer": "scope", "requestOnlyFields": ["store_uid"], "hideable": false, "width": 220 },
-    { "id": "provider", "labelKey": "Proveedor", "renderer": "provider", "path": "provider", "width": 180 },
-    { "id": "model", "labelKey": "Modelo", "renderer": "aiModel", "path": "model", "width": 170 },
-    { "id": "base_url", "labelKey": "Base URL", "renderer": "baseUrl", "path": "base_url" },
-    { "id": "prompt", "labelKey": "Prompt", "renderer": "promptInfo", "requestOnlyFields": ["system_prompt", "prompt_mode", "store_uid"], "width": 170 },
+    {
+      "id": "scope",
+      "labelKey": "Alcance",
+      "renderer": "scope",
+      "requestOnlyFields": [
+        "store_uid"
+      ],
+      "hideable": false,
+      "width": 220
+    },
+    {
+      "id": "provider",
+      "labelKey": "Proveedor",
+      "renderer": "provider",
+      "path": "provider",
+      "width": 180
+    },
+    {
+      "id": "model",
+      "labelKey": "Modelo",
+      "renderer": "aiModel",
+      "path": "model",
+      "width": 170
+    },
+    {
+      "id": "base_url",
+      "labelKey": "Base URL",
+      "renderer": "baseUrl",
+      "path": "base_url"
+    },
+    {
+      "id": "prompt",
+      "labelKey": "Prompt",
+      "renderer": "promptInfo",
+      "requestOnlyFields": [
+        "system_prompt",
+        "prompt_mode",
+        "store_uid"
+      ],
+      "width": 170
+    },
     {
       "id": "active",
       "labelKey": "Estado",
@@ -14,11 +50,28 @@
       "center": true,
       "badge": {
         "variants": {
-          "true": { "label": "Activa", "color": "success" },
-          "false": { "label": "Inactiva", "color": "secondary" }
+          "true": {
+            "label": "Activa",
+            "color": "success"
+          },
+          "false": {
+            "label": "Inactiva",
+            "color": "secondary"
+          }
         }
       }
     },
-    { "id": "actions", "labelKey": "Acciones", "renderer": "aiActions", "requestOnlyFields": ["id"], "displayColumn": true, "hideable": false, "width": 90, "center": true }
+    {
+      "id": "actions",
+      "labelKey": "Acciones",
+      "renderer": "aiActions",
+      "requestOnlyFields": [
+        "id"
+      ],
+      "displayColumn": true,
+      "hideable": false,
+      "width": 90,
+      "center": true
+    }
   ]
 }

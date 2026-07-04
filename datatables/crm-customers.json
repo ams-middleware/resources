@@ -1,11 +1,60 @@
 {
   "columns": [
-    { "id": "uid", "labelKey": "UID", "renderer": "custUid", "fields": ["uid"], "hideable": false },
-    { "id": "document_type", "labelKey": "Tipo doc.", "renderer": "capitalize", "path": "document_type", "width": 110 },
-    { "id": "document_id", "labelKey": "N° doc.", "renderer": "text", "path": "document_id", "width": 120 },
-    { "id": "full_name", "labelKey": "Nombre completo", "renderer": "fullName", "fields": ["full_name"] },
-    { "id": "email", "labelKey": "Email", "renderer": "text", "path": "email" },
-    { "id": "phone", "labelKey": "Teléfono", "renderer": "text", "path": "phone", "width": 130 },
-    { "id": "actions", "labelKey": "Acciones", "renderer": "custActions", "requestOnlyFields": ["uid"], "displayColumn": true, "hideable": false, "width": 90, "center": true }
+    {
+      "id": "uid",
+      "labelKey": "UID",
+      "renderer": "custUid",
+      "fields": [
+        "uid"
+      ],
+      "hideable": false
+    },
+    {
+      "id": "document_type",
+      "labelKey": "Tipo doc.",
+      "renderer": "capitalize",
+      "path": "document_type",
+      "width": 110
+    },
+    {
+      "id": "document_id",
+      "labelKey": "N° doc.",
+      "renderer": "text",
+      "path": "document_id",
+      "width": 120
+    },
+    {
+      "id": "full_name",
+      "labelKey": "Nombre completo",
+      "renderer": "fullName",
+      "fields": [
+        "full_name"
+      ]
+    },
+    {
+      "id": "email",
+      "labelKey": "Email",
+      "renderer": "text",
+      "path": "email"
+    },
+    {
+      "id": "phone",
+      "labelKey": "Teléfono",
+      "renderer": "text",
+      "path": "phone",
+      "width": 130
+    },
+    {
+      "id": "actions",
+      "labelKey": "Acciones",
+      "renderer": "custActions",
+      "requestOnlyFields": [
+        "uid"
+      ],
+      "displayColumn": true,
+      "hideable": false,
+      "width": 90,
+      "center": true
+    }
   ]
 }

@@ -1,7 +1,29 @@
 {
   "columns": [
-    { "id": "priority", "labelKey": "Prioridad", "renderer": "rulePriority", "requestOnlyFields": ["priority"], "displayColumn": true, "hideable": false, "width": 110, "center": true },
-    { "id": "name", "labelKey": "Regla", "renderer": "ruleName", "fields": ["name"], "requestOnlyFields": ["triggers"], "hideable": false },
+    {
+      "id": "priority",
+      "labelKey": "Prioridad",
+      "renderer": "rulePriority",
+      "requestOnlyFields": [
+        "priority"
+      ],
+      "displayColumn": true,
+      "hideable": false,
+      "width": 110,
+      "center": true
+    },
+    {
+      "id": "name",
+      "labelKey": "Regla",
+      "renderer": "ruleName",
+      "fields": [
+        "name"
+      ],
+      "requestOnlyFields": [
+        "triggers"
+      ],
+      "hideable": false
+    },
     {
       "id": "entity",
       "labelKey": "Entidad",
@@ -11,15 +33,68 @@
       "center": true,
       "badge": {
         "variants": {
-          "order": { "label": "Orden", "color": "primary" },
-          "product": { "label": "Producto", "color": "success" }
+          "order": {
+            "label": "Orden",
+            "color": "primary"
+          },
+          "product": {
+            "label": "Producto",
+            "color": "success"
+          }
         }
       }
     },
-    { "id": "conditions", "labelKey": "Condiciones", "renderer": "ruleConditions", "requestOnlyFields": ["conditions", "logic"] },
-    { "id": "stores", "labelKey": "Tiendas", "renderer": "ruleStores", "requestOnlyFields": ["store_uids"], "width": 160 },
-    { "id": "rule_actions", "labelKey": "Acciones (regla)", "renderer": "ruleActionsSummary", "requestOnlyFields": ["actions"], "width": 200 },
-    { "id": "active", "labelKey": "Activa", "renderer": "ruleActive", "requestOnlyFields": ["active", "id"], "displayColumn": true, "hideable": false, "width": 80, "center": true },
-    { "id": "row_actions", "labelKey": "", "renderer": "ruleRowActions", "requestOnlyFields": ["id"], "displayColumn": true, "hideable": false, "width": 90, "center": true }
+    {
+      "id": "conditions",
+      "labelKey": "Condiciones",
+      "renderer": "ruleConditions",
+      "requestOnlyFields": [
+        "conditions",
+        "logic"
+      ]
+    },
+    {
+      "id": "stores",
+      "labelKey": "Tiendas",
+      "renderer": "ruleStores",
+      "requestOnlyFields": [
+        "store_uids"
+      ],
+      "width": 160
+    },
+    {
+      "id": "rule_actions",
+      "labelKey": "Acciones (regla)",
+      "renderer": "ruleActionsSummary",
+      "requestOnlyFields": [
+        "actions"
+      ],
+      "width": 200
+    },
+    {
+      "id": "active",
+      "labelKey": "Activa",
+      "renderer": "ruleActive",
+      "requestOnlyFields": [
+        "active",
+        "id"
+      ],
+      "displayColumn": true,
+      "hideable": false,
+      "width": 80,
+      "center": true
+    },
+    {
+      "id": "row_actions",
+      "labelKey": "",
+      "renderer": "ruleRowActions",
+      "requestOnlyFields": [
+        "id"
+      ],
+      "displayColumn": true,
+      "hideable": false,
+      "width": 90,
+      "center": true
+    }
   ]
 }
