@@ -1,4 +1,9 @@
 {
+    "Access denied title": "Você não tem permissão para esta ação",
+    "Access denied message": "Seu perfil atual não inclui a permissão necessária para acessar esta tela.",
+    "Access denied hint": "Se você precisa de acesso, peça a um administrador do sistema que atribua a permissão correspondente ao seu perfil.",
+    "Access denied required permission": "Permissão necessária:",
+    "Access denied back": "Voltar",
     "Discard": "Descartar",
     "error.not_found": "Não encontrado",
     "error.invalid_input": "Entrada inválida",
