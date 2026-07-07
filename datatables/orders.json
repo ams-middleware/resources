@@ -351,15 +351,16 @@
     {
       "id": "actions",
       "labelKey": "Order col actions",
-      "renderer": "rowActions",
+      "renderer": "orderRowActions",
       "requestOnlyFields": [
         "sequence_nro",
         "uid",
-        "order_uid"
+        "order_uid",
+        "workflow.current_step"
       ],
       "displayColumn": true,
       "hideable": false,
-      "width": 70,
+      "width": 90,
       "center": true,
       "sticky": "right",
       "actions": [
@@ -368,21 +369,22 @@
           "renderer": "button-view",
           "url": "/orders/{id}",
           "external_url": false,
-          "permission": "ORDER_SHOW"
+          "permission": "ORDER_SHOW",
+          "primary": true
         },
         {
           "tooltip": "Editar pedido",
           "renderer": "button-edit",
           "url": "/orders/edit/{id}",
           "external_url": false,
-          "permission": "ORDER_UPDATE"
+          "permission": "ORDER_UPDATE",
+          "primary": true
         },
         {
           "tooltip": "Procesar pedido",
           "renderer": "button-process",
-          "url": "/orders/process/{id}",
-          "external_url": false,
-          "permission": "ORDER_PROCESS"
+          "permission": "ORDER_UPDATE",
+          "primary": false
         }
       ]
     }
