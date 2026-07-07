@@ -347,12 +347,12 @@
       ],
       "displayColumn": true,
       "hideable": false,
-      "width": 200,
+      "width": 70,
       "center": true,
+      "sticky": "right",
       "actions": [
         {
           "tooltip": "Ver pedido",
-          "style": "primary btn-sm",
           "renderer": "button-view",
           "url": "/orders/{id}",
           "external_url": false,
