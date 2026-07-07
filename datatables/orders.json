@@ -30,6 +30,7 @@
         "order_status"
       ],
       "sortable": true,
+      "center": true,
       "width": 120,
       "badge": {
         "variants": {
@@ -74,6 +75,13 @@
           "color": "secondary"
         }
       }
+    },
+    {
+      "id": "observation",
+      "labelKey": "Observation",
+      "renderer": "text",
+      "path": "observation",
+      "defaultHidden":true
     },
     {
       "id": "grand_total",
@@ -170,12 +178,14 @@
       "labelKey": "Order col dni",
       "renderer": "clipboard",
       "path": "billing.customer.document_id",
+      "defaultHidden":true,
       "width": 130
     },
     {
       "id": "tracking",
       "labelKey": "Order col tracking",
       "renderer": "tracking",
+      "center": true,
       "fields": [
         "courier"
       ],
@@ -184,8 +194,9 @@
     {
       "id": "workflow_status",
       "labelKey": "Order col wf status",
-      "renderer": "badge",
+      "renderer": "workflowStatus",
       "path": "workflow.status",
+      "requestOnlyFields": ["workflow.current_step"],
       "width": 110,
       "center": true,
       "badge": {
@@ -228,6 +239,7 @@
       "labelKey": "Order col wf step",
       "renderer": "workflowStep",
       "path": "workflow.current_step",
+      "defaultHidden": true,
       "width": 140
     },
     {
@@ -364,6 +376,13 @@
           "url": "/orders/edit/{id}",
           "external_url": false,
           "permission": "ORDER_UPDATE"
+        },
+        {
+          "tooltip": "Procesar pedido",
+          "renderer": "button-process",
+          "url": "/orders/process/{id}",
+          "external_url": false,
+          "permission": "ORDER_PROCESS"
         }
       ]
     }
