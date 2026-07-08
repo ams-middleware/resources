@@ -12,6 +12,15 @@
       "hideable": false
     },
     {
+      "id": "sequence_nro",
+      "labelKey": "Order col sequence",
+      "renderer": "clipboard",
+      "path": "sequence_nro",
+      "sortable": true,
+      "width": 110,
+      "defaultHidden": true
+    },
+    {
       "id": "ref_code",
       "labelKey": "Order col code",
       "renderer": "clipboard",
@@ -20,6 +29,15 @@
         "refCode"
       ],
       "sortable": true
+    },
+    {
+      "id": "type",
+      "labelKey": "Order col type",
+      "renderer": "titleCaseText",
+      "path": "type",
+      "width": 110,
+      "center": true,
+      "defaultHidden": true
     },
     {
       "id": "status",
@@ -77,126 +95,13 @@
       }
     },
     {
-      "id": "observation",
-      "labelKey": "Observation",
-      "renderer": "text",
-      "path": "observation",
-      "defaultHidden":true
-    },
-    {
-      "id": "grand_total",
-      "labelKey": "Order col grand total",
-      "renderer": "currency",
-      "fields": [
-        "grand_total",
-        "total"
-      ],
-      "width": 120
-    },
-    {
-      "id": "payment",
-      "labelKey": "Order col payment",
-      "renderer": "badge",
-      "requestOnlyFields": [
-        "paid",
-        "tags"
-      ],
-      "width": 100,
-      "center": true,
-      "badge": {
-        "value": {
-          "cases": [
-            {
-              "when": {
-                "path": "tags",
-                "contains": "paid"
-              },
-              "then": "paid"
-            }
-          ]
-        },
-        "variants": {
-          "paid": {
-            "label": "paid",
-            "color": "success"
-          }
-        },
-        "default": {
-          "label": "not paid",
-          "color": "danger"
-        }
-      }
-    },
-    {
-      "id": "stock",
-      "labelKey": "Order col stock",
-      "renderer": "badge",
-      "requestOnlyFields": [
-        "stock_reserved",
-        "tags"
-      ],
-      "width": 90,
-      "center": true,
-      "defaultHidden": true,
-      "badge": {
-        "value": {
-          "cases": [
-            {
-              "when": {
-                "path": "tags",
-                "contains": "reserved"
-              },
-              "then": "reserved"
-            }
-          ]
-        },
-        "variants": {
-          "reserved": {
-            "label": "reserved",
-            "color": "info"
-          }
-        }
-      }
-    },
-    {
-      "id": "customer",
-      "labelKey": "Order col customer",
-      "renderer": "customer",
-      "path": "billing.customer.full_name",
-      "requestOnlyFields": [
-        "billing.customer._id",
-        "billing.customer.uid",
-        "billing.customer.email",
-        "billing.customer.phone",
-        "billing.customer.document_type",
-        "billing.customer.sequence_nro",
-        "billing.customer.observation"
-      ]
-    },
-    {
-      "id": "document_id",
-      "labelKey": "Order col dni",
-      "renderer": "clipboard",
-      "path": "billing.customer.document_id",
-      "defaultHidden":true,
-      "width": 130
-    },
-    {
-      "id": "tracking",
-      "labelKey": "Order col tracking",
-      "renderer": "tracking",
-      "center": true,
-      "fields": [
-        "courier"
-      ],
-      "width": 160
-    },
-    {
       "id": "workflow_status",
       "labelKey": "Order col wf status",
       "renderer": "workflowStatus",
       "path": "workflow.status",
-      "requestOnlyFields": ["workflow.current_step"],
+      "requestOnlyFields": [
+        "workflow.current_step"
+      ],
       "width": 110,
       "center": true,
       "badge": {
@@ -243,6 +148,79 @@
       "width": 140
     },
     {
+      "id": "customer",
+      "labelKey": "Order col customer",
+      "renderer": "customer",
+      "path": "billing.customer.full_name",
+      "requestOnlyFields": [
+        "billing.customer._id",
+        "billing.customer.uid",
+        "billing.customer.email",
+        "billing.customer.phone",
+        "billing.customer.document_type",
+        "billing.customer.sequence_nro",
+        "billing.customer.observation"
+      ]
+    },
+    {
+      "id": "customer_email",
+      "labelKey": "Order col customer email",
+      "renderer": "clipboard",
+      "path": "billing.customer.email",
+      "width": 190,
+      "defaultHidden": true
+    },
+    {
+      "id": "customer_phone",
+      "labelKey": "Order col customer phone",
+      "renderer": "clipboard",
+      "path": "billing.customer.phone",
+      "width": 150,
+      "defaultHidden": true
+    },
+    {
+      "id": "document_id",
+      "labelKey": "Order col dni",
+      "renderer": "clipboard",
+      "path": "billing.customer.document_id",
+      "defaultHidden": true,
+      "width": 130
+    },
+    {
+      "id": "address",
+      "labelKey": "address",
+      "renderer": "address",
+      "requestOnlyFields": [
+        "billing.address.uid",
+        "billing.address.street",
+        "billing.address.street_number",
+        "billing.address.floor",
+        "billing.address.apartment",
+        "billing.address.city",
+        "billing.address.region",
+        "billing.address.zip_code",
+        "billing.address.reference"
+      ]
+    },
+    {
+      "id": "shipping_address",
+      "labelKey": "Order col shipping address",
+      "renderer": "shippingAddress",
+      "requestOnlyFields": [
+        "shipping.address.uid",
+        "shipping.address.street",
+        "shipping.address.street_number",
+        "shipping.address.floor",
+        "shipping.address.apartment",
+        "shipping.address.city",
+        "shipping.address.region",
+        "shipping.address.zip_code",
+        "shipping.address.reference"
+      ],
+      "width": 180,
+      "defaultHidden": true
+    },
+    {
       "id": "store.name",
       "labelKey": "Order col store",
       "renderer": "text",
@@ -262,38 +240,118 @@
       "width": 160
     },
     {
-      "id": "emitted_at",
-      "labelKey": "Order col emitted at",
-      "renderer": "datetime",
-      "fields": [
-        "emitted_at"
+      "id": "created_by",
+      "labelKey": "Order col created by",
+      "renderer": "createdBy",
+      "requestOnlyFields": [
+        "created_by"
       ],
-      "sortable": true,
       "width": 160,
-      "center": true,
       "defaultHidden": true
     },
     {
-      "id": "created_at",
-      "labelKey": "Order col created",
-      "renderer": "datetime",
+      "id": "grand_total",
+      "labelKey": "Order col grand total",
+      "renderer": "currency",
       "fields": [
-        "created_at"
+        "grand_total",
+        "total"
       ],
-      "sortable": true,
-      "width": 160,
-      "center": true,
+      "width": 120
+    },
+    {
+      "id": "sub_total",
+      "labelKey": "Order col subtotal",
+      "renderer": "currency",
+      "fields": [
+        "sub_total"
+      ],
+      "width": 120,
       "defaultHidden": true
     },
     {
-      "id": "updated_at",
-      "labelKey": "Order col updated",
-      "renderer": "datetime",
+      "id": "total_discount_price",
+      "labelKey": "Order col discount",
+      "renderer": "currency",
       "fields": [
-        "updated_at"
+        "total_discount_price"
       ],
-      "width": 160,
+      "width": 120,
       "defaultHidden": true
+    },
+    {
+      "id": "total_shipping",
+      "labelKey": "Order col shipping cost",
+      "renderer": "currency",
+      "fields": [
+        "total_shipping"
+      ],
+      "width": 120,
+      "defaultHidden": true
+    },
+    {
+      "id": "total_payment",
+      "labelKey": "Order col paid",
+      "renderer": "currency",
+      "fields": [
+        "total_payment"
+      ],
+      "width": 120,
+      "defaultHidden": true
+    },
+    {
+      "id": "diff_to_pay",
+      "labelKey": "Order col diff to pay",
+      "renderer": "currency",
+      "fields": [
+        "diff_to_pay"
+      ],
+      "width": 120,
+      "defaultHidden": true
+    },
+    {
+      "id": "payment",
+      "labelKey": "Order col payment",
+      "renderer": "badge",
+      "requestOnlyFields": [
+        "paid",
+        "tags"
+      ],
+      "width": 100,
+      "center": true,
+      "badge": {
+        "value": {
+          "cases": [
+            {
+              "when": {
+                "path": "tags",
+                "contains": "paid"
+              },
+              "then": "paid"
+            }
+          ]
+        },
+        "variants": {
+          "paid": {
+            "label": "paid",
+            "color": "success"
+          }
+        },
+        "default": {
+          "label": "not paid",
+          "color": "danger"
+        }
+      }
+    },
+    {
+      "id": "tracking",
+      "labelKey": "Order col tracking",
+      "renderer": "tracking",
+      "center": true,
+      "fields": [
+        "courier"
+      ],
+      "width": 160
     },
     {
       "id": "chat_status",
@@ -347,6 +405,47 @@
           }
         }
       }
+    },
+    {
+      "id": "created_at",
+      "labelKey": "Order col created",
+      "renderer": "datetime",
+      "fields": [
+        "created_at"
+      ],
+      "sortable": true,
+      "width": 160,
+      "center": true
+    },
+    {
+      "id": "emitted_at",
+      "labelKey": "Order col emitted at",
+      "renderer": "datetime",
+      "fields": [
+        "emitted_at"
+      ],
+      "sortable": true,
+      "width": 160,
+      "center": true,
+      "defaultHidden": true
+    },
+    {
+      "id": "updated_at",
+      "labelKey": "Order col updated",
+      "renderer": "datetime",
+      "fields": [
+        "updated_at"
+      ],
+      "width": 160,
+      "defaultHidden": true
+    },
+    {
+      "id": "observation",
+      "labelKey": "Observation",
+      "renderer": "observation",
+      "path": "observation",
+      "defaultHidden": true,
+      "width": 220
     },
     {
       "id": "actions",
