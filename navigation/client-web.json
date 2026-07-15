@@ -128,11 +128,11 @@
     },
     {
       "id": "bulk",
-      "title": "Cargas masivas",
+      "title": "Gestión masiva",
       "icon": "ri-stack-line",
       "link": "/bulk",
       "permission": "ORDER_LIST",
-      "description": "Importá y exportá datos de forma masiva con plantillas.",
+      "description": "Importá, exportá y ejecutá acciones masivas (sincronizar, eliminar y más) sobre tus datos.",
       "help_url": "https://docs.e-middleware.com/operativa/cargas-masivas"
     },
     {
