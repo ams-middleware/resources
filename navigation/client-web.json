@@ -136,34 +136,6 @@
       "help_url": "https://docs.e-middleware.com/operativa/cargas-masivas"
     },
     {
-      "id": "connectors",
-      "title": "Conectores",
-      "icon": "ri-plug-line",
-      "link": "/connectors",
-      "permission": "CONNECTOR_LIST",
-      "description": "Integraciones por tienda: configuración, sincronización y autorización.",
-      "keywords": ["integraciones", "connectors", "marketplaces", "erp"],
-      "help_url": "https://docs.e-middleware.com/operativa/conectores"
-    },
-    {
-      "id": "ai-config",
-      "title": "Configuración de IA",
-      "icon": "ri-robot-line",
-      "link": "/ai-config",
-      "permission": "BACKOFFICE_ACCESS",
-      "description": "Configura el proveedor LLM y prompts del asistente virtual. Podés definir una config base por cliente y sobreescribirla por tienda.",
-      "help_url": "https://docs.e-middleware.com/configuracion/ia"
-    },
-    {
-      "id": "scheduler",
-      "title": "Scheduler",
-      "icon": "ri-time-line",
-      "link": "/scheduler",
-      "permission": "BACKOFFICE_ACCESS",
-      "description": "Tareas cron gestionadas desde la base de datos.",
-      "help_url": "https://docs.e-middleware.com/configuracion/scheduler"
-    },
-    {
       "id": "system",
       "title": "Sistema",
       "icon": "ri-settings-3-line",
@@ -196,6 +168,34 @@
           "icon": "ri-store-2-line",
           "description": "Tiendas configuradas. Cada una agrupa conectores y usuarios.",
           "help_url": "https://docs.e-middleware.com/configuracion/tiendas"
+        },
+        {
+          "id": "connectors",
+          "title": "Conectores",
+          "link": "/connectors",
+          "permission": "CONNECTOR_LIST",
+          "icon": "ri-plug-line",
+          "description": "Integraciones por tienda: configuración, sincronización y autorización.",
+          "keywords": ["integraciones", "connectors", "marketplaces", "erp"],
+          "help_url": "https://docs.e-middleware.com/operativa/conectores"
+        },
+        {
+          "id": "ai-config",
+          "title": "Configuración de IA",
+          "link": "/ai-config",
+          "permission": "BACKOFFICE_ACCESS",
+          "icon": "ri-robot-line",
+          "description": "Configura el proveedor LLM y prompts del asistente virtual. Podés definir una config base por cliente y sobreescribirla por tienda.",
+          "help_url": "https://docs.e-middleware.com/configuracion/ia"
+        },
+        {
+          "id": "scheduler",
+          "title": "Scheduler",
+          "link": "/scheduler",
+          "permission": "BACKOFFICE_ACCESS",
+          "icon": "ri-time-line",
+          "description": "Tareas cron gestionadas desde la base de datos.",
+          "help_url": "https://docs.e-middleware.com/configuracion/scheduler"
         }
       ]
     },
