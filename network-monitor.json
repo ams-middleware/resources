@@ -1,0 +1,8 @@
+{
+  "_comment": "Umbrales del monitor de red (client-web). PROVISIONALES — estimados, no medidos: los 730ms de la migración eran TTFB de página, otra cosa. Recalibrar con data real. ms por leg: <=ok verde, <=degraded amarillo, resto rojo. jitter = desvío estándar del RTT.",
+  "user": { "ok": 80, "degraded": 250 },
+  "network": { "ok": 150, "degraded": 500 },
+  "backend": { "ok": 120, "degraded": 500 },
+  "jitterDegraded": 120,
+  "jitterDown": 350
+}

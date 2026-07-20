@@ -459,31 +459,41 @@
       ],
       "displayColumn": true,
       "hideable": false,
-      "width": 90,
       "center": true,
-      "sticky": "right",
       "actions": [
         {
           "tooltip": "Ver pedido",
           "renderer": "button-view",
           "url": "/orders/{id}",
           "external_url": false,
-          "permission": "ORDER_SHOW",
-          "primary": true
+          "permission": "ORDER_SHOW"
         },
         {
           "tooltip": "Editar pedido",
           "renderer": "button-edit",
           "url": "/orders/edit/{id}",
           "external_url": false,
-          "permission": "ORDER_UPDATE",
-          "primary": true
+          "permission": "ORDER_UPDATE"
         },
         {
           "tooltip": "Procesar pedido",
           "renderer": "button-process",
-          "permission": "ORDER_UPDATE",
-          "primary": false
+          "permission": "ORDER_UPDATE"
+        },
+        {
+          "tooltip": "Procesar pedido",
+          "renderer": "button-process",
+          "permission": "ORDER_UPDATE"
+        },
+        {
+          "tooltip": "Procesar pedido",
+          "renderer": "button-process",
+          "permission": "ORDER_UPDATE"
+        },
+        {
+          "tooltip": "Procesar pedido",
+          "renderer": "button-process",
+          "permission": "ORDER_UPDATE"
         }
       ]
     }
