@@ -479,21 +479,6 @@
           "tooltip": "Procesar pedido",
           "renderer": "button-process",
           "permission": "ORDER_UPDATE"
-        },
-        {
-          "tooltip": "Procesar pedido",
-          "renderer": "button-process",
-          "permission": "ORDER_UPDATE"
-        },
-        {
-          "tooltip": "Procesar pedido",
-          "renderer": "button-process",
-          "permission": "ORDER_UPDATE"
-        },
-        {
-          "tooltip": "Procesar pedido",
-          "renderer": "button-process",
-          "permission": "ORDER_UPDATE"
         }
       ]
     }
