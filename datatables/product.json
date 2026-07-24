@@ -15,8 +15,7 @@
       ],
       "sortable": true,
       "sortField": "name",
-      "hideable": false,
-      "width": 280
+      "hideable": false
     },
     {
       "id": "brand",
