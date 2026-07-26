@@ -1,0 +1,46 @@
+{
+  "columns": [
+    {
+      "id": "name",
+      "labelKey": "Nombre",
+      "renderer": "filterName",
+      "fields": ["name"],
+      "requestOnlyFields": ["uid"],
+      "sortable": true,
+      "sortField": "name",
+      "hideable": false
+    },
+    {
+      "id": "module",
+      "labelKey": "Módulo",
+      "renderer": "filterModule",
+      "fields": ["type"],
+      "width": 160,
+      "center": true
+    },
+    {
+      "id": "conditions",
+      "labelKey": "Condiciones",
+      "renderer": "filterConditions",
+      "requestOnlyFields": ["filters"],
+      "width": 140,
+      "center": true
+    },
+    {
+      "id": "created_at",
+      "labelKey": "Creado",
+      "renderer": "filterDate",
+      "fields": ["created_at"],
+      "width": 170
+    },
+    {
+      "id": "actions",
+      "labelKey": "Acciones",
+      "renderer": "filterActions",
+      "requestOnlyFields": ["uid", "name", "type", "filters"],
+      "displayColumn": true,
+      "hideable": false,
+      "center": true
+    }
+  ]
+}

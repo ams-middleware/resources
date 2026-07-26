@@ -1,0 +1,81 @@
+{
+  "fields": [
+    {
+      "field": "mode",
+      "data_type": "string",
+      "display_name": "modo",
+      "translation_key": "mode",
+      "operators": ["eq", "ne"],
+      "options": [
+        { "value": "handoff", "label": "Espera operador" },
+        { "value": "operator", "label": "Con operador" },
+        { "value": "ai", "label": "Atiende la IA" }
+      ]
+    },
+    {
+      "field": "status",
+      "data_type": "string",
+      "display_name": "estado",
+      "translation_key": "status",
+      "operators": ["eq", "ne"],
+      "options": [
+        { "value": "active", "label": "Abierta" },
+        { "value": "closed", "label": "Cerrada" }
+      ]
+    },
+    {
+      "field": "last_channel",
+      "data_type": "string",
+      "display_name": "canal",
+      "translation_key": "channel",
+      "operators": ["eq", "ne"],
+      "options": [
+        { "value": "web", "label": "Web" },
+        { "value": "whatsapp", "label": "WhatsApp" },
+        { "value": "email", "label": "Email" }
+      ]
+    },
+    {
+      "field": "contact.email",
+      "data_type": "string",
+      "display_name": "email del contacto",
+      "translation_key": "contact email",
+      "operators": ["eq", "like", "regex"]
+    },
+    {
+      "field": "contact.wa_number",
+      "data_type": "string",
+      "display_name": "whatsapp del contacto",
+      "translation_key": "contact wa number",
+      "operators": ["eq", "like"]
+    },
+    {
+      "field": "contact.name",
+      "data_type": "string",
+      "display_name": "nombre del contacto",
+      "translation_key": "contact name",
+      "operators": ["like", "regex"]
+    },
+    {
+      "field": "customer_uid",
+      "data_type": "string",
+      "display_name": "customer uid",
+      "translation_key": "customer uid",
+      "operators": ["eq", "ne"]
+    },
+    {
+      "field": "order_uids",
+      "data_type": "string",
+      "display_name": "orden referenciada",
+      "translation_key": "order uid",
+      "operators": ["eq"]
+    },
+    {
+      "field": "last_message_at",
+      "data_type": "date",
+      "display_name": "último mensaje",
+      "translation_key": "last message at",
+      "operators": ["eq", "gte", "lte", "between"]
+    }
+  ]
+}

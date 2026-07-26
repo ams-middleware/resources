@@ -1,0 +1,68 @@
+{
+  "columns": [
+    {
+      "id": "contact",
+      "labelKey": "Contacto",
+      "renderer": "chatContact",
+      "fields": ["contact"],
+      "requestOnlyFields": ["uid", "customer_uid"],
+      "hideable": false
+    },
+    {
+      "id": "identity",
+      "labelKey": "Identidad",
+      "renderer": "chatIdentity",
+      "requestOnlyFields": ["customer_uid", "contact"],
+      "width": 190,
+      "center": true
+    },
+    {
+      "id": "mode",
+      "labelKey": "Estado",
+      "renderer": "chatMode",
+      "fields": ["mode"],
+      "width": 170,
+      "center": true
+    },
+    {
+      "id": "last_channel",
+      "labelKey": "Canal",
+      "renderer": "chatChannel",
+      "fields": ["last_channel"],
+      "width": 120,
+      "center": true
+    },
+    {
+      "id": "orders",
+      "labelKey": "Pedidos",
+      "renderer": "chatOrders",
+      "requestOnlyFields": ["order_uids"],
+      "width": 110,
+      "center": true
+    },
+    {
+      "id": "message_count",
+      "labelKey": "Mensajes",
+      "renderer": "chatMessages",
+      "fields": ["message_count"],
+      "width": 110,
+      "center": true
+    },
+    {
+      "id": "last_message_at",
+      "labelKey": "Último mensaje",
+      "renderer": "chatDate",
+      "fields": ["last_message_at"],
+      "width": 170
+    },
+    {
+      "id": "actions",
+      "labelKey": "Acciones",
+      "renderer": "chatActions",
+      "requestOnlyFields": ["uid"],
+      "displayColumn": true,
+      "hideable": false,
+      "center": true
+    }
+  ]
+}

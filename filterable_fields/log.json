@@ -1,53 +1,88 @@
 {
   "fields": [
     {
+      "field": "entity",
+      "data_type": "string",
+      "display_name": "entity",
+      "translation_key": "entity",
+      "operators": [
+        "eq",
+        "ne"
+      ]
+    },
+    {
       "field": "action",
       "data_type": "string",
       "display_name": "action",
       "translation_key": "action",
-      "operators": ["eq", "ne", "like"]
+      "operators": [
+        "eq",
+        "ne",
+        "like"
+      ]
     },
     {
       "field": "level",
       "data_type": "string",
       "display_name": "level",
       "translation_key": "level",
-      "operators": ["eq", "ne"]
+      "operators": [
+        "eq",
+        "ne"
+      ]
     },
     {
       "field": "connector_uid",
       "data_type": "string",
       "display_name": "connector uid",
       "translation_key": "connector uid",
-      "operators": ["eq", "ne", "like"]
+      "operators": [
+        "eq",
+        "ne",
+        "like"
+      ]
     },
     {
       "field": "store_uid",
       "data_type": "string",
       "display_name": "store uid",
       "translation_key": "store uid",
-      "operators": ["eq", "ne"]
+      "operators": [
+        "eq",
+        "ne"
+      ]
     },
     {
       "field": "message",
       "data_type": "string",
       "display_name": "message",
       "translation_key": "message",
-      "operators": ["like", "regex"]
+      "operators": [
+        "like",
+        "regex"
+      ]
     },
     {
       "field": "user",
       "data_type": "string",
       "display_name": "user",
       "translation_key": "user",
-      "operators": ["eq", "like"]
+      "operators": [
+        "eq",
+        "like"
+      ]
     },
     {
       "field": "emitted_at",
       "data_type": "date",
       "display_name": "emitted at",
       "translation_key": "emitted at",
-      "operators": ["eq", "gte", "lte", "between"]
+      "operators": [
+        "eq",
+        "gte",
+        "lte",
+        "between"
+      ]
     }
   ]
 }

@@ -6,7 +6,13 @@
       "icon": "ri-dashboard-2-line",
       "link": "/",
       "description": "Resumen general y métricas del sistema.",
-      "keywords": ["inicio", "home", "tablero", "metricas", "resumen"]
+      "keywords": [
+        "inicio",
+        "home",
+        "tablero",
+        "metricas",
+        "resumen"
+      ]
     },
     {
       "id": "orders",
@@ -22,7 +28,11 @@
           "permission": "ORDER_LIST",
           "icon": "ri-shopping-bag-3-line",
           "description": "Pedidos de todas las tiendas: seguimiento, edición y gestión.",
-          "keywords": ["pedidos", "ventas", "orders"],
+          "keywords": [
+            "pedidos",
+            "ventas",
+            "orders"
+          ],
           "help_url": "https://docs.e-middleware.com/operativa/ordenes"
         },
         {
@@ -30,7 +40,11 @@
           "title": "Crear orden",
           "link": "/orders/new",
           "permission": "ORDER_CREATE",
-          "keywords": ["nueva orden", "nuevo pedido", "alta orden"]
+          "keywords": [
+            "nueva orden",
+            "nuevo pedido",
+            "alta orden"
+          ]
         },
         {
           "id": "orders-custom-fields",
@@ -66,7 +80,12 @@
           "permission": "PRODUCT_LIST",
           "icon": "ri-box-3-line",
           "description": "Catálogo de productos: carga, edición y publicación por conector.",
-          "keywords": ["articulos", "catalogo", "products", "items"],
+          "keywords": [
+            "articulos",
+            "catalogo",
+            "products",
+            "items"
+          ],
           "help_url": "https://docs.e-middleware.com/operativa/productos"
         },
         {
@@ -112,7 +131,11 @@
           "permission": "ORDER_LIST",
           "icon": "ri-user-3-line",
           "description": "Clientes finales y su historial de órdenes.",
-          "keywords": ["compradores", "customers", "contactos"],
+          "keywords": [
+            "compradores",
+            "customers",
+            "contactos"
+          ],
           "help_url": "https://docs.e-middleware.com/operativa/clientes"
         },
         {
@@ -124,6 +147,23 @@
           "description": "Códigos postales y regiones para envíos.",
           "help_url": "https://docs.e-middleware.com/operativa/codigos-postales"
         }
+      ]
+    },
+    {
+      "id": "conversations",
+      "title": "Conversaciones",
+      "icon": "ri-chat-3-line",
+      "link": "/conversations",
+      "permission": "CHAT_LIST",
+      "description": "Chats del asistente virtual con los compradores: seguimiento y respuesta del operador.",
+      "keywords": [
+        "chat",
+        "chats",
+        "asistente",
+        "ia",
+        "soporte",
+        "atencion",
+        "conversaciones"
       ]
     },
     {
@@ -148,7 +188,11 @@
           "permission": "INVOICE_LIST",
           "icon": "ri-bill-line",
           "description": "Facturas emitidas y pendientes.",
-          "keywords": ["facturacion", "invoices", "comprobantes"],
+          "keywords": [
+            "facturacion",
+            "invoices",
+            "comprobantes"
+          ],
           "help_url": "https://docs.e-middleware.com/operativa/facturas"
         },
         {
@@ -159,6 +203,14 @@
           "icon": "ri-git-branch-line",
           "description": "Reglas que se disparan automáticamente. Ordená por prioridad.",
           "help_url": "https://docs.e-middleware.com/configuracion/reglas"
+        },
+        {
+          "id": "advanced-filters",
+          "title": "Filtros avanzados",
+          "link": "/advanced-filters",
+          "permission": "SEARCH_FILTER_LIST",
+          "icon": "ri-filter-3-line",
+          "description": "Gestioná los filtros de búsqueda guardados: detalle, editar, duplicar y eliminar."
         },
         {
           "id": "stores",
@@ -176,17 +228,13 @@
           "permission": "CONNECTOR_LIST",
           "icon": "ri-plug-line",
           "description": "Integraciones por tienda: configuración, sincronización y autorización.",
-          "keywords": ["integraciones", "connectors", "marketplaces", "erp"],
+          "keywords": [
+            "integraciones",
+            "connectors",
+            "marketplaces",
+            "erp"
+          ],
           "help_url": "https://docs.e-middleware.com/operativa/conectores"
-        },
-        {
-          "id": "ai-config",
-          "title": "Configuración de IA",
-          "link": "/ai-config",
-          "permission": "BACKOFFICE_ACCESS",
-          "icon": "ri-robot-line",
-          "description": "Configura el proveedor LLM y prompts del asistente virtual. Podés definir una config base por cliente y sobreescribirla por tienda.",
-          "help_url": "https://docs.e-middleware.com/configuracion/ia"
         },
         {
           "id": "scheduler",
