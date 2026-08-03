@@ -1,0 +1,46 @@
+{
+  "columns": [
+    {
+      "id": "value",
+      "labelKey": "Valor",
+      "renderer": "mainValue",
+      "fields": [
+        "value"
+      ],
+      "hideable": false
+    },
+    {
+      "id": "category_uid",
+      "labelKey": "Categoría",
+      "renderer": "categoryUid",
+      "fields": [
+        "category_uid"
+      ],
+      "width": 200
+    },
+    {
+      "id": "mappings",
+      "labelKey": "Mapeos",
+      "renderer": "mappingsToggle",
+      "requestOnlyFields": [
+        "external"
+      ],
+      "displayColumn": true,
+      "hideable": false,
+      "width": 110,
+      "center": true
+    },
+    {
+      "id": "actions",
+      "labelKey": "",
+      "renderer": "valueDetailActions",
+      "requestOnlyFields": [
+        "uid"
+      ],
+      "displayColumn": true,
+      "hideable": false,
+      "width": 150,
+      "center": true
+    }
+  ]
+}
