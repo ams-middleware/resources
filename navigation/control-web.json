@@ -138,19 +138,28 @@
       "help_url": "https://docs.e-middleware.com/administracion/integraciones"
     },
     {
+      "id": "admin-connectors",
+      "title": "Conectores",
+      "icon": "ri-plug-line",
+      "link": "/administration/connectors",
+      "permission": "CONNECTOR_LIST",
+      "description": "Conectores del cliente: alta, configuración y credenciales por integración.",
+      "keywords": [
+        "connectors",
+        "conectores",
+        "credenciales",
+        "tokens",
+        "sincronizacion"
+      ],
+      "help_url": "https://docs.e-middleware.com/administracion/conectores"
+    },
+    {
       "id": "admin-applications",
       "title": "Aplicaciones",
       "icon": "ri-key-2-line",
       "link": "/administration/applications",
       "description": "Aplicaciones y credenciales de acceso.",
       "help_url": "https://docs.e-middleware.com/administracion/aplicaciones"
-    },
-    {
-      "id": "admin-ai-config",
-      "title": "Configuración de IA",
-      "icon": "ri-robot-2-line",
-      "link": "/administration/ai-config",
-      "description": "Proveedor, modelo y prompt del asistente por cliente y por tienda."
     },
     {
       "id": "profile",

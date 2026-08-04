@@ -33,7 +33,7 @@
     {
       "id": "type",
       "labelKey": "Order col type",
-      "renderer": "titleCaseText",
+      "renderer": "orderType",
       "path": "type",
       "width": 110,
       "center": true,
