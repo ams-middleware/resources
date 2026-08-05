@@ -902,6 +902,8 @@
   "of": "de",
   "Operation action active": "Estado (activo/inactivo)",
   "Operation action attributes": "Atributos",
+  "Operation action cancel": "Cancelación",
+  "Operation action complete": "Completado",
   "Operation action inventory": "Inventario",
   "Operation action multimedia": "Multimedia",
   "Operation action price": "Precio",

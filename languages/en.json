@@ -904,6 +904,8 @@
   "of": "of",
   "Operation action active": "Status (active/inactive)",
   "Operation action attributes": "Attributes",
+  "Operation action cancel": "Cancellation",
+  "Operation action complete": "Completion",
   "Operation action inventory": "Inventory",
   "Operation action multimedia": "Multimedia",
   "Operation action price": "Price",
