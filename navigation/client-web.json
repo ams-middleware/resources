@@ -40,6 +40,7 @@
           "title": "Crear orden",
           "link": "/orders/new",
           "permission": "ORDER_CREATE",
+          "hidden": true,
           "keywords": [
             "nueva orden",
             "nuevo pedido",
@@ -74,6 +75,17 @@
       "permission": "PRODUCT_LIST",
       "children": [
         {
+          "id": "products-create",
+          "title": "Crear producto",
+          "link": "/products/new",
+          "permission": "PRODUCT_CREATE",
+          "hidden": true,
+          "keywords": [
+            "nuevo producto",
+            "alta producto"
+          ]
+        },
+        {
           "id": "products-list",
           "title": "Productos",
           "link": "/products",
@@ -90,7 +102,7 @@
         },
         {
           "id": "products-attribute-values",
-          "title": "Atributos",
+          "title": "Valores de atributos",
           "link": "/products/attributes",
           "permission": "PRODUCT_UPDATE",
           "icon": "ri-price-tag-3-line",
@@ -110,7 +122,7 @@
           "id": "products-multimedia",
           "title": "Multimedia",
           "link": "/products/multimedia",
-          "permission": "PRODUCT_UPDATE",
+          "permission": "MULTIMEDIA_LIST",
           "icon": "ri-image-line",
           "description": "Sets multimedia reutilizables (imágenes y videos) por producto.",
           "help_url": "https://docs.e-middleware.com/operativa/multimedia"

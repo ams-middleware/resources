@@ -28,23 +28,23 @@
       "width": 200
     },
     {
-      "id": "mappings",
+      "id": "mappings_count",
       "labelKey": "Mapeos",
-      "renderer": "mappingsToggle",
+      "renderer": "mappingsCount",
       "requestOnlyFields": [
         "external"
       ],
       "displayColumn": true,
-      "hideable": false,
       "width": 110,
       "center": true
     },
     {
       "id": "actions",
-      "labelKey": "",
+      "labelKey": "Acciones",
       "renderer": "valueActions",
       "requestOnlyFields": [
-        "uid"
+        "uid",
+        "external"
       ],
       "displayColumn": true,
       "hideable": false,
