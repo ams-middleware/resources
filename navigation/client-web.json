@@ -103,8 +103,17 @@
           "help_url": "https://docs.e-middleware.com/operativa/productos"
         },
         {
+          "id": "products-multimedia",
+          "title": "Multimedia",
+          "link": "/products/multimedia",
+          "permission": "MULTIMEDIA_LIST",
+          "icon": "ri-image-line",
+          "description": "Sets multimedia reutilizables (imágenes y videos) por producto.",
+          "help_url": "https://docs.e-middleware.com/operativa/multimedia"
+        },
+        {
           "id": "products-attribute-values",
-          "title": "Valores de atributos",
+          "title": "Atributos",
           "link": "/products/attributes",
           "permission": "PRODUCT_UPDATE",
           "icon": "ri-price-tag-3-line",
@@ -113,21 +122,12 @@
         },
         {
           "id": "products-category-mapping",
-          "title": "Mapeos de categoría",
+          "title": "Categorías",
           "link": "/products/category-mapping",
           "permission": "PRODUCT_UPDATE",
           "icon": "ri-git-merge-line",
           "description": "Relacioná tus categorías con las de cada plataforma.",
           "help_url": "https://docs.e-middleware.com/operativa/mapeo-de-categorias"
-        },
-        {
-          "id": "products-multimedia",
-          "title": "Multimedia",
-          "link": "/products/multimedia",
-          "permission": "MULTIMEDIA_LIST",
-          "icon": "ri-image-line",
-          "description": "Sets multimedia reutilizables (imágenes y videos) por producto.",
-          "help_url": "https://docs.e-middleware.com/operativa/multimedia"
         }
       ]
     },
@@ -136,7 +136,6 @@
       "title": "CRM",
       "icon": "ri-team-line",
       "link": "/crm/customers",
-      "permission": "ORDER_LIST",
       "children": [
         {
           "id": "crm-customers",
@@ -153,33 +152,25 @@
           "help_url": "https://docs.e-middleware.com/operativa/clientes"
         },
         {
-          "id": "crm-postal-codes",
-          "title": "Códigos postales",
-          "link": "/crm/postal-codes",
-          "permission": "ORDER_LIST",
-          "icon": "ri-map-pin-line",
-          "description": "Códigos postales y regiones para envíos.",
-          "help_url": "https://docs.e-middleware.com/operativa/codigos-postales"
+          "id": "conversations",
+          "title": "Conversaciones",
+          "icon": "ri-chat-3-line",
+          "link": "/conversations",
+          "permission": "CHAT_LIST",
+          "description": "Chats del asistente virtual con los compradores: seguimiento y respuesta del operador.",
+          "keywords": [
+            "chat",
+            "chats",
+            "asistente",
+            "ia",
+            "soporte",
+            "atencion",
+            "conversaciones"
+          ],
+          "help_url": "https://docs.e-middleware.com/operativa/conversaciones"
         }
-      ]
-    },
-    {
-      "id": "conversations",
-      "title": "Conversaciones",
-      "icon": "ri-chat-3-line",
-      "link": "/conversations",
-      "permission": "CHAT_LIST",
-      "description": "Chats del asistente virtual con los compradores: seguimiento y respuesta del operador.",
-      "keywords": [
-        "chat",
-        "chats",
-        "asistente",
-        "ia",
-        "soporte",
-        "atencion",
-        "conversaciones"
       ],
-      "help_url": "https://docs.e-middleware.com/operativa/conversaciones"
+      "description": "Clientes y conversaciones."
     },
     {
       "id": "bulk",
@@ -191,43 +182,18 @@
       "help_url": "https://docs.e-middleware.com/operativa/cargas-masivas"
     },
     {
-      "id": "system",
-      "title": "Sistema",
+      "id": "configuration",
+      "title": "Configuración",
       "icon": "ri-settings-3-line",
-      "link": "/invoices",
+      "link": "/stores",
+      "description": "Cómo opera tu cuenta: tiendas, integraciones, automatizaciones y catálogos.",
+      "keywords": [
+        "configuracion",
+        "ajustes",
+        "setup",
+        "parametros"
+      ],
       "children": [
-        {
-          "id": "invoices",
-          "title": "Facturas",
-          "link": "/invoices",
-          "permission": "INVOICE_LIST",
-          "icon": "ri-bill-line",
-          "description": "Facturas emitidas y pendientes.",
-          "keywords": [
-            "facturacion",
-            "invoices",
-            "comprobantes"
-          ],
-          "help_url": "https://docs.e-middleware.com/operativa/facturas"
-        },
-        {
-          "id": "rules",
-          "title": "Reglas",
-          "link": "/rules",
-          "permission": "RULE_LIST",
-          "icon": "ri-git-branch-line",
-          "description": "Reglas que se disparan automáticamente. Ordená por prioridad.",
-          "help_url": "https://docs.e-middleware.com/configuracion/reglas"
-        },
-        {
-          "id": "advanced-filters",
-          "title": "Filtros avanzados",
-          "link": "/advanced-filters",
-          "permission": "SEARCH_FILTER_LIST",
-          "icon": "ri-filter-3-line",
-          "description": "Gestioná los filtros de búsqueda guardados: detalle, editar, duplicar y eliminar.",
-          "help_url": "https://docs.e-middleware.com/comunes/filtrado-avanzado"
-        },
         {
           "id": "stores",
           "title": "Tiendas",
@@ -253,6 +219,15 @@
           "help_url": "https://docs.e-middleware.com/operativa/conectores"
         },
         {
+          "id": "rules",
+          "title": "Reglas",
+          "link": "/rules",
+          "permission": "RULE_LIST",
+          "icon": "ri-git-branch-line",
+          "description": "Reglas que se disparan automáticamente. Ordená por prioridad.",
+          "help_url": "https://docs.e-middleware.com/configuracion/reglas"
+        },
+        {
           "id": "scheduler",
           "title": "Scheduler",
           "link": "/scheduler",
@@ -262,6 +237,54 @@
           "help_url": "https://docs.e-middleware.com/configuracion/scheduler"
         }
       ]
+    },
+    {
+      "id": "system",
+      "title": "Sistema",
+      "icon": "ri-terminal-box-line",
+      "link": "/advanced-filters",
+      "description": "Herramientas de plataforma: búsquedas guardadas y tareas programadas.",
+      "keywords": [
+        "sistema",
+        "plataforma",
+        "tecnico",
+        "avanzado"
+      ],
+      "children": [
+        {
+          "id": "advanced-filters",
+          "title": "Filtros avanzados",
+          "link": "/advanced-filters",
+          "permission": "SEARCH_FILTER_LIST",
+          "icon": "ri-filter-3-line",
+          "description": "Gestioná los filtros de búsqueda guardados: detalle, editar, duplicar y eliminar.",
+          "help_url": "https://docs.e-middleware.com/comunes/filtrado-avanzado"
+        },
+        {
+          "id": "crm-postal-codes",
+          "title": "Códigos postales",
+          "link": "/crm/postal-codes",
+          "permission": "SYSTEM_LIST",
+          "icon": "ri-map-pin-line",
+          "description": "Códigos postales y regiones para envíos.",
+          "help_url": "https://docs.e-middleware.com/operativa/codigos-postales"
+        }
+      ]
+    },
+    {
+      "id": "invoices",
+      "title": "Facturas",
+      "link": "/invoices",
+      "permission": "INVOICE_LIST",
+      "icon": "ri-bill-line",
+      "description": "Facturas emitidas y pendientes. Se entra desde el menú de perfil.",
+      "keywords": [
+        "facturacion",
+        "invoices",
+        "comprobantes"
+      ],
+      "help_url": "https://docs.e-middleware.com/operativa/facturas",
+      "hidden": true
     },
     {
       "id": "profile",
