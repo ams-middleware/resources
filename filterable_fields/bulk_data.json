@@ -1,0 +1,114 @@
+{
+  "fields": [
+    {
+      "field": "uid",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "uid",
+      "translation_key": "uid",
+      "operators": [
+        "eq",
+        "ne",
+        "like",
+        "in",
+        "nin"
+      ]
+    },
+    {
+      "field": "status",
+      "data_type": "string",
+      "input_type": "select",
+      "display_name": "status",
+      "translation_key": "status",
+      "operators": [
+        "eq",
+        "ne",
+        "in",
+        "nin"
+      ],
+      "options": [
+        "pending",
+        "completed",
+        "error"
+      ]
+    },
+    {
+      "field": "message",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "message",
+      "translation_key": "message",
+      "operators": [
+        "eq",
+        "ne",
+        "like",
+        "regex",
+        "exists",
+        "not_exists"
+      ]
+    },
+    {
+      "field": "type",
+      "data_type": "string",
+      "input_type": "select",
+      "display_name": "type",
+      "translation_key": "type",
+      "operators": [
+        "eq",
+        "ne",
+        "in",
+        "nin"
+      ]
+    },
+    {
+      "field": "data.type",
+      "data_type": "string",
+      "input_type": "select",
+      "display_name": "data type",
+      "translation_key": "data_type",
+      "operators": [
+        "eq",
+        "ne",
+        "in",
+        "nin"
+      ],
+      "options": [
+        "base",
+        "simple"
+      ]
+    },
+    {
+      "field": "collection",
+      "data_type": "string",
+      "input_type": "select",
+      "display_name": "collection",
+      "translation_key": "collection",
+      "operators": [
+        "eq",
+        "ne",
+        "in",
+        "nin"
+      ],
+      "options": [
+        "order",
+        "product",
+        "product_media"
+      ]
+    },
+    {
+      "field": "row",
+      "data_type": "number",
+      "input_type": "number",
+      "display_name": "row",
+      "translation_key": "row",
+      "operators": [
+        "eq",
+        "ne",
+        "gt",
+        "gte",
+        "lt",
+        "lte"
+      ]
+    }
+  ]
+}

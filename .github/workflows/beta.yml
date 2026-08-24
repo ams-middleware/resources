@@ -11,8 +11,7 @@ jobs:
     steps:
       - name: Update resources (beta)
         env:
-          # TODO: confirmar la URL de control-api de BETA
-          API_URL: "https://control-api-beta.e-middleware.ar/notify/update-resources"
+          API_URL: "https://control-api.beta.e-middleware.com/notify/update-resources"
           APP_KEY: ${{ secrets.NOTIFY_APP_KEY }}
         run: |
           curl -X POST "$API_URL" \

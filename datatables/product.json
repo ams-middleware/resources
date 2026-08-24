@@ -11,7 +11,8 @@
       "requestOnlyFields": [
         "uid",
         "created_at",
-        "multimedia_uid"
+        "multimedia_uid",
+        "multimedia.uid"
       ],
       "sortable": true,
       "sortField": "name",

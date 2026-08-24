@@ -45,7 +45,8 @@
             "nueva orden",
             "nuevo pedido",
             "alta orden"
-          ]
+          ],
+          "help_url": "https://docs.e-middleware.com/operativa/ordenes/crear"
         },
         {
           "id": "orders-custom-fields",
@@ -83,7 +84,8 @@
           "keywords": [
             "nuevo producto",
             "alta producto"
-          ]
+          ],
+          "help_url": "https://docs.e-middleware.com/operativa/productos/editar"
         },
         {
           "id": "products-list",
@@ -176,7 +178,8 @@
         "soporte",
         "atencion",
         "conversaciones"
-      ]
+      ],
+      "help_url": "https://docs.e-middleware.com/operativa/conversaciones"
     },
     {
       "id": "bulk",
@@ -222,7 +225,8 @@
           "link": "/advanced-filters",
           "permission": "SEARCH_FILTER_LIST",
           "icon": "ri-filter-3-line",
-          "description": "Gestioná los filtros de búsqueda guardados: detalle, editar, duplicar y eliminar."
+          "description": "Gestioná los filtros de búsqueda guardados: detalle, editar, duplicar y eliminar.",
+          "help_url": "https://docs.e-middleware.com/comunes/filtrado-avanzado"
         },
         {
           "id": "stores",

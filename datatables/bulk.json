@@ -42,21 +42,21 @@
       }
     },
     {
-      "id": "type",
-      "labelKey": "Tipo",
+      "id": "origin",
+      "labelKey": "Origen",
       "renderer": "badge",
       "fields": [
-        "type"
+        "origin"
       ],
       "width": 90,
       "badge": {
         "variants": {
-          "upload": {
-            "color": "primary",
+          "query": {
+            "color": "info",
             "uppercase": true
           },
-          "download": {
-            "color": "info",
+          "upload": {
+            "color": "primary",
             "uppercase": true
           }
         },
