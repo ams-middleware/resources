@@ -25,26 +25,6 @@
       "hideable": false
     },
     {
-      "id": "entity",
-      "labelKey": "Entidad",
-      "renderer": "badge",
-      "path": "entity_type",
-      "width": 110,
-      "center": true,
-      "badge": {
-        "variants": {
-          "order": {
-            "label": "Orden",
-            "color": "primary"
-          },
-          "product": {
-            "label": "Producto",
-            "color": "success"
-          }
-        }
-      }
-    },
-    {
       "id": "conditions",
       "labelKey": "Condiciones",
       "renderer": "ruleConditions",

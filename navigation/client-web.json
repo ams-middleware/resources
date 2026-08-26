@@ -65,6 +65,22 @@
           "icon": "ri-git-merge-line",
           "description": "Definí qué proceso BPM se ejecuta al inicializar un workflow.",
           "help_url": "https://docs.e-middleware.com/configuracion/workflows"
+        },
+        {
+          "id": "orders-rules",
+          "title": "Reglas",
+          "link": "/orders/rules",
+          "permission": "RULE_LIST",
+          "icon": "ri-git-branch-line",
+          "description": "Reglas que se disparan sobre las órdenes. Ordená por prioridad.",
+          "keywords": [
+            "reglas",
+            "automatizacion",
+            "prioridad",
+            "courier",
+            "ordenes"
+          ],
+          "help_url": "https://docs.e-middleware.com/configuracion/reglas"
         }
       ]
     },
@@ -128,6 +144,22 @@
           "icon": "ri-git-merge-line",
           "description": "Relacioná tus categorías con las de cada plataforma.",
           "help_url": "https://docs.e-middleware.com/operativa/mapeo-de-categorias"
+        },
+        {
+          "id": "products-rules",
+          "title": "Reglas",
+          "link": "/products/rules",
+          "permission": "RULE_LIST",
+          "icon": "ri-git-branch-line",
+          "description": "Reglas que se disparan sobre los productos. Ordená por prioridad.",
+          "keywords": [
+            "reglas",
+            "automatizacion",
+            "prioridad",
+            "productos",
+            "tags"
+          ],
+          "help_url": "https://docs.e-middleware.com/configuracion/reglas"
         }
       ]
     },
@@ -217,15 +249,6 @@
             "erp"
           ],
           "help_url": "https://docs.e-middleware.com/operativa/conectores"
-        },
-        {
-          "id": "rules",
-          "title": "Reglas",
-          "link": "/rules",
-          "permission": "RULE_LIST",
-          "icon": "ri-git-branch-line",
-          "description": "Reglas que se disparan automáticamente. Ordená por prioridad.",
-          "help_url": "https://docs.e-middleware.com/configuracion/reglas"
         },
         {
           "id": "scheduler",
