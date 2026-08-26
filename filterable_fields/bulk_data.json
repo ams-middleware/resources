@@ -33,6 +33,24 @@
       ]
     },
     {
+      "field": "action",
+      "data_type": "string",
+      "input_type": "select",
+      "display_name": "action",
+      "translation_key": "action",
+      "operators": [
+        "eq",
+        "ne",
+        "in",
+        "nin"
+      ],
+      "options": [
+        "create",
+        "update",
+        "invalid"
+      ]
+    },
+    {
       "field": "message",
       "data_type": "string",
       "input_type": "text",

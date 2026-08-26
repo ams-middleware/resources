@@ -108,11 +108,49 @@
       "labelKey": "Acciones",
       "renderer": "productActions",
       "requestOnlyFields": [
-        "uid"
+        "uid",
+        "type",
+        "price.available",
+        "price.special",
+        "stock.available"
       ],
       "displayColumn": true,
       "hideable": false,
-      "center": true
+      "center": true,
+      "actions": [
+        {
+          "tooltip": "Ver producto",
+          "renderer": "button-view",
+          "url": "/products/{id}",
+          "external_url": false,
+          "permission": "PRODUCT_SHOW"
+        },
+        {
+          "tooltip": "Editar producto",
+          "renderer": "button-edit",
+          "url": "/products/{id}/edit",
+          "external_url": false,
+          "permission": "PRODUCT_UPDATE"
+        },
+        {
+          "tooltip": "Copiar producto",
+          "renderer": "button-copy",
+          "icon": "ri-file-copy-line",
+          "permission": "PRODUCT_CREATE"
+        },
+        {
+          "tooltip": "Editar precio",
+          "renderer": "button-price",
+          "icon": "ri-price-tag-3-line",
+          "permission": "PRODUCT_UPDATE"
+        },
+        {
+          "tooltip": "Editar stock",
+          "renderer": "button-stock",
+          "icon": "ri-inbox-archive-line",
+          "permission": "PRODUCT_UPDATE"
+        }
+      ]
     }
   ]
 }
