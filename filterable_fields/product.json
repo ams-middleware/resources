@@ -319,6 +319,29 @@
         "exists",
         "not_exists"
       ]
+    },
+    {
+      "field": "connectors_count",
+      "data_type": "int",
+      "expression": {
+        "$size": {
+          "$ifNull": [
+            "$connectors",
+            []
+          ]
+        }
+      },
+      "input_type": "text",
+      "display_name": "cantidad de conectores",
+      "translation_key": "connectors count",
+      "operators": [
+        "eq",
+        "ne",
+        "gt",
+        "gte",
+        "lt",
+        "lte"
+      ]
     }
   ]
 }
