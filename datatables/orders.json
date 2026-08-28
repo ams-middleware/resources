@@ -5,8 +5,7 @@
       "labelKey": "Order col uid",
       "renderer": "clipboardStrong",
       "fields": [
-        "uid",
-        "order_uid"
+        "uid"
       ],
       "sortable": true,
       "hideable": false
@@ -452,9 +451,7 @@
       "labelKey": "Order col actions",
       "renderer": "orderRowActions",
       "requestOnlyFields": [
-        "sequence_nro",
         "uid",
-        "order_uid",
         "workflow.current_step"
       ],
       "displayColumn": true,
