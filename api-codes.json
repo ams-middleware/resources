@@ -35,6 +35,10 @@
     "name": "unprocessable_entity",
     "message_key": "api.unprocessable_entity"
   },
+  "ERR429": {
+    "name": "too_many_requests",
+    "message_key": "api.too_many_requests"
+  },
   "ERR500": {
     "name": "internal_error",
     "message_key": "api.internal_error"

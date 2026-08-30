@@ -804,6 +804,7 @@
   "api.unauthorized": "Unauthorized",
   "api.forbidden": "Forbidden access",
   "api.unprocessable_entity": "Unprocessable entity",
+  "api.too_many_requests": "Usage quota exhausted",
   "api.internal_error": "Internal server error",
   "t-ref-code": "Platform reference",
   "t-store": "Store",

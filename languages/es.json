@@ -801,6 +801,7 @@
   "api.unauthorized": "No autorizado",
   "api.forbidden": "Acceso denegado",
   "api.unprocessable_entity": "No se puede procesar la entidad",
+  "api.too_many_requests": "Se alcanzó el límite de uso permitido",
   "api.internal_error": "Error interno del servidor",
   "t-ref-code": "Referencia de la plataforma",
   "t-store": "Tienda",
