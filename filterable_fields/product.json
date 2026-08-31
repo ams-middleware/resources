@@ -116,7 +116,8 @@
         "like",
         "exists",
         "not_exists"
-      ]
+      ],
+      "case_insensitive": true
     },
     {
       "field": "stock.available",
@@ -227,7 +228,8 @@
         "ne",
         "exists",
         "not_exists"
-      ]
+      ],
+      "case_insensitive": true
     },
     {
       "field": "attributes.color_code.value",
@@ -240,7 +242,8 @@
         "ne",
         "exists",
         "not_exists"
-      ]
+      ],
+      "case_insensitive": true
     },
     {
       "field": "attributes.size.value",
@@ -253,7 +256,8 @@
         "ne",
         "exists",
         "not_exists"
-      ]
+      ],
+      "case_insensitive": true
     },
     {
       "field": "attributes.size_code.value",
@@ -266,7 +270,8 @@
         "ne",
         "exists",
         "not_exists"
-      ]
+      ],
+      "case_insensitive": true
     },
     {
       "field": "attributes.size_ar.value",
@@ -279,7 +284,8 @@
         "ne",
         "exists",
         "not_exists"
-      ]
+      ],
+      "case_insensitive": true
     },
     {
       "field": "attributes.gender.value",
@@ -292,7 +298,8 @@
         "ne",
         "exists",
         "not_exists"
-      ]
+      ],
+      "case_insensitive": true
     },
     {
       "field": "attributes.technology.value",
@@ -305,7 +312,8 @@
         "ne",
         "exists",
         "not_exists"
-      ]
+      ],
+      "case_insensitive": true
     },
     {
       "field": "connectors.uid",
