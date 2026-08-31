@@ -124,7 +124,6 @@
           "link": "/products/multimedia",
           "permission": "MULTIMEDIA_LIST",
           "icon": "ri-image-line",
-          "description": "Sets multimedia reutilizables (imágenes y videos) por producto.",
           "help_url": "https://docs.e-middleware.com/operativa/multimedia"
         },
         {

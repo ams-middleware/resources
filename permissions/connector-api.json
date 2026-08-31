@@ -1,0 +1,40 @@
+{
+  "permissions": [
+    {
+      "uid": "API_PRODUCT_WRITE",
+      "label": "Crear productos",
+      "description": "Alta de productos base y simples por lote.",
+      "group": "Producto"
+    },
+    {
+      "uid": "API_PRODUCT_INVENTORY",
+      "label": "Actualizar stock y precio",
+      "description": "Sincronizar existencias y lista de precios. Reemplaza a API_PRODUCT_STOCK y API_PRODUCT_PRICE.",
+      "group": "Producto"
+    },
+    {
+      "uid": "API_ORDER_READ",
+      "label": "Leer órdenes",
+      "description": "Consultar y buscar órdenes del cliente.",
+      "group": "Órdenes"
+    },
+    {
+      "uid": "API_ORDER_WRITE",
+      "label": "Escribir órdenes",
+      "description": "Reservado: todavía no lo exige ningún endpoint.",
+      "group": "Órdenes"
+    },
+    {
+      "uid": "API_REPORTING_READ",
+      "label": "Consumir reporting",
+      "description": "Feed OData de órdenes para Power BI, Excel u otra herramienta.",
+      "group": "Datos"
+    },
+    {
+      "uid": "API_CHAT",
+      "label": "Usar el asistente IA",
+      "description": "Enviar mensajes al asistente desde un canal propio.",
+      "group": "Asistente"
+    }
+  ]
+}
