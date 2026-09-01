@@ -47,7 +47,10 @@
       "renderer": "mappingActions",
       "requestOnlyFields": [
         "uid",
-        "connector.uid"
+        "connector.uid",
+        "category_uid",
+        "ref_code",
+        "name"
       ],
       "displayColumn": true,
       "hideable": false,
