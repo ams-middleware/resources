@@ -23,11 +23,10 @@
       "labelKey": "Marca",
       "renderer": "text",
       "fields": [
-        "attributes.brand.value.text",
         "attributes.brand.value"
       ],
       "sortable": true,
-      "sortField": "attributes.brand.value.text",
+      "sortField": "attributes.brand.value",
       "width": 140
     },
     {
