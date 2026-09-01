@@ -180,6 +180,7 @@
       "input_type": "text",
       "display_name": "category",
       "translation_key": "category",
+      "case_insensitive": true,
       "operators": [
         "eq",
         "ne",
