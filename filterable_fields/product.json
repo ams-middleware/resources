@@ -25,7 +25,7 @@
       ]
     },
     {
-      "field": "ref_code.ean",
+      "field": "ref_codes.ean",
       "data_type": "string",
       "input_type": "text",
       "display_name": "ean",
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "field": "ref_code.upc",
+      "field": "ref_codes.upc",
       "data_type": "string",
       "input_type": "text",
       "display_name": "upc",

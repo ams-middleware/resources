@@ -23,7 +23,8 @@
       "labelKey": "Marca",
       "renderer": "text",
       "fields": [
-        "attributes.brand.value.text"
+        "attributes.brand.value.text",
+        "attributes.brand.value"
       ],
       "sortable": true,
       "sortField": "attributes.brand.value.text",
@@ -102,6 +103,318 @@
       "width": 160,
       "center": true,
       "defaultHidden": true
+    },
+    {
+      "id": "uid",
+      "labelKey": "UID",
+      "renderer": "clipboard",
+      "fields": [
+        "uid"
+      ],
+      "sortable": true,
+      "width": 200,
+      "defaultHidden": true
+    },
+    {
+      "id": "ean",
+      "labelKey": "EAN",
+      "renderer": "clipboard",
+      "fields": [
+        "ref_codes.ean"
+      ],
+      "sortable": true,
+      "sortField": "ref_codes.ean",
+      "width": 150,
+      "defaultHidden": true
+    },
+    {
+      "id": "upc",
+      "labelKey": "UPC",
+      "renderer": "clipboard",
+      "fields": [
+        "ref_codes.upc"
+      ],
+      "sortable": true,
+      "sortField": "ref_codes.upc",
+      "width": 150,
+      "defaultHidden": true
+    },
+    {
+      "id": "category_uid",
+      "labelKey": "UID de categoría",
+      "renderer": "text",
+      "fields": [
+        "category.uid"
+      ],
+      "sortable": true,
+      "sortField": "category.uid",
+      "width": 150,
+      "defaultHidden": true
+    },
+    {
+      "id": "multimedia_uid",
+      "labelKey": "Set de imágenes",
+      "renderer": "clipboard",
+      "fields": [
+        "multimedia.uid",
+        "multimedia_uid"
+      ],
+      "width": 170,
+      "defaultHidden": true,
+      "visibilityLabelKey": "UID del set de imágenes"
+    },
+    {
+      "id": "attr_color",
+      "labelKey": "Color",
+      "renderer": "text",
+      "fields": [
+        "attributes.color.value.text",
+        "attributes.color.value"
+      ],
+      "sortable": true,
+      "sortField": "attributes.color.value.text",
+      "width": 130,
+      "defaultHidden": true,
+      "visibilityLabelKey": "Atributo · Color"
+    },
+    {
+      "id": "attr_color_code",
+      "labelKey": "Código de color",
+      "renderer": "text",
+      "fields": [
+        "attributes.color_code.value.text",
+        "attributes.color_code.value"
+      ],
+      "sortable": true,
+      "sortField": "attributes.color_code.value.text",
+      "width": 140,
+      "defaultHidden": true,
+      "visibilityLabelKey": "Atributo · Código de color"
+    },
+    {
+      "id": "attr_size",
+      "labelKey": "Talle",
+      "renderer": "text",
+      "fields": [
+        "attributes.size.value.text",
+        "attributes.size.value"
+      ],
+      "sortable": true,
+      "sortField": "attributes.size.value.text",
+      "width": 100,
+      "defaultHidden": true,
+      "visibilityLabelKey": "Atributo · Talle"
+    },
+    {
+      "id": "attr_size_code",
+      "labelKey": "Código de talle",
+      "renderer": "text",
+      "fields": [
+        "attributes.size_code.value.text",
+        "attributes.size_code.value"
+      ],
+      "sortable": true,
+      "sortField": "attributes.size_code.value.text",
+      "width": 140,
+      "defaultHidden": true,
+      "visibilityLabelKey": "Atributo · Código de talle"
+    },
+    {
+      "id": "attr_size_ar",
+      "labelKey": "Talle AR",
+      "renderer": "text",
+      "fields": [
+        "attributes.size_ar.value.text",
+        "attributes.size_ar.value"
+      ],
+      "sortable": true,
+      "sortField": "attributes.size_ar.value.text",
+      "width": 110,
+      "defaultHidden": true,
+      "visibilityLabelKey": "Atributo · Talle AR"
+    },
+    {
+      "id": "attr_gender",
+      "labelKey": "Género",
+      "renderer": "text",
+      "fields": [
+        "attributes.gender.value.text",
+        "attributes.gender.value"
+      ],
+      "sortable": true,
+      "sortField": "attributes.gender.value.text",
+      "width": 110,
+      "defaultHidden": true,
+      "visibilityLabelKey": "Atributo · Género"
+    },
+    {
+      "id": "attr_technology",
+      "labelKey": "Tecnología",
+      "renderer": "text",
+      "fields": [
+        "attributes.technology.value.text",
+        "attributes.technology.value"
+      ],
+      "sortable": true,
+      "sortField": "attributes.technology.value.text",
+      "width": 150,
+      "defaultHidden": true,
+      "visibilityLabelKey": "Atributo · Tecnología"
+    },
+    {
+      "id": "price_available",
+      "labelKey": "Precio de lista",
+      "renderer": "currency",
+      "fields": [
+        "price.available"
+      ],
+      "sortable": true,
+      "sortField": "price.available",
+      "width": 130,
+      "defaultHidden": true
+    },
+    {
+      "id": "price_special",
+      "labelKey": "Precio especial",
+      "renderer": "currency",
+      "fields": [
+        "price.special"
+      ],
+      "sortable": true,
+      "sortField": "price.special",
+      "width": 130,
+      "defaultHidden": true
+    },
+    {
+      "id": "price_last_update",
+      "labelKey": "Precio actualizado",
+      "renderer": "datetime",
+      "fields": [
+        "price.last_update"
+      ],
+      "sortable": true,
+      "sortField": "price.last_update",
+      "width": 160,
+      "defaultHidden": true,
+      "visibilityLabelKey": "Última actualización de precio"
+    },
+    {
+      "id": "stock_available",
+      "labelKey": "Disponible",
+      "renderer": "text",
+      "fields": [
+        "stock.available"
+      ],
+      "sortable": true,
+      "sortField": "stock.available",
+      "width": 110,
+      "center": true,
+      "defaultHidden": true,
+      "visibilityLabelKey": "Stock disponible"
+    },
+    {
+      "id": "stock_reserved",
+      "labelKey": "Reservado",
+      "renderer": "text",
+      "fields": [
+        "stock.reserved"
+      ],
+      "sortable": true,
+      "sortField": "stock.reserved",
+      "width": 110,
+      "center": true,
+      "defaultHidden": true,
+      "visibilityLabelKey": "Stock reservado"
+    },
+    {
+      "id": "stock_last_update",
+      "labelKey": "Stock actualizado",
+      "renderer": "datetime",
+      "fields": [
+        "stock.last_update"
+      ],
+      "sortable": true,
+      "sortField": "stock.last_update",
+      "width": 160,
+      "defaultHidden": true,
+      "visibilityLabelKey": "Última actualización de stock"
+    },
+    {
+      "id": "tags",
+      "labelKey": "Etiquetas",
+      "renderer": "tagList",
+      "fields": [
+        "tags"
+      ],
+      "width": 180,
+      "defaultHidden": true,
+      "visibilityLabelKey": "Etiquetas del sistema"
+    },
+    {
+      "id": "custom_tags",
+      "labelKey": "Etiquetas propias",
+      "renderer": "tagList",
+      "fields": [
+        "custom_tags"
+      ],
+      "width": 180,
+      "defaultHidden": true
+    },
+    {
+      "id": "parents_uid",
+      "labelKey": "Producto base",
+      "renderer": "tagList",
+      "fields": [
+        "parents_uid"
+      ],
+      "width": 200,
+      "defaultHidden": true,
+      "visibilityLabelKey": "UID del producto base"
+    },
+    {
+      "id": "created_at",
+      "labelKey": "Creado",
+      "renderer": "datetime",
+      "fields": [
+        "created_at"
+      ],
+      "sortable": true,
+      "width": 160,
+      "defaultHidden": true
+    },
+    {
+      "id": "created_by",
+      "labelKey": "Creado por",
+      "renderer": "text",
+      "fields": [
+        "created_by.full_name",
+        "created_by.email"
+      ],
+      "width": 170,
+      "defaultHidden": true
+    },
+    {
+      "id": "updated_by",
+      "labelKey": "Actualizado por",
+      "renderer": "text",
+      "fields": [
+        "updated_by.full_name",
+        "updated_by.email"
+      ],
+      "width": 170,
+      "defaultHidden": true
+    },
+    {
+      "id": "emitted_by",
+      "labelKey": "Origen",
+      "renderer": "text",
+      "fields": [
+        "emitted_by.name",
+        "emitted_by.uid"
+      ],
+      "width": 150,
+      "defaultHidden": true,
+      "visibilityLabelKey": "Conector que lo trajo"
     },
     {
       "id": "actions",
