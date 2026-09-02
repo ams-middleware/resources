@@ -424,28 +424,35 @@
         "type",
         "price.available",
         "price.special",
-        "stock.available"
+        "stock.available",
+        "connectors"
       ],
       "displayColumn": true,
       "hideable": false,
       "center": true,
       "actions": [
         {
-          "tooltip": "Ver producto",
+          "tooltip": "Ver",
           "renderer": "button-view",
           "url": "/products/{id}",
           "external_url": false,
           "permission": "PRODUCT_SHOW"
         },
         {
-          "tooltip": "Editar producto",
+          "tooltip": "Editar",
           "renderer": "button-edit",
           "url": "/products/{id}/edit",
           "external_url": false,
           "permission": "PRODUCT_UPDATE"
         },
         {
-          "tooltip": "Copiar producto",
+          "tooltip": "Sincronizar",
+          "renderer": "button-sync",
+          "icon": "ri-loop-right-line",
+          "permission": "PRODUCT_UPDATE"
+        },
+        {
+          "tooltip": "Duplicar",
           "renderer": "button-copy",
           "icon": "ri-file-copy-line",
           "permission": "PRODUCT_CREATE"
@@ -461,6 +468,17 @@
           "renderer": "button-stock",
           "icon": "ri-inbox-archive-line",
           "permission": "PRODUCT_UPDATE"
+        },
+        {
+          "tooltip": "Activar / desactivar",
+          "renderer": "button-active",
+          "permission": "PRODUCT_UPDATE"
+        },
+        {
+          "tooltip": "Eliminar",
+          "renderer": "button-delete",
+          "icon": "ri-delete-bin-line",
+          "permission": "PRODUCT_DELETE"
         }
       ]
     }

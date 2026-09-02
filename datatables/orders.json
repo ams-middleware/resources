@@ -459,21 +459,21 @@
       "center": true,
       "actions": [
         {
-          "tooltip": "Ver pedido",
+          "tooltip": "Ver",
           "renderer": "button-view",
           "url": "/orders/{id}",
           "external_url": false,
           "permission": "ORDER_SHOW"
         },
         {
-          "tooltip": "Editar pedido",
+          "tooltip": "Editar",
           "renderer": "button-edit",
           "url": "/orders/edit/{id}",
           "external_url": false,
           "permission": "ORDER_UPDATE"
         },
         {
-          "tooltip": "Procesar pedido",
+          "tooltip": "Procesar",
           "renderer": "button-process",
           "permission": "ORDER_UPDATE"
         }
