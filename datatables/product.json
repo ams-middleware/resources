@@ -50,10 +50,12 @@
       "width": 90,
       "center": true,
       "badge": {
-        "variants": {},
+        "variants": {
+          "simple": { "color": "secondary" },
+          "base": { "color": "info" }
+        },
         "default": {
-          "color": "info",
-          "uppercase": true
+          "color": "secondary"
         }
       }
     },
