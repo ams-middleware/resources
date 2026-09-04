@@ -351,6 +351,45 @@
         "lt",
         "lte"
       ]
+    },
+    {
+      "field": "connectors_failed_count",
+      "data_type": "int",
+      "expression": {
+        "$size": {
+          "$filter": {
+            "input": {
+              "$ifNull": [
+                "$connectors",
+                []
+              ]
+            },
+            "as": "c",
+            "cond": {
+              "$ne": [
+                {
+                  "$ifNull": [
+                    "$$c.sync_error",
+                    null
+                  ]
+                },
+                null
+              ]
+            }
+          }
+        }
+      },
+      "input_type": "text",
+      "display_name": "conectores con error",
+      "translation_key": "connectors failed count",
+      "operators": [
+        "eq",
+        "ne",
+        "gt",
+        "gte",
+        "lt",
+        "lte"
+      ]
     }
   ]
 }
