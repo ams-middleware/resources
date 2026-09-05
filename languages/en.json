@@ -927,6 +927,7 @@
   "Disable connector": "Disable connector",
   "Enable connector": "Enable connector",
   "Connectors": "Connectors",
+  "connectors failed count": "connectors with errors",
   "Connector not found": "Connector not found",
   "Back to connectors": "Back to connectors",
   "Network error": "Network error",

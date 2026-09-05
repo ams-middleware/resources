@@ -924,6 +924,7 @@
   "Disable connector": "Deshabilitar conector",
   "Enable connector": "Habilitar conector",
   "Connectors": "Conectores",
+  "connectors failed count": "conectores con error",
   "Connector not found": "Conector no encontrado",
   "Back to connectors": "Volver a conectores",
   "Network error": "Error de red",
