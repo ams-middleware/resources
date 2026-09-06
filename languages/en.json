@@ -989,5 +989,6 @@
   "validation.discount.amount_zero": "The discount amount cannot be 0",
   "validation.discount.price_zero": "The discount price cannot be 0",
   "validation.discount.percentage_zero": "The discount percentage cannot be 0",
-  "validation.product.unresolved": "The product exists but could not be resolved"
+  "validation.product.unresolved": "The product exists but could not be resolved",
+  "validation.client.country_code_missing": "The client does not have a country code configured"
 }
