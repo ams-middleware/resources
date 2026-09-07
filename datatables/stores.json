@@ -1,0 +1,183 @@
+{
+  "columns": [
+    {
+      "id": "name",
+      "labelKey": "Store col name",
+      "renderer": "storeName",
+      "fields": [
+        "name"
+      ],
+      "requestOnlyFields": [
+        "uid",
+        "acronym",
+        "color"
+      ],
+      "width": 260,
+      "hideable": false
+    },
+    {
+      "id": "uid",
+      "labelKey": "Store col uid",
+      "renderer": "clipboard",
+      "path": "uid",
+      "width": 130,
+      "defaultHidden": true
+    },
+    {
+      "id": "acronym",
+      "labelKey": "Store col acronym",
+      "renderer": "clipboard",
+      "path": "acronym",
+      "width": 100,
+      "center": true,
+      "defaultHidden": true
+    },
+    {
+      "id": "client_uid",
+      "labelKey": "Store col client",
+      "renderer": "text",
+      "path": "client_uid",
+      "width": 110,
+      "center": true,
+      "defaultHidden": true
+    },
+    {
+      "id": "data_base",
+      "labelKey": "Store col database",
+      "visibilityLabelKey": "Store col database vis",
+      "renderer": "storeDb",
+      "path": "data_base",
+      "width": 150
+    },
+    {
+      "id": "split_order",
+      "labelKey": "Store col split",
+      "visibilityLabelKey": "Store col split vis",
+      "renderer": "badge",
+      "path": "split_order",
+      "width": 110,
+      "center": true,
+      "badge": {
+        "value": "split_order",
+        "variants": {
+          "true": {
+            "label": "Sí",
+            "color": "success"
+          }
+        },
+        "default": {
+          "label": "No",
+          "color": "secondary"
+        }
+      }
+    },
+    {
+      "id": "active",
+      "labelKey": "Store col active",
+      "renderer": "badge",
+      "path": "active",
+      "width": 100,
+      "center": true,
+      "badge": {
+        "value": "active",
+        "variants": {
+          "true": {
+            "label": "Sí",
+            "color": "success"
+          }
+        },
+        "default": {
+          "label": "No",
+          "color": "secondary"
+        }
+      }
+    },
+    {
+      "id": "country",
+      "labelKey": "Store col country",
+      "renderer": "titleCaseText",
+      "path": "country",
+      "width": 130,
+      "defaultHidden": true
+    },
+    {
+      "id": "country_code",
+      "labelKey": "Store col country code",
+      "visibilityLabelKey": "Store col country code vis",
+      "renderer": "text",
+      "path": "country_code",
+      "width": 90,
+      "center": true,
+      "defaultHidden": true
+    },
+    {
+      "id": "currency",
+      "labelKey": "Store col currency",
+      "renderer": "text",
+      "path": "currency",
+      "width": 90,
+      "center": true,
+      "defaultHidden": true
+    },
+    {
+      "id": "brands",
+      "labelKey": "Store col brands",
+      "renderer": "tagList",
+      "path": "brands",
+      "width": 220,
+      "defaultHidden": true
+    },
+    {
+      "id": "split_config",
+      "labelKey": "Store col split config",
+      "renderer": "tagList",
+      "path": "split_config",
+      "width": 200,
+      "defaultHidden": true
+    },
+    {
+      "id": "custom_order_validation",
+      "labelKey": "Store col custom validation",
+      "visibilityLabelKey": "Store col custom validation vis",
+      "renderer": "tagList",
+      "path": "custom_order_validation",
+      "width": 220,
+      "defaultHidden": true
+    },
+    {
+      "id": "public_folder_root",
+      "labelKey": "Store col folder",
+      "renderer": "text",
+      "path": "public_folder_root",
+      "width": 200,
+      "defaultHidden": true
+    },
+    {
+      "id": "created_at",
+      "labelKey": "Store col created",
+      "renderer": "datetime",
+      "path": "created_at",
+      "width": 160,
+      "center": true,
+      "defaultHidden": true
+    },
+    {
+      "id": "updated_at",
+      "labelKey": "Store col updated",
+      "renderer": "datetime",
+      "path": "updated_at",
+      "width": 160,
+      "center": true,
+      "defaultHidden": true
+    },
+    {
+      "id": "actions",
+      "labelKey": "Store col actions",
+      "renderer": "storeActions",
+      "width": 110,
+      "center": true,
+      "hideable": false,
+      "displayColumn": true
+    }
+  ]
+}
