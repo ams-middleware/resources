@@ -424,22 +424,6 @@
       ]
     },
     {
-      "field": "billing.address.full_address",
-      "data_type": "string",
-      "display_name": "fulladdress (billing.address)",
-      "translation_key": "fulladdress (billing.address)",
-      "operators": [
-        "eq",
-        "ne",
-        "exists",
-        "not_exists",
-        "null",
-        "not_null",
-        "like",
-        "regex"
-      ]
-    },
-    {
       "field": "courier.name",
       "data_type": "string",
       "display_name": "courier name (courier)",
@@ -485,20 +469,6 @@
         "not_null",
         "like",
         "regex"
-      ]
-    },
-    {
-      "field": "courier.same_day",
-      "data_type": "bool",
-      "display_name": "same day (courier)",
-      "translation_key": "same day (courier)",
-      "operators": [
-        "eq",
-        "ne",
-        "exists",
-        "not_exists",
-        "null",
-        "not_null"
       ]
     },
     {
@@ -835,6 +805,689 @@
       "values": [
         "active",
         "closed"
+      ]
+    },
+    {
+      "field": "courier.operation",
+      "data_type": "string",
+      "display_name": "modality (courier)",
+      "translation_key": "modality (courier)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex",
+        "in",
+        "nin"
+      ]
+    },
+    {
+      "field": "courier.operation_id",
+      "data_type": "string",
+      "display_name": "operation id (courier)",
+      "translation_key": "operation id (courier)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "field": "courier.price",
+      "data_type": "float",
+      "display_name": "price (courier)",
+      "translation_key": "price (courier)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "gt",
+        "gte",
+        "lt",
+        "lte"
+      ]
+    },
+    {
+      "field": "courier.emitted_at",
+      "data_type": "datetime",
+      "display_name": "emitted at (courier)",
+      "translation_key": "emitted at (courier)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "gt",
+        "gte",
+        "lt",
+        "lte",
+        "range"
+      ]
+    },
+    {
+      "field": "courier.connector.uid",
+      "data_type": "string",
+      "display_name": "connector (courier)",
+      "translation_key": "connector (courier)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex",
+        "in",
+        "nin"
+      ]
+    },
+    {
+      "field": "courier.office_name",
+      "data_type": "string",
+      "display_name": "pickup point (courier)",
+      "translation_key": "pickup point (courier)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "field": "emitted_by.connector.uid",
+      "data_type": "string",
+      "display_name": "connector (emitter)",
+      "translation_key": "connector (emitter)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex",
+        "in",
+        "nin"
+      ]
+    },
+    {
+      "field": "emitted_by.connector.integration.name",
+      "data_type": "string",
+      "display_name": "integration (emitter)",
+      "translation_key": "integration (emitter)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex",
+        "in",
+        "nin"
+      ]
+    },
+    {
+      "field": "emitted_by.connector.store.uid",
+      "data_type": "string",
+      "display_name": "store (emitter)",
+      "translation_key": "store (emitter)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex",
+        "in",
+        "nin"
+      ]
+    },
+    {
+      "field": "shipping.address.region",
+      "data_type": "string",
+      "display_name": "region (shipping)",
+      "translation_key": "region (shipping)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex",
+        "in",
+        "nin"
+      ]
+    },
+    {
+      "field": "shipping.address.uid",
+      "data_type": "string",
+      "display_name": "address id (shipping)",
+      "translation_key": "address id (shipping)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "field": "shipping.address.street",
+      "data_type": "string",
+      "display_name": "street (shipping)",
+      "translation_key": "street (shipping)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "field": "shipping.customer.email",
+      "data_type": "string",
+      "display_name": "email (shipping)",
+      "translation_key": "email (shipping)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "field": "shipping.customer.phone",
+      "data_type": "string",
+      "display_name": "phone (shipping)",
+      "translation_key": "phone (shipping)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "field": "shipping.customer.document_id",
+      "data_type": "string",
+      "display_name": "document (shipping)",
+      "translation_key": "document (shipping)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "field": "payments.transaction",
+      "data_type": "string",
+      "display_name": "transaction (payment)",
+      "translation_key": "transaction (payment)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "field": "payments.platform",
+      "data_type": "string",
+      "display_name": "platform (payment)",
+      "translation_key": "platform (payment)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex",
+        "in",
+        "nin"
+      ]
+    },
+    {
+      "field": "payments.method",
+      "data_type": "string",
+      "display_name": "method (payment)",
+      "translation_key": "method (payment)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex",
+        "in",
+        "nin"
+      ]
+    },
+    {
+      "field": "payments.bank",
+      "data_type": "string",
+      "display_name": "bank (payment)",
+      "translation_key": "bank (payment)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex",
+        "in",
+        "nin"
+      ]
+    },
+    {
+      "field": "payments.refund",
+      "data_type": "bool",
+      "display_name": "refund (payment)",
+      "translation_key": "refund (payment)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null"
+      ]
+    },
+    {
+      "field": "payments.total_price",
+      "data_type": "float",
+      "display_name": "amount (payment)",
+      "translation_key": "amount (payment)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "gt",
+        "gte",
+        "lt",
+        "lte"
+      ]
+    },
+    {
+      "field": "payments.connector.uid",
+      "data_type": "string",
+      "display_name": "connector (payment)",
+      "translation_key": "connector (payment)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex",
+        "in",
+        "nin"
+      ]
+    },
+    {
+      "field": "payments.connector.integration.name",
+      "data_type": "string",
+      "display_name": "integration (payment)",
+      "translation_key": "integration (payment)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex",
+        "in",
+        "nin"
+      ]
+    },
+    {
+      "field": "items.product.sku",
+      "data_type": "string",
+      "display_name": "sku (item)",
+      "translation_key": "sku (item)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex",
+        "in",
+        "nin"
+      ]
+    },
+    {
+      "field": "items.product.name",
+      "data_type": "string",
+      "display_name": "product (item)",
+      "translation_key": "product (item)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "field": "items.product.brand",
+      "data_type": "string",
+      "display_name": "brand (item)",
+      "translation_key": "brand (item)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex",
+        "in",
+        "nin"
+      ]
+    },
+    {
+      "field": "items.ref_code",
+      "data_type": "string",
+      "display_name": "reference code (item)",
+      "translation_key": "reference code (item)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "field": "completed_at",
+      "data_type": "datetime",
+      "display_name": "completed at",
+      "translation_key": "completed at",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "gt",
+        "gte",
+        "lt",
+        "lte",
+        "range"
+      ]
+    },
+    {
+      "field": "canceled_at",
+      "data_type": "datetime",
+      "display_name": "canceled at",
+      "translation_key": "canceled at",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "gt",
+        "gte",
+        "lt",
+        "lte",
+        "range"
+      ]
+    },
+    {
+      "field": "stock_reserved",
+      "data_type": "bool",
+      "display_name": "stock reserved",
+      "translation_key": "stock reserved",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null"
+      ]
+    },
+    {
+      "field": "external",
+      "data_type": "bool",
+      "display_name": "external",
+      "translation_key": "external",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null"
+      ]
+    },
+    {
+      "field": "total_payment",
+      "data_type": "float",
+      "display_name": "total payment",
+      "translation_key": "total payment",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "gt",
+        "gte",
+        "lt",
+        "lte"
+      ]
+    },
+    {
+      "field": "diff_to_pay",
+      "data_type": "float",
+      "display_name": "amount due",
+      "translation_key": "amount due",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "gt",
+        "gte",
+        "lt",
+        "lte"
+      ]
+    },
+    {
+      "field": "total_discount_price",
+      "data_type": "float",
+      "display_name": "discount",
+      "translation_key": "discount",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "gt",
+        "gte",
+        "lt",
+        "lte"
+      ]
+    },
+    {
+      "field": "total_discount_percentage",
+      "data_type": "float",
+      "display_name": "discount percentage",
+      "translation_key": "discount percentage",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "gt",
+        "gte",
+        "lt",
+        "lte"
+      ]
+    },
+    {
+      "field": "store.name",
+      "data_type": "string",
+      "display_name": "store name",
+      "translation_key": "store name",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex",
+        "in",
+        "nin"
+      ]
+    },
+    {
+      "field": "buyer_user.email",
+      "data_type": "string",
+      "display_name": "buyer email",
+      "translation_key": "buyer email",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
+      ]
+    },
+    {
+      "field": "workflow.definition_key",
+      "data_type": "string",
+      "display_name": "workflow definition",
+      "translation_key": "workflow definition",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex",
+        "in",
+        "nin"
+      ]
+    },
+    {
+      "field": "workflow.manual",
+      "data_type": "bool",
+      "display_name": "manual workflow",
+      "translation_key": "manual workflow",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null"
+      ]
+    },
+    {
+      "field": "workflow.business_key",
+      "data_type": "string",
+      "display_name": "business key (workflow)",
+      "translation_key": "business key (workflow)",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "like",
+        "regex"
       ]
     }
   ]

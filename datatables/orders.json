@@ -30,8 +30,26 @@
       "sortable": true
     },
     {
+      "id": "emitted_by_ref_code",
+      "labelKey": "Order col emitter ref code",
+      "renderer": "clipboard",
+      "path": "emitted_by.ref_code",
+      "width": 140,
+      "defaultHidden": true,
+      "visibilityLabelKey": "Order col emitter ref code vis"
+    },
+    {
+      "id": "parent_uid",
+      "labelKey": "Order col parent",
+      "renderer": "clipboard",
+      "path": "parent.uid",
+      "width": 130,
+      "defaultHidden": true
+    },
+    {
       "id": "type",
       "labelKey": "Order col type",
+      "visibilityLabelKey": "Order col type vis",
       "renderer": "orderType",
       "path": "type",
       "width": 110,
@@ -147,6 +165,14 @@
       "width": 140
     },
     {
+      "id": "workflow_definition",
+      "labelKey": "Order col workflow definition",
+      "renderer": "text",
+      "path": "workflow.definition_name",
+      "width": 180,
+      "defaultHidden": true
+    },
+    {
       "id": "customer",
       "labelKey": "Order col customer",
       "renderer": "customer",
@@ -186,6 +212,14 @@
       "width": 130
     },
     {
+      "id": "buyer_email",
+      "labelKey": "Order col buyer email",
+      "renderer": "clipboard",
+      "path": "buyer_user.email",
+      "width": 190,
+      "defaultHidden": true
+    },
+    {
       "id": "address",
       "labelKey": "address",
       "renderer": "address",
@@ -218,6 +252,50 @@
       ],
       "width": 180,
       "defaultHidden": true
+    },
+    {
+      "id": "shipping_city",
+      "labelKey": "Order col shipping city",
+      "renderer": "text",
+      "path": "shipping.address.city",
+      "width": 150,
+      "defaultHidden": true
+    },
+    {
+      "id": "shipping_region",
+      "labelKey": "Order col shipping region",
+      "renderer": "text",
+      "path": "shipping.address.region",
+      "width": 150,
+      "defaultHidden": true
+    },
+    {
+      "id": "shipping_region_code",
+      "labelKey": "Order col shipping region code",
+      "visibilityLabelKey": "Order col shipping region code vis",
+      "renderer": "text",
+      "path": "shipping.address.region_code",
+      "width": 100,
+      "center": true,
+      "defaultHidden": true
+    },
+    {
+      "id": "shipping_zip_code",
+      "labelKey": "Order col shipping zip",
+      "renderer": "clipboard",
+      "path": "shipping.address.zip_code",
+      "width": 100,
+      "center": true,
+      "defaultHidden": true
+    },
+    {
+      "id": "shipping_address_uid",
+      "labelKey": "Order col shipping address uid",
+      "renderer": "clipboard",
+      "path": "shipping.address.uid",
+      "width": 120,
+      "defaultHidden": true,
+      "visibilityLabelKey": "Order col shipping address uid vis"
     },
     {
       "id": "store.name",
@@ -343,14 +421,103 @@
       }
     },
     {
+      "id": "payment_integration",
+      "labelKey": "Order col payment integration",
+      "renderer": "pathList",
+      "path": "payments.connector.integration.name",
+      "width": 150,
+      "defaultHidden": true
+    },
+    {
+      "id": "payment_transaction",
+      "labelKey": "Order col payment transaction",
+      "renderer": "pathList",
+      "path": "payments.transaction",
+      "width": 160,
+      "defaultHidden": true
+    },
+    {
+      "id": "courier_name",
+      "labelKey": "Order col courier",
+      "renderer": "text",
+      "path": "courier.name",
+      "width": 130,
+      "defaultHidden": true,
+      "visibilityLabelKey": "Order col courier vis"
+    },
+    {
+      "id": "courier_operation",
+      "labelKey": "Order col courier operation",
+      "renderer": "badge",
+      "path": "courier.operation",
+      "width": 140,
+      "center": true,
+      "defaultHidden": true,
+      "badge": {
+        "variants": {
+          "delivery": {
+            "label": "Envío a domicilio",
+            "color": "info"
+          },
+          "delivery_same_day": {
+            "label": "Envío en el día",
+            "color": "primary"
+          },
+          "pickup-in-point": {
+            "label": "Retiro en punto",
+            "color": "warning"
+          }
+        },
+        "default": {
+          "color": "secondary"
+        }
+      }
+    },
+    {
       "id": "tracking",
       "labelKey": "Order col tracking",
+      "visibilityLabelKey": "Order col tracking vis",
       "renderer": "tracking",
       "center": true,
       "fields": [
         "courier"
       ],
       "width": 160
+    },
+    {
+      "id": "courier_tracking",
+      "labelKey": "Order col tracking number",
+      "visibilityLabelKey": "Order col tracking number vis",
+      "renderer": "clipboard",
+      "path": "courier.tracking",
+      "width": 140,
+      "defaultHidden": true
+    },
+    {
+      "id": "courier_operation_id",
+      "labelKey": "Order col courier operation id",
+      "visibilityLabelKey": "Order col courier operation id vis",
+      "renderer": "clipboard",
+      "path": "courier.operation_id",
+      "width": 130,
+      "defaultHidden": true
+    },
+    {
+      "id": "courier_price",
+      "labelKey": "Order col courier price",
+      "renderer": "currency",
+      "path": "courier.price",
+      "width": 120,
+      "defaultHidden": true
+    },
+    {
+      "id": "courier_emitted_at",
+      "labelKey": "Order col courier emitted at",
+      "renderer": "datetime",
+      "path": "courier.emitted_at",
+      "width": 160,
+      "center": true,
+      "defaultHidden": true
     },
     {
       "id": "chat_status",
@@ -406,6 +573,30 @@
       }
     },
     {
+      "id": "tags",
+      "labelKey": "Order col tags",
+      "renderer": "tagList",
+      "path": "tags",
+      "width": 160,
+      "defaultHidden": true
+    },
+    {
+      "id": "custom_tags",
+      "labelKey": "Order col custom tags",
+      "renderer": "tagList",
+      "path": "custom_tags",
+      "width": 160,
+      "defaultHidden": true
+    },
+    {
+      "id": "observation",
+      "labelKey": "Observation",
+      "renderer": "observation",
+      "path": "observation",
+      "defaultHidden": true,
+      "width": 220
+    },
+    {
       "id": "created_at",
       "labelKey": "Order col created",
       "renderer": "datetime",
@@ -429,6 +620,26 @@
       "defaultHidden": true
     },
     {
+      "id": "completed_at",
+      "labelKey": "Order col completed at",
+      "visibilityLabelKey": "Order col completed at vis",
+      "renderer": "datetime",
+      "path": "completed_at",
+      "width": 160,
+      "center": true,
+      "defaultHidden": true
+    },
+    {
+      "id": "canceled_at",
+      "labelKey": "Order col canceled at",
+      "visibilityLabelKey": "Order col canceled at vis",
+      "renderer": "datetime",
+      "path": "canceled_at",
+      "width": 160,
+      "center": true,
+      "defaultHidden": true
+    },
+    {
       "id": "updated_at",
       "labelKey": "Order col updated",
       "renderer": "datetime",
@@ -437,14 +648,6 @@
       ],
       "width": 160,
       "defaultHidden": true
-    },
-    {
-      "id": "observation",
-      "labelKey": "Observation",
-      "renderer": "observation",
-      "path": "observation",
-      "defaultHidden": true,
-      "width": 220
     },
     {
       "id": "actions",
