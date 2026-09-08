@@ -90,6 +90,7 @@
   "validation.product.duplicated": "O produto está duplicado",
   "validation.product.insufficient_stock": "Estoque insuficiente (real: {{real}}, reservado por este pedido: {{reserved}}, necessário: {{required}})",
   "validation.item.change_required": "O item deve ter uma troca associada",
+  "validation.item.not_in_parent_order": "O item não pertence ao pedido original",
   "validation.item.change_assignment_error": "Erro ao atribuir o produto de troca",
   "validation.item.discount_data_error": "Erro nos dados de desconto do produto",
   "validation.discount.applied": "O pedido tem um desconto aplicado",

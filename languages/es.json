@@ -979,6 +979,7 @@
   "validation.product.duplicated": "El producto está duplicado",
   "validation.product.insufficient_stock": "Stock insuficiente (real: {{real}}, reservado por esta orden: {{reserved}}, necesario: {{required}})",
   "validation.item.change_required": "El ítem debe tener un cambio asociado",
+  "validation.item.not_in_parent_order": "El ítem no pertenece a la orden original",
   "validation.item.change_assignment_error": "Error al asignar el producto de cambio",
   "validation.item.discount_data_error": "Error en los datos de descuento del producto",
   "validation.discount.applied": "La orden tiene un descuento aplicado",
