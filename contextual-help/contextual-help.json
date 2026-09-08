@@ -21,6 +21,13 @@
       "title": "Ayuda: atributos que participan en el mapeo",
       "placement": "inside-end",
       "emphasis": true
+    },
+    {
+      "selector": "[data-help=\"order-workflow\"]",
+      "url": "/configuracion/workflows",
+      "title": "Ayuda: etapas, reintentos y bloqueo de la orden",
+      "placement": "before",
+      "emphasis": true
     }
   ]
 }
