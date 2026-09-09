@@ -157,5 +157,22 @@
   "Store col folder": "Pasta pública",
   "Store col created": "Criada",
   "Store col updated": "Atualizada",
-  "Store col actions": "Ações"
+  "Store col actions": "Ações",
+  "t-step-name-initialization": "Inicialização",
+  "t-step-name-data-validation": "Validação de dados",
+  "t-step-name-data-normalization": "Normalização de dados",
+  "t-step-name-save-customer": "Salvar cliente",
+  "t-step-name-stock-reserve": "Reserva de estoque",
+  "t-step-name-generate-shipping": "Gerar envio",
+  "t-step-name-generate-shipping-oca": "Gerar envio OCA",
+  "t-step-name-send-to-tango": "Enviar para o Tango",
+  "t-step-name-send-to-integration": "Enviar para a integração",
+  "t-step-name-order-completed": "Pedido concluído",
+  "t-step-name-completed-order": "Pedido concluído",
+  "t-step-name-completed-workflow": "Workflow concluído",
+  "t-step-name-order-pending": "Pedido pendente",
+  "t-step-name-pending-to-receive": "Pendente de recebimento",
+  "t-step-name-pending-confirmation": "Pendente de confirmação",
+  "t-step-name-split-order": "Dividir pedido",
+  "t-step-name-separate-order": "Separar pedido"
 }

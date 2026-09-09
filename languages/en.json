@@ -1049,5 +1049,22 @@
   "Store col folder": "Public folder",
   "Store col created": "Created",
   "Store col updated": "Updated",
-  "Store col actions": "Actions"
+  "Store col actions": "Actions",
+  "t-step-name-initialization": "Initialization",
+  "t-step-name-data-validation": "Data validation",
+  "t-step-name-data-normalization": "Data normalization",
+  "t-step-name-save-customer": "Save customer",
+  "t-step-name-stock-reserve": "Stock reserve",
+  "t-step-name-generate-shipping": "Generate shipping",
+  "t-step-name-generate-shipping-oca": "Generate OCA shipping",
+  "t-step-name-send-to-tango": "Send to Tango",
+  "t-step-name-send-to-integration": "Send to integration",
+  "t-step-name-order-completed": "Order completed",
+  "t-step-name-completed-order": "Completed order",
+  "t-step-name-completed-workflow": "Completed workflow",
+  "t-step-name-order-pending": "Order pending",
+  "t-step-name-pending-to-receive": "Pending to receive",
+  "t-step-name-pending-confirmation": "Pending confirmation",
+  "t-step-name-split-order": "Split order",
+  "t-step-name-separate-order": "Separate order"
 }

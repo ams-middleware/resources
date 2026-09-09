@@ -1046,5 +1046,22 @@
   "Store col folder": "Carpeta pública",
   "Store col created": "Creada",
   "Store col updated": "Actualizada",
-  "Store col actions": "Acciones"
+  "Store col actions": "Acciones",
+  "t-step-name-initialization": "Inicialización",
+  "t-step-name-data-validation": "Validación de datos",
+  "t-step-name-data-normalization": "Normalización de datos",
+  "t-step-name-save-customer": "Guardar cliente",
+  "t-step-name-stock-reserve": "Reserva de stock",
+  "t-step-name-generate-shipping": "Generar envío",
+  "t-step-name-generate-shipping-oca": "Generar envío OCA",
+  "t-step-name-send-to-tango": "Enviar a Tango",
+  "t-step-name-send-to-integration": "Enviar a la integración",
+  "t-step-name-order-completed": "Orden completada",
+  "t-step-name-completed-order": "Orden completada",
+  "t-step-name-completed-workflow": "Workflow completado",
+  "t-step-name-order-pending": "Orden pendiente",
+  "t-step-name-pending-to-receive": "Pendiente de recepción",
+  "t-step-name-pending-confirmation": "Pendiente de confirmación",
+  "t-step-name-split-order": "Dividir orden",
+  "t-step-name-separate-order": "Separar orden"
 }
