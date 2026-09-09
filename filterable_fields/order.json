@@ -149,6 +149,14 @@
         "not_null",
         "like",
         "regex"
+      ],
+      "values": [
+        "pending",
+        "processing",
+        "completed",
+        "canceled",
+        "failed",
+        "deleted"
       ]
     },
     {
@@ -565,6 +573,14 @@
         "not_null",
         "like",
         "regex"
+      ],
+      "values": [
+        "processing",
+        "waiting",
+        "failed",
+        "completed",
+        "canceled",
+        "pending"
       ]
     },
     {
@@ -586,6 +602,14 @@
         "eq",
         "ne",
         "in"
+      ],
+      "values": [
+        "pending",
+        "processing",
+        "waiting",
+        "completed",
+        "failed",
+        "skipped"
       ]
     },
     {
