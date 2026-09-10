@@ -1066,5 +1066,7 @@
   "t-step-name-pending-to-receive": "Pending to receive",
   "t-step-name-pending-confirmation": "Pending confirmation",
   "t-step-name-split-order": "Split order",
-  "t-step-name-separate-order": "Separate order"
+  "t-step-name-separate-order": "Separate order",
+  "error.order.already_synchronized": "The order is already synchronized. Use the force option to pull it again.",
+  "error.order.no_connector_ref": "The order has no reference on connector %s: it cannot be requested from the platform."
 }

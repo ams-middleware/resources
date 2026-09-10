@@ -174,5 +174,7 @@
   "t-step-name-pending-to-receive": "Pendente de recebimento",
   "t-step-name-pending-confirmation": "Pendente de confirmação",
   "t-step-name-split-order": "Dividir pedido",
-  "t-step-name-separate-order": "Separar pedido"
+  "t-step-name-separate-order": "Separar pedido",
+  "error.order.already_synchronized": "O pedido já está sincronizado. Use a opção forçada para trazê-lo novamente.",
+  "error.order.no_connector_ref": "O pedido não tem referência no conector %s: não é possível solicitá-lo à plataforma."
 }

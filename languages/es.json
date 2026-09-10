@@ -1063,5 +1063,7 @@
   "t-step-name-pending-to-receive": "Pendiente de recepción",
   "t-step-name-pending-confirmation": "Pendiente de confirmación",
   "t-step-name-split-order": "Dividir orden",
-  "t-step-name-separate-order": "Separar orden"
+  "t-step-name-separate-order": "Separar orden",
+  "error.order.already_synchronized": "La orden ya está sincronizada. Usá la opción forzada para volver a traerla.",
+  "error.order.no_connector_ref": "La orden no tiene referencia en el conector %s: no se le puede pedir a la plataforma."
 }
