@@ -253,7 +253,7 @@
           "id": "scheduler",
           "title": "Scheduler",
           "link": "/scheduler",
-          "permission": "BACKOFFICE_ACCESS",
+          "permission": "SCHEDULER_LIST",
           "icon": "ri-time-line",
           "description": "Tareas cron gestionadas desde la base de datos.",
           "help_url": "https://docs.e-middleware.com/configuracion/scheduler"
