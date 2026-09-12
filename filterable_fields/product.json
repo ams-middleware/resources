@@ -330,6 +330,36 @@
       ]
     },
     {
+      "field": "connectors.ref_code",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "connectors ref_code",
+      "translation_key": "connectors",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists"
+      ]
+    },
+    {
+      "field": "connectors.active",
+      "data_type": "bool",
+      "input_type": "select",
+      "display_name": "connectors status",
+      "translation_key": "connectors",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists"
+      ],
+      "options": [
+        { "value": "true", "label": "Activo" },
+        { "value": "false", "label": "Inactivo" }
+      ]
+    },
+    {
       "field": "connectors_count",
       "data_type": "int",
       "expression": {
