@@ -338,6 +338,8 @@
       "operators": [
         "eq",
         "ne",
+        "null",
+        "not_null",
         "exists",
         "not_exists"
       ]
