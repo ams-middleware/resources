@@ -7,6 +7,7 @@
   "Discard": "Descartar",
   "error.not_found": "Não encontrado",
   "error.invalid_input": "Entrada inválida",
+  "error.platform_http_status": "a plataforma respondeu com um erro (HTTP %d)",
   "success.saved": "Salvo com sucesso",
   "error.permission.no_push_product": "Você não tem permissão para enviar produtos",
   "error.product.category_mapping_missing": "não existe mapeamento de categoria para a categoria do produto neste conector",

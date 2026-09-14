@@ -184,6 +184,7 @@
   "error.push_order_cancel": "Error cancelling order: %v",
   "error.push_order_complete": "Error marking order as completed: %v",
   "error.push_order_shipping": "Error sending shipping information: %v",
+  "error.platform_http_status": "the platform responded with an error (HTTP %d)",
   "error.push_product": "Error uploading product: %v",
   "error.push_product_inventory": "Error updating inventory: %v",
   "error.validate_product": "Product has invalid data",
