@@ -1,0 +1,128 @@
+{
+  "columns": [
+    {
+      "id": "name",
+      "labelKey": "Nombre",
+      "renderer": "feedName",
+      "fields": [
+        "name"
+      ],
+      "requestOnlyFields": [
+        "connector_uid",
+        "configured"
+      ]
+    },
+    {
+      "id": "strategy",
+      "labelKey": "Destino",
+      "renderer": "badge",
+      "fields": [
+        "strategy"
+      ],
+      "width": 150,
+      "badge": {
+        "variants": {
+          "google_merchant": {
+            "color": "primary",
+            "label": "Google Merchant"
+          }
+        },
+        "default": {
+          "color": "secondary"
+        }
+      }
+    },
+    {
+      "id": "active",
+      "labelKey": "Estado",
+      "renderer": "feedActive",
+      "fields": [
+        "active"
+      ],
+      "width": 110,
+      "center": true
+    },
+    {
+      "id": "format",
+      "labelKey": "Formato",
+      "renderer": "badge",
+      "fields": [
+        "config.format"
+      ],
+      "width": 100,
+      "center": true,
+      "badge": {
+        "variants": {
+          "xml": {
+            "color": "info",
+            "uppercase": true
+          },
+          "csv": {
+            "color": "secondary",
+            "uppercase": true
+          },
+          "tsv": {
+            "color": "secondary",
+            "uppercase": true
+          }
+        },
+        "default": {
+          "color": "info",
+          "label": "XML"
+        }
+      }
+    },
+    {
+      "id": "cron",
+      "labelKey": "Programación",
+      "renderer": "feedCron",
+      "fields": [
+        "config.cron"
+      ],
+      "width": 140
+    },
+    {
+      "id": "included",
+      "labelKey": "Productos",
+      "renderer": "feedCounts",
+      "fields": [
+        "last_run.included"
+      ],
+      "requestOnlyFields": [
+        "last_run.excluded",
+        "last_run.status"
+      ],
+      "width": 130,
+      "center": true
+    },
+    {
+      "id": "generated_at",
+      "labelKey": "Última generación",
+      "renderer": "datetime",
+      "fields": [
+        "last_run.generated_at"
+      ],
+      "width": 170
+    },
+    {
+      "id": "url",
+      "labelKey": "URL del feed",
+      "renderer": "clipboard",
+      "fields": [
+        "url"
+      ],
+      "width": 260
+    },
+    {
+      "id": "actions",
+      "labelKey": "",
+      "renderer": "feedActions",
+      "fields": [
+        "connector_uid"
+      ],
+      "width": 90,
+      "center": true,
+      "displayColumn": true
+    }
+  ]
+}

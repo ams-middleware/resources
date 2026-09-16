@@ -159,6 +159,26 @@
             "tags"
           ],
           "help_url": "https://docs.e-middleware.com/configuracion/reglas"
+        },
+        {
+          "id": "products-feeds",
+          "title": "Feeds",
+          "link": "/products/feeds",
+          "permission": "PRODUCT_FEED_LIST",
+          "icon": "ri-rss-line",
+          "description": "Archivos de catálogo que consumen Google, Meta y otras plataformas de publicidad.",
+          "keywords": [
+            "feed",
+            "google",
+            "merchant",
+            "shopping",
+            "xml",
+            "meta",
+            "tiktok",
+            "pinterest",
+            "publicidad"
+          ],
+          "help_url": "https://docs.e-middleware.com/operativa/feeds"
         }
       ]
     },

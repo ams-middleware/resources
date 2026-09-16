@@ -58,6 +58,11 @@
           "upload": {
             "color": "primary",
             "uppercase": true
+          },
+          "system": {
+            "color": "dark",
+            "uppercase": true,
+            "label": "SISTEMA"
           }
         },
         "default": {
