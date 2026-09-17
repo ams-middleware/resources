@@ -1,0 +1,42 @@
+{
+  "columns": [
+    {
+      "id": "name",
+      "labelKey": "Asistente",
+      "renderer": "aiName",
+      "fields": ["name"],
+      "requestOnlyFields": ["connector_uid"]
+    },
+    {
+      "id": "store_uid",
+      "labelKey": "Alcance",
+      "renderer": "aiScope",
+      "fields": ["store_uid"],
+      "width": 160
+    },
+    {
+      "id": "active",
+      "labelKey": "Estado",
+      "renderer": "aiActive",
+      "fields": ["active"],
+      "width": 110,
+      "center": true
+    },
+    {
+      "id": "prompt",
+      "labelKey": "Prompts",
+      "renderer": "aiPrompt",
+      "fields": ["prompt"],
+      "requestOnlyFields": ["legacy_prompt"],
+      "width": 220
+    },
+    {
+      "id": "priority",
+      "labelKey": "Prioridad",
+      "renderer": "text",
+      "fields": ["priority"],
+      "width": 110,
+      "center": true
+    }
+  ]
+}

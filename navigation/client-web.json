@@ -224,6 +224,26 @@
       "description": "Clientes y conversaciones."
     },
     {
+      "id": "ai",
+      "title": "AI",
+      "icon": "ri-robot-2-line",
+      "link": "/ai",
+      "permission": "AI_LIST",
+      "description": "Asistente virtual: redacción de los prompts que rigen al bot de atención.",
+      "keywords": [
+        "ia",
+        "ai",
+        "asistente",
+        "bot",
+        "chat",
+        "prompt",
+        "prompts",
+        "inteligencia artificial"
+      ],
+      "badge_name": "Nuevo",
+      "badge_color": "success"
+    },
+    {
       "id": "bulk",
       "title": "Gestión masiva",
       "icon": "ri-stack-line",
