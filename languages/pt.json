@@ -84,6 +84,7 @@
   "validation.order.total_payment_mismatch": "O pagamento não corresponde ao total do pedido",
   "validation.payment.platform_invalid": "A plataforma de pagamento está vazia ou é inválida",
   "validation.payment.transaction_invalid": "O número da transação não é válido",
+  "validation.payment.connector_missing": "O pagamento não está associado a nenhum conector",
   "validation.payment.transaction_too_short": "O número da transação deve ter mais de 4 dígitos",
   "validation.payment.transaction_duplicated": "Já existe um pedido com esse número de transação",
   "validation.payment.total_mismatch": "O total pago não corresponde",

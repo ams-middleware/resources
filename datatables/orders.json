@@ -446,10 +446,10 @@
       "visibilityLabelKey": "Order col courier vis"
     },
     {
-      "id": "courier_operation",
-      "labelKey": "Order col courier operation",
+      "id": "courier_modality",
+      "labelKey": "Order col courier modality",
       "renderer": "badge",
-      "path": "courier.operation",
+      "path": "courier.modality",
       "width": 140,
       "center": true,
       "defaultHidden": true,
@@ -494,11 +494,11 @@
       "defaultHidden": true
     },
     {
-      "id": "courier_operation_id",
-      "labelKey": "Order col courier operation id",
-      "visibilityLabelKey": "Order col courier operation id vis",
+      "id": "courier_carrier_code",
+      "labelKey": "Order col courier carrier code",
+      "visibilityLabelKey": "Order col courier carrier code vis",
       "renderer": "clipboard",
-      "path": "courier.operation_id",
+      "path": "courier.carrier_code",
       "width": 130,
       "defaultHidden": true
     },
