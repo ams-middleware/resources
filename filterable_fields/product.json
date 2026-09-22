@@ -165,6 +165,25 @@
       ]
     },
     {
+      "field": "stock.last_update",
+      "data_type": "datetime",
+      "display_name": "stock reserved",
+      "translation_key": "stock reserved",
+      "operators": [
+        "eq",
+        "ne",
+        "exists",
+        "not_exists",
+        "null",
+        "not_null",
+        "gt",
+        "gte",
+        "lt",
+        "lte",
+        "range"
+      ]
+    },
+    {
       "field": "name",
       "data_type": "string",
       "input_type": "text",
@@ -372,8 +391,14 @@
         "not_exists"
       ],
       "options": [
-        { "value": "true", "label": "Activo" },
-        { "value": "false", "label": "Inactivo" }
+        {
+          "value": "true",
+          "label": "Activo"
+        },
+        {
+          "value": "false",
+          "label": "Inactivo"
+        }
       ]
     },
     {

@@ -1347,25 +1347,6 @@
       ]
     },
     {
-      "field": "stock.last_update",
-      "data_type": "datetime",
-      "display_name": "stock reserved",
-      "translation_key": "stock reserved",
-      "operators": [
-        "eq",
-        "ne",
-        "exists",
-        "not_exists",
-        "null",
-        "not_null",
-        "gt",
-        "gte",
-        "lt",
-        "lte",
-        "range"
-      ]
-    },
-    {
       "field": "external",
       "data_type": "bool",
       "display_name": "external",
