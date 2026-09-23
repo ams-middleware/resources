@@ -451,7 +451,7 @@
           "tooltip": "Sincronizar",
           "renderer": "button-sync",
           "icon": "ri-loop-right-line",
-          "permission": "PRODUCT_UPDATE"
+          "permission": "PRODUCT_CONNECTOR_EXECUTE"
         },
         {
           "tooltip": "Duplicar",
