@@ -183,7 +183,6 @@
         "billing.customer.email",
         "billing.customer.phone",
         "billing.customer.document_type",
-        "billing.customer.sequence_nro",
         "billing.customer.observation"
       ]
     },
