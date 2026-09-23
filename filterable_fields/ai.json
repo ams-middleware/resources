@@ -1,0 +1,36 @@
+{
+  "fields": [
+    {
+      "field": "connector.name",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "Nombre",
+      "translation_key": "name",
+      "operators": ["like", "eq"]
+    },
+    {
+      "field": "store.name",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "Tienda",
+      "translation_key": "store",
+      "operators": ["like", "eq"]
+    },
+    {
+      "field": "connector.store_uid",
+      "data_type": "string",
+      "input_type": "text",
+      "display_name": "UID de tienda",
+      "translation_key": "store_uid",
+      "operators": ["eq"]
+    },
+    {
+      "field": "connector.active",
+      "data_type": "bool",
+      "input_type": "select",
+      "display_name": "Activo",
+      "translation_key": "active",
+      "operators": ["eq"]
+    }
+  ]
+}

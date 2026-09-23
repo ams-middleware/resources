@@ -229,7 +229,7 @@
       "icon": "ri-robot-2-line",
       "link": "/ai",
       "permission": "AI_LIST",
-      "description": "Asistente virtual: redacción de los prompts que rigen al bot de atención.",
+      "description": "Asistente virtual: instrucciones del bot de atención y qué productos y órdenes puede consultar.",
       "keywords": [
         "ia",
         "ai",

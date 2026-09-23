@@ -4,39 +4,121 @@
       "id": "name",
       "labelKey": "Asistente",
       "renderer": "aiName",
-      "fields": ["name"],
-      "requestOnlyFields": ["connector_uid"]
+      "fields": [
+        "name"
+      ],
+      "requestOnlyFields": [
+        "connector_uid"
+      ],
+      "hideable": false
     },
     {
-      "id": "store_uid",
-      "labelKey": "Alcance",
-      "renderer": "aiScope",
-      "fields": ["store_uid"],
-      "width": 160
+      "id": "store",
+      "labelKey": "Tienda",
+      "renderer": "aiStore",
+      "fields": [
+        "store_name",
+        "store_uid"
+      ],
+      "width": 180
+    },
+    {
+      "id": "model",
+      "labelKey": "Modelo",
+      "renderer": "text",
+      "fields": [
+        "model"
+      ],
+      "width": 200
     },
     {
       "id": "active",
       "labelKey": "Estado",
-      "renderer": "aiActive",
-      "fields": ["active"],
+      "renderer": "badge",
+      "fields": [
+        "active"
+      ],
       "width": 110,
-      "center": true
+      "center": true,
+      "badge": {
+        "variants": {
+          "true": {
+            "color": "success",
+            "label": "Activo"
+          },
+          "false": {
+            "color": "secondary",
+            "label": "Inactivo"
+          }
+        },
+        "default": {
+          "color": "secondary",
+          "label": "Inactivo"
+        }
+      }
     },
     {
       "id": "prompt",
-      "labelKey": "Prompts",
+      "labelKey": "Instrucciones",
       "renderer": "aiPrompt",
-      "fields": ["prompt"],
-      "requestOnlyFields": ["legacy_prompt"],
-      "width": 220
+      "fields": [
+        "prompt"
+      ],
+      "requestOnlyFields": [
+        "legacy_prompt"
+      ],
+      "width": 200,
+      "center": true
+    },
+    {
+      "id": "scope",
+      "labelKey": "Alcance",
+      "renderer": "aiScope",
+      "fields": [
+        "product_filters",
+        "order_filters"
+      ],
+      "width": 200,
+      "center": true
     },
     {
       "id": "priority",
       "labelKey": "Prioridad",
       "renderer": "text",
-      "fields": ["priority"],
-      "width": 110,
-      "center": true
+      "fields": [
+        "priority"
+      ],
+      "width": 100,
+      "center": true,
+      "defaultHidden": true
+    },
+    {
+      "id": "updated_at",
+      "labelKey": "Actualizado",
+      "renderer": "datetime",
+      "fields": [
+        "updated_at"
+      ],
+      "width": 160
+    },
+    {
+      "id": "actions",
+      "labelKey": "",
+      "renderer": "rowActions",
+      "requestOnlyFields": [
+        "connector_uid"
+      ],
+      "displayColumn": true,
+      "hideable": false,
+      "center": true,
+      "actions": [
+        {
+          "tooltip": "Ver asistente",
+          "renderer": "button-view",
+          "url": "/ai/{connector_uid}",
+          "permission": "AI_SHOW"
+        }
+      ]
     }
   ]
 }
