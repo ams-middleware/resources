@@ -1,0 +1,219 @@
+{
+  "_doc": "Herramientas del asistente de atención (ai-api). Se pueden editar libremente las descripciones (\"description\"). NO renombrar ni borrar herramientas ni parámetros: ai-api valida al arrancar que coincidan con lo que sabe ejecutar y, si no, no levanta. Se relee solo cada ~60 s. Ver docs_technical/propuesta/modulo-ai-client-web.md §20.",
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "consultar_catalogo",
+        "description": "Consulta el catálogo con los filtros que vos armes. Es la herramienta principal para responder por talle, color, categoría, precio o modelo. El sistema ya aplica una base que NO podés quitar (solo productos vendibles, dentro del alcance de este asistente y, salvo que pidas lo contrario, con stock); tus filtros se suman a esa base. Devuelve el total de coincidencias, la página y los productos con sus atributos y parents_uid. Si el total es mayor a lo que ves, hay más páginas: no concluyas que no hay.",
+        "parameters": {
+          "properties": {
+            "filtros": {
+              "description": "Condiciones que se SUMAN (AND) a la base del sistema. Cada una: {campo, operador, valor}.",
+              "items": {
+                "properties": {
+                  "campo": {
+                    "description": "name · sku · ref_codes.ean · category.uid · parents_uid · price.available · attributes.<uid>.value (uid de atributos_catalogo, ej. attributes.size.value)",
+                    "type": "string"
+                  },
+                  "operador": {
+                    "description": "eq · ne · in · nin · like · exists · gt · gte · lt · lte (según el campo)",
+                    "type": "string"
+                  },
+                  "valor": {
+                    "description": "Valor a comparar. Para in/nin, una lista."
+                  }
+                },
+                "required": [
+                  "campo",
+                  "operador"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "pagina": {
+              "description": "Página de resultados, desde 1.",
+              "type": "integer"
+            },
+            "solo_con_stock": {
+              "description": "Por defecto true. false incluye agotados.",
+              "type": "boolean"
+            },
+            "texto": {
+              "description": "Texto libre sobre nombre/descripción. Opcional.",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "valores_atributo",
+        "description": "Devuelve los valores que EXISTEN con stock de un atributo (ej. los talles o colores disponibles), con cuántos productos tiene cada uno. Usala antes de filtrar por un valor, para no suponer cómo está cargado (\"44\", \"44 AR\", \"10 US\"…). Acepta filtros extra para acotar (ej. los talles de un modelo).",
+        "parameters": {
+          "properties": {
+            "atributo": {
+              "description": "uid del atributo, ej. size, color, gender.",
+              "type": "string"
+            },
+            "filtros": {
+              "description": "Condiciones que se SUMAN (AND) a la base del sistema. Cada una: {campo, operador, valor}.",
+              "items": {
+                "properties": {
+                  "campo": {
+                    "description": "name · sku · ref_codes.ean · category.uid · parents_uid · price.available · attributes.<uid>.value (uid de atributos_catalogo, ej. attributes.size.value)",
+                    "type": "string"
+                  },
+                  "operador": {
+                    "description": "eq · ne · in · nin · like · exists · gt · gte · lt · lte (según el campo)",
+                    "type": "string"
+                  },
+                  "valor": {
+                    "description": "Valor a comparar. Para in/nin, una lista."
+                  }
+                },
+                "required": [
+                  "campo",
+                  "operador"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "atributo"
+          ],
+          "type": "object"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "atributos_catalogo",
+        "description": "Lista los atributos de los productos (uid y nombre) que se pueden usar en los filtros.",
+        "parameters": {
+          "properties": {},
+          "type": "object"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "buscar_ordenes",
+        "description": "Lista los pedidos del comprador YA identificado (escribió desde un email o WhatsApp verificado). Solo busca por la identidad que el canal probó: no acepta buscar por el email o documento de otra persona. Si el comprador no está identificado, o dice haber comprado con otros datos, usá verificar_identidad. Devuelve los pedidos con su uid, código, estado y un resumen.",
+        "parameters": {
+          "properties": {
+            "ref_code": {
+              "description": "Código de pedido, si el comprador quiere acotar la búsqueda a uno en particular. Opcional.",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "productos_disponibles",
+        "description": "Lista productos que HAY EN STOCK ahora, sin buscar por texto. Usala cuando `buscar_productos` no encuentre nada, o cuando el comprador pregunte en general qué hay disponible. Sirve para ofrecer alternativas concretas en vez de responder que no hay nada.",
+        "parameters": {
+          "properties": {},
+          "type": "object"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "buscar_productos",
+        "description": "Busca productos del catálogo por nombre, descripción o SKU. Usala cuando el comprador pregunte por un producto, su precio o si hay disponibilidad. NO requiere identificar al comprador: se puede responder a cualquiera. Devuelve nombre, precio vigente y si hay disponibilidad.",
+        "parameters": {
+          "properties": {
+            "consulta": {
+              "description": "Texto o SKU del producto que menciona el comprador.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "consulta"
+          ],
+          "type": "object"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "detalle_producto",
+        "description": "Trae el detalle de UN producto por su uid o SKU: atributos y las variantes (talles, colores) con el precio y la disponibilidad de cada una. Usala para responder qué talles o colores hay disponibles. Tampoco requiere identificar al comprador. Si el talle o color que pide el comprador NO figura, ofrecele `url_modelo`: es la página del modelo, donde ve todas las opciones. No armes vos una URL ni mandes la de otra variante.",
+        "parameters": {
+          "properties": {
+            "producto": {
+              "description": "uid o SKU del producto (el uid viene en los resultados de buscar_productos).",
+              "type": "string"
+            }
+          },
+          "required": [
+            "producto"
+          ],
+          "type": "object"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "verificar_identidad",
+        "description": "Verifica la identidad del comprador para poder mostrarle datos de SUS pedidos. Requiere DOS de estos tres datos: número de pedido, documento (DNI) y email de compra. Con uno solo NO alcanza. Llamala en cuanto tengas dos de los tres; si solo tenés uno, pedile amablemente otro al comprador. Si verifica, devuelve el pedido y ya podés usar detalle_orden con su uid. Si el comprador NO sabe su número de pedido, alcanza con documento + email: la tool devuelve TODOS sus pedidos para que él reconozca cuál es. En ese caso podés pasar además fecha_compra para ordenarlos por cercanía a ese día.",
+        "parameters": {
+          "properties": {
+            "documento": {
+              "description": "Documento / DNI del comprador.",
+              "type": "string"
+            },
+            "email": {
+              "description": "Email con el que hizo la compra.",
+              "type": "string"
+            },
+            "fecha_compra": {
+              "description": "Opcional. Fecha aproximada de la compra, si el comprador la menciona y no sabe su número de pedido (formato AAAA-MM-DD, DD/MM/AAAA o AAAA-MM). Ordena el listado por cercanía a ese día; no descarta pedidos.",
+              "type": "string"
+            },
+            "numero_pedido": {
+              "description": "Número o código de pedido que menciona el comprador (el nuestro o el de la plataforma donde compró).",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "detalle_orden",
+        "description": "Trae el detalle completo de UN pedido por su uid (el campo uid que viene en los resultados de buscar_ordenes). Usalo una vez que identificaste el pedido para responder con datos precisos (estado, items, tracking, etc.).",
+        "parameters": {
+          "properties": {
+            "order_uid": {
+              "description": "uid del pedido (campo uid devuelto por buscar_ordenes).",
+              "type": "string"
+            }
+          },
+          "required": [
+            "order_uid"
+          ],
+          "type": "object"
+        }
+      }
+    }
+  ]
+}

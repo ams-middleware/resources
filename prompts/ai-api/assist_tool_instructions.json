@@ -1,0 +1,9 @@
+{
+  "_doc": "Instrucciones que las herramientas del asistente (ai-api) le devuelven al MODELO junto con su resultado; el comprador no las ve. Todas las claves son obligatorias: si falta una, ai-api no levanta. Se relee solo cada ~60 s. Ver docs_technical/propuesta/modulo-ai-client-web.md §20.",
+  "identidad_no_verificada": "No puedo mostrar datos de un pedido sin verificar la identidad. Pedile al comprador DOS de estos tres datos: número de pedido, documento (DNI) y email con el que compró. Después llamá a verificar_identidad con los dos datos.",
+  "verificacion_agotada": "Se agotaron los intentos de verificación. Decile al comprador que lo vas a derivar a un operador humano y terminá tu mensaje con [HANDOFF].",
+  "datos_insuficientes": "Con un solo dato no alcanza. Pedile al comprador OTRO dato distinto (número de pedido, documento o email de compra) y volvé a llamar a verificar_identidad con los dos.",
+  "datos_no_coinciden": "Los datos no coinciden con ningún pedido. Sin confirmar ni negar si alguno de los datos existe, pedile al comprador que los revise. Nunca digas cuál de los dos falló.",
+  "identidad_verificada": "Identidad verificada. Ya podés usar detalle_orden con el uid de este pedido para responder la consulta.",
+  "identidad_verificada_lista": "Identidad verificada. El comprador no dio número de pedido, así que estos son TODOS sus pedidos. Mostráselos en una lista corta con fecha, monto y estado, y pedile que te diga cuál quiere consultar. Cuando elija, usá detalle_orden con el uid de ese pedido."
+}

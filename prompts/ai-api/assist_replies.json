@@ -1,0 +1,7 @@
+{
+  "_doc": "Respuestas fijas del asistente de atención al comprador (ai-api), para los casos en que NO responde el modelo. Todas las claves son obligatorias: si falta una, ai-api no levanta. Se relee solo cada ~60 s. Ver docs_technical/propuesta/modulo-ai-client-web.md §20.",
+  "verificacion_bloqueada": "Por seguridad no puedo seguir verificando tu identidad en esta conversación. Ya avisé a una persona del equipo para que revise tu caso y te responda por acá.",
+  "asistente_inactivo": "En este momento el asistente virtual no está disponible. Podés escribirnos más tarde o, si preferís, te comunico con una persona del equipo: respondé \"quiero hablar con una persona\".",
+  "asistente_inactivo_derivado": "Listo, le pasé tu consulta a una persona del equipo. Te va a responder por este mismo canal.",
+  "dato_no_disponible": "(dato no disponible)"
+}
