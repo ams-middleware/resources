@@ -149,6 +149,54 @@
         "lte",
         "range"
       ]
+    },
+    {
+      "field": "classification.level",
+      "data_type": "string",
+      "input_type": "select",
+      "display_name": "clasificación",
+      "translation_key": "classification",
+      "options": [
+        {
+          "value": "trusted",
+          "label": "Confiable"
+        },
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "watch",
+          "label": "En observación"
+        },
+        {
+          "value": "blocked",
+          "label": "Bloqueado"
+        }
+      ],
+      "operators": [
+        "eq",
+        "ne",
+        "in",
+        "nin",
+        "exists",
+        "not_exists"
+      ]
+    },
+    {
+      "field": "custom_tags",
+      "data_type": "[]string",
+      "input_type": "text",
+      "display_name": "etiquetas",
+      "translation_key": "custom_tags",
+      "operators": [
+        "eq",
+        "ne",
+        "in",
+        "nin",
+        "exists",
+        "not_exists"
+      ]
     }
   ]
 }

@@ -192,7 +192,7 @@
           "id": "crm-customers",
           "title": "Clientes",
           "link": "/crm/customers",
-          "permission": "ORDER_LIST",
+          "permission": "CUSTOMER_LIST",
           "icon": "ri-user-3-line",
           "description": "Clientes finales y su historial de órdenes.",
           "keywords": [
@@ -297,6 +297,19 @@
           "icon": "ri-time-line",
           "description": "Tareas cron gestionadas desde la base de datos.",
           "help_url": "https://docs.e-middleware.com/configuracion/scheduler"
+        },
+        {
+          "id": "tags",
+          "title": "Etiquetas",
+          "link": "/tags",
+          "permission": "TAG_LIST",
+          "icon": "ri-price-tag-3-line",
+          "description": "Ícono y color de las etiquetas de clientes, órdenes, productos y multimedia.",
+          "keywords": [
+            "tags",
+            "etiquetas",
+            "labels"
+          ]
         }
       ]
     },

@@ -29,6 +29,10 @@
       "renderer": "fullName",
       "fields": [
         "full_name"
+      ],
+      "requestOnlyFields": [
+        "first_name",
+        "last_name"
       ]
     },
     {
@@ -43,6 +47,19 @@
       "renderer": "text",
       "path": "phone",
       "width": 130
+    },
+    {
+      "id": "classification",
+      "labelKey": "Clasificación",
+      "renderer": "custClassification",
+      "path": "classification.level",
+      "width": 140
+    },
+    {
+      "id": "custom_tags",
+      "labelKey": "Etiquetas",
+      "renderer": "custTags",
+      "path": "custom_tags"
     },
     {
       "id": "actions",

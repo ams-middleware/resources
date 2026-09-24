@@ -969,6 +969,7 @@
   "validation.address.region_code_mismatch": "Province “{{region}}” does not match code “{{region_code}}”",
   "validation.address.not_found": "Address {{uid}} is not in the catalog",
   "validation.customer.name_mismatch": "Billing name «{{name}}» does not match customer «{{registered}}» registered with document {{document}}. Fix the order and retry",
+  "validation.customer.blocked": "Customer {{customer}} is blocked: {{reason}}. Review the order and approve it if appropriate",
   "validation.address.zip_region_invalid": "Postal code {{zip_code}} does not match province “{{region}}”",
   "validation.customer.not_exist": "There is no customer information",
   "validation.billing.not_exist": "There is no billing information",

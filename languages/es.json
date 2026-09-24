@@ -966,6 +966,7 @@
   "validation.address.region_code_mismatch": "La provincia «{{region}}» no corresponde al código «{{region_code}}»",
   "validation.address.not_found": "La dirección {{uid}} no existe en el catálogo",
   "validation.customer.name_mismatch": "El nombre de facturación «{{name}}» no coincide con el cliente «{{registered}}» registrado con el documento {{document}}. Corregí la orden y reintentá",
+  "validation.customer.blocked": "El cliente {{customer}} está bloqueado: {{reason}}. Revisá la orden y aprobala si corresponde",
   "validation.address.zip_region_invalid": "El código postal {{zip_code}} no corresponde a la provincia «{{region}}»",
   "validation.customer.not_exist": "No hay datos del cliente",
   "validation.billing.not_exist": "No hay datos de facturación",
