@@ -1,0 +1,15 @@
+# Avisa a control-api (dev) que refresque los recursos; automático. Ver docs_technical/propuesta/ci-propio-woodpecker.md
+when:
+  - event: push
+    branch: dev
+  - event: manual
+    branch: dev
+
+steps:
+  - name: notify-control-api
+    image: curlimages/curl:8.10.1
+    environment:
+      APP_KEY: { from_secret: NOTIFY_APP_KEY }
+    commands:
+      - |
+        curl -fsS -X POST "https://control-api.e-middleware.dev/notify/update-resources" -H 'accept: application/json' -H "app_key: $$APP_KEY" -d ''

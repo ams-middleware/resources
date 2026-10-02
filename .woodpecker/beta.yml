@@ -1,0 +1,13 @@
+# Avisa a control-api (beta) que refresque los recursos; manual desde la UI (Ejecutar). Ver docs_technical/propuesta/ci-propio-woodpecker.md
+when:
+  - event: manual
+    branch: beta
+
+steps:
+  - name: notify-control-api
+    image: curlimages/curl:8.10.1
+    environment:
+      APP_KEY: { from_secret: NOTIFY_APP_KEY }
+    commands:
+      - |
+        curl -fsS -X POST "https://control-api.beta.e-middleware.com/notify/update-resources" -H 'accept: application/json' -H "app_key: $$APP_KEY" -d ''

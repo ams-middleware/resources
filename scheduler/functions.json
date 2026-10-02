@@ -5,13 +5,6 @@
     "default_cron": "*/15 * * * *",
     "args": [
       {
-        "name": "client_uid",
-        "label": "Cliente (UID)",
-        "type": "string",
-        "required": false,
-        "description": "Procesar los conectores ecommerce de este cliente. ⚠️ Vacío Y sin connector_uid = TODOS los clientes."
-      },
-      {
         "name": "connector_uid",
         "label": "Connector (UID)",
         "type": "string",
@@ -50,28 +43,13 @@
     "name": "reconcile_reserved_stock",
     "description": "Reconcilia stock reservado de productos desde las órdenes",
     "default_cron": "*/15 * * * *",
-    "args": [
-      {
-        "name": "client_uid",
-        "label": "Cliente (UID)",
-        "type": "string",
-        "required": false,
-        "description": "Procesar solo este cliente. Vacío = todos."
-      }
-    ]
+    "args": []
   },
   {
     "name": "sync_stock_weekly",
     "description": "Sync stock semanal",
     "default_cron": "0 2 * * 1",
     "args": [
-      {
-        "name": "client_uid",
-        "label": "Cliente (UID)",
-        "type": "string",
-        "required": false,
-        "description": "Procesar solo este cliente. Vacío = todos."
-      },
       {
         "name": "days",
         "label": "Días",
@@ -84,42 +62,19 @@
     "name": "archive_orders",
     "description": "Archiva órdenes antiguas (>1 año) a BD por año",
     "default_cron": "0 3 1 * *",
-    "args": [
-      {
-        "name": "client_uid",
-        "label": "Cliente (UID)",
-        "type": "string",
-        "required": false,
-        "description": "Procesar solo este cliente. Vacío = todos."
-      }
-    ]
+    "args": []
   },
   {
     "name": "invoice_reminders",
     "description": "Envía recordatorios de facturas pendientes/vencidas y actualiza estados",
     "default_cron": "0 9 * * *",
-    "args": [
-      {
-        "name": "client_uid",
-        "label": "Cliente (UID)",
-        "type": "string",
-        "required": false,
-        "description": "Procesar solo este cliente. Vacío = todos."
-      }
-    ]
+    "args": []
   },
   {
     "name": "optimize_product_media",
     "description": "Optimiza imágenes de product_media pendientes",
     "default_cron": "0 22 * * 0",
     "args": [
-      {
-        "name": "client_uid",
-        "label": "Cliente (UID)",
-        "type": "string",
-        "required": false,
-        "description": "Procesar solo este cliente. Vacío = todos."
-      },
       {
         "name": "limit",
         "label": "Límite",
@@ -134,13 +89,6 @@
     "default_cron": "0 4 */14 * *",
     "args": [
       {
-        "name": "client_uid",
-        "label": "Cliente (UID)",
-        "type": "string",
-        "required": false,
-        "description": "Procesar solo este cliente. Vacío = todos."
-      },
-      {
         "name": "months",
         "label": "Meses a conservar",
         "type": "int",
@@ -153,13 +101,6 @@
     "description": "Limpieza de bulk_processor",
     "default_cron": "0 3 * * 0",
     "args": [
-      {
-        "name": "client_uid",
-        "label": "Cliente (UID)",
-        "type": "string",
-        "required": false,
-        "description": "Procesar solo este cliente. Vacío = todos."
-      },
       {
         "name": "months",
         "label": "Meses a conservar",
