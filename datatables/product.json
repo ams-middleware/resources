@@ -343,7 +343,7 @@
     {
       "id": "tags",
       "labelKey": "Etiquetas",
-      "renderer": "tagList",
+      "renderer": "tags",
       "fields": [
         "tags"
       ],
@@ -354,7 +354,7 @@
     {
       "id": "custom_tags",
       "labelKey": "Etiquetas propias",
-      "renderer": "tagList",
+      "renderer": "tags",
       "fields": [
         "custom_tags"
       ],

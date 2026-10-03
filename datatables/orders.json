@@ -574,7 +574,7 @@
     {
       "id": "tags",
       "labelKey": "Order col tags",
-      "renderer": "tagList",
+      "renderer": "tags",
       "path": "tags",
       "width": 160,
       "defaultHidden": true
@@ -582,7 +582,7 @@
     {
       "id": "custom_tags",
       "labelKey": "Order col custom tags",
-      "renderer": "tagList",
+      "renderer": "tags",
       "path": "custom_tags",
       "width": 160,
       "defaultHidden": true
