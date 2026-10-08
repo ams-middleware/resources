@@ -1,15 +1,6 @@
 {
   "columns": [
     {
-      "id": "value",
-      "labelKey": "Valor",
-      "renderer": "mainValue",
-      "fields": [
-        "value"
-      ],
-      "hideable": false
-    },
-    {
       "id": "attribute_uid",
       "labelKey": "Atributo",
       "renderer": "attrRef",
@@ -28,14 +19,54 @@
       "width": 200
     },
     {
-      "id": "mappings_count",
-      "labelKey": "Mapeos",
-      "renderer": "mappingsCount",
+      "id": "connector",
+      "labelKey": "Conector",
+      "renderer": "mappingConnector",
       "requestOnlyFields": [
         "external"
       ],
       "displayColumn": true,
-      "width": 110,
+      "width": 200
+    },
+    {
+      "id": "value",
+      "labelKey": "Valor interno",
+      "renderer": "mainValue",
+      "fields": [
+        "value"
+      ],
+      "hideable": false
+    },
+    {
+      "id": "external_value",
+      "labelKey": "Id externo",
+      "renderer": "externalValue",
+      "requestOnlyFields": [
+        "external"
+      ],
+      "displayColumn": true,
+      "hideable": false,
+      "width": 240
+    },
+    {
+      "id": "external_label",
+      "labelKey": "Valor externo",
+      "renderer": "externalLabel",
+      "requestOnlyFields": [
+        "external"
+      ],
+      "displayColumn": true,
+      "width": 220
+    },
+    {
+      "id": "mapping_status",
+      "labelKey": "Estado",
+      "renderer": "mappingStatus",
+      "requestOnlyFields": [
+        "external"
+      ],
+      "displayColumn": true,
+      "width": 150,
       "center": true
     },
     {

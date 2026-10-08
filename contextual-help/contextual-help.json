@@ -28,6 +28,13 @@
       "title": "Ayuda: etapas, reintentos y bloqueo de la orden",
       "placement": "inside-end",
       "emphasis": true
+    },
+    {
+      "selector": "[data-help=\"product-attribute-value-identity\"]",
+      "url": "/operativa/atributos",
+      "title": "Más información: valores de atributo",
+      "placement": "inside-end",
+      "emphasis": true
     }
   ]
 }
