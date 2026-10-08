@@ -136,6 +136,14 @@
           "help_url": "https://docs.e-middleware.com/operativa/atributos"
         },
         {
+          "id": "products-value-mapping",
+          "title": "Mapeo de valores",
+          "link": "/products/value-mapping",
+          "permission": "PRODUCT_UPDATE",
+          "icon": "ri-translate-2",
+          "description": "Traducí en lote los valores de un atributo a los de cada plataforma."
+        },
+        {
           "id": "products-category-mapping",
           "title": "Categorías",
           "link": "/products/category-mapping",
