@@ -46,6 +46,12 @@
     "args": []
   },
   {
+    "name": "reconcile_product_tags",
+    "description": "Reconcilia los tags de sistema de productos (stock y nuevo)",
+    "default_cron": "0 4 * * *",
+    "args": []
+  },
+  {
     "name": "sync_stock_weekly",
     "description": "Sync stock semanal",
     "default_cron": "0 2 * * 1",
