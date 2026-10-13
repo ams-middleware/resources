@@ -25,7 +25,7 @@
       "dynamic_field": false
     },
     {
-      "field": "multimedia_uid",
+      "field": "multimedia.uid",
       "data_type": "string",
       "input_type": "text",
       "display_name": "multimedia",
