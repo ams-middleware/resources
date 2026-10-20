@@ -10,4 +10,4 @@ steps:
       APP_KEY: { from_secret: NOTIFY_APP_KEY }
     commands:
       - |
-        curl -fsS -X POST "https://jmc-control-api.e-middleware.ar/notify/update-resources" -H 'accept: application/json' -H "app_key: $$APP_KEY" -d ''
+        curl -fsS -X POST "https://control-api.e-middleware.ar/notify/update-resources" -H 'accept: application/json' -H "app_key: $$APP_KEY" -d ''
