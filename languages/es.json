@@ -186,6 +186,7 @@
   "error.push_order_shipping": "Error al enviar información de envío: %v",
   "error.platform_http_status": "la plataforma respondió con un error (HTTP %d)",
   "error.push_product": "Error al subir el producto: %v",
+  "error.activate_after_push": "El producto se publicó, pero no se pudo activar",
   "error.push_product_inventory": "Error al actualizar el inventario: %v",
   "error.validate_product": "el producto tiene datos no válidos",
   "Errors": "errores",
