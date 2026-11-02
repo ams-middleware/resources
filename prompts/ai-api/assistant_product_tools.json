@@ -1,0 +1,27 @@
+{
+  "_doc": "Herramientas del asistente de carga de producto (ai-api). Se pueden editar las descripciones; los nombres y parámetros tienen que coincidir con assistantToolParams.",
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "leer_url",
+        "description": "Lee una página pública de producto para usarla en la propuesta. Solo acepta URLs que el operador escribió en esta conversación.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "url": { "type": "string", "description": "La URL tal como la escribió el operador" }
+          },
+          "required": ["url"]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "proponer_atributos",
+        "description": "Arma la propuesta de atributos con lo que dijo el operador y las páginas leídas, y se la muestra para que la revise. Devuelve qué se propuso y qué quedó sin dato.",
+        "parameters": { "type": "object", "properties": {} }
+      }
+    }
+  ]
+}
