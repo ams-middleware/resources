@@ -1,5 +1,5 @@
 {
-  "_doc": "APIs de control-api que el asistente puede consultar, y para qué sirve cada una. Para sumar un dato o un módulo, se agrega una línea acá; no hace falta código. Solo lecturas: GET, o POST que termine en /search o /logs. Antes de sumar un módulo, revisar qué datos personales o claves devuelve (hiddenAPIKeys en ai-api).",
+  "_doc": "APIs de control-api que el asistente puede usar, y para qué sirve cada una. Para sumar un dato o una acción, se agrega una entrada acá; no hace falta código. Las lecturas son GET, o POST que termine en /search o /logs. Lo que cambia datos lleva \"write\": true y solo corre si el operador lo confirma. Antes de sumar una API, verificar en control-api que valide permisos y qué hace con los campos que no recibe, y qué datos personales o claves devuelve (hiddenAPIKeys en ai-api).",
   "endpoints": [
     {
       "method": "GET",
@@ -55,6 +55,32 @@
       "method": "GET",
       "path": "/v3/product/media/{uid}",
       "use": "Set de imágenes por su uid: cuántas son, sus datos y su orden. No permite ver la imagen."
+    },
+    {
+      "method": "GET",
+      "path": "/v3/product/{uid}/propagation",
+      "use": "Vista previa de qué atributos y nombre de un producto base se pueden propagar a sus variaciones. Usala antes de proponer una propagación."
+    },
+    {
+      "method": "PUT",
+      "path": "/v3/product/{uid}/active",
+      "write": true,
+      "use": "Activa o desactiva el producto en uno o en todos sus conectores. Con platforms=true también lo aplica en las plataformas, como VTEX; sin eso, solo cambia la relación en el sistema. Sin connector_uid afecta a todos.",
+      "body": "{\"active\":true,\"connector_uid\":\"<uid>\",\"platforms\":true}"
+    },
+    {
+      "method": "PUT",
+      "path": "/v3/product/{uid}/configuration",
+      "write": true,
+      "use": "Prende o apaga la propagación automática del producto base a sus variaciones.",
+      "body": "{\"auto_propagate\":true}"
+    },
+    {
+      "method": "POST",
+      "path": "/v3/product/{uid}/propagation",
+      "write": true,
+      "use": "Propaga atributos y nombre de un producto base a sus variaciones. Afecta a varios productos.",
+      "body": "{\"attributes\":[\"<uid del atributo>\"],\"name\":true}"
     }
   ]
 }

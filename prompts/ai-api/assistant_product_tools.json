@@ -27,7 +27,7 @@
       "type": "function",
       "function": {
         "name": "consultar_api",
-        "description": "Consulta una API del sistema de la lista de APIs disponibles, con los permisos del operador. Solo lee.",
+        "description": "Consulta una API de lectura de la lista, con los permisos del operador.",
         "parameters": {
           "type": "object",
           "properties": {
@@ -37,6 +37,24 @@
             "cuerpo": { "type": "object", "description": "Cuerpo de un POST" }
           },
           "required": ["metodo", "ruta"]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "proponer_accion",
+        "description": "Propone una API de la lista marcada como que cambia datos. No la ejecuta: le muestra al operador una tarjeta para que confirme.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "metodo": { "type": "string", "description": "Método, como figura en la lista" },
+            "ruta": { "type": "string", "description": "Ruta de la lista con sus {parámetros} reemplazados, sin consulta" },
+            "consulta": { "type": "object", "description": "Parámetros de consulta" },
+            "cuerpo": { "type": "object", "description": "Cuerpo del pedido" },
+            "resumen": { "type": "string", "description": "Qué va a pasar, en una frase para el operador. Con nombres de producto y conector, sin términos técnicos" }
+          },
+          "required": ["metodo", "ruta", "resumen"]
         }
       }
     }
