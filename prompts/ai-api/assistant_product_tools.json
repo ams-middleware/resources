@@ -19,8 +19,22 @@
       "type": "function",
       "function": {
         "name": "proponer_atributos",
-        "description": "Arma la propuesta de atributos con lo que dijo el operador y las páginas leídas, y se la muestra para que la revise. Devuelve qué se propuso y qué quedó sin dato.",
+        "description": "Arma la propuesta de atributos con lo ya cargado en el producto, lo que dijo el operador y las páginas leídas, y se la muestra para que la revise. Devuelve qué se propuso y qué quedó sin dato.",
         "parameters": { "type": "object", "properties": {} }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "ver_requisitos_publicacion",
+        "description": "Consulta en el sistema qué atributos exige cada conector de publicación para la categoría de este producto y cuáles le faltan. Devuelve solo atributos; no dice si la publicación va a funcionar.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "plataforma": { "type": "string", "description": "Plataforma, tienda o conector por el que pregunta, por ejemplo vtex. Vacío para ver todos." }
+          },
+          "required": ["plataforma"]
+        }
       }
     }
   ]
