@@ -3,8 +3,13 @@
   "endpoints": [
     {
       "method": "GET",
+      "path": "/v3/user/me",
+      "use": "Rol y permisos del usuario de la sesión. Sirve para saber qué puede hacer."
+    },
+    {
+      "method": "GET",
       "path": "/v3/product/{uid}",
-      "use": "Ficha completa de un producto: SKU, tipo, categoría, precio, stock, conectores y estado de publicación.",
+      "use": "Ficha de un producto: SKU, tipo, categoría, precio, stock, conectores y estado de publicación. Trae mucho: pedí en enrich solo lo que necesites, y para datos de las variaciones usá la búsqueda con fields.",
       "query": "enrich, lista con cualquiera de: attributes, multimedia, variations, connectors, base_stock."
     },
     {
