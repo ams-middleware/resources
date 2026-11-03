@@ -9,9 +9,14 @@
         "parameters": {
           "type": "object",
           "properties": {
-            "url": { "type": "string", "description": "La URL tal como la escribió el operador" }
+            "url": {
+              "type": "string",
+              "description": "La URL tal como la escribió el operador"
+            }
           },
-          "required": ["url"]
+          "required": [
+            "url"
+          ]
         }
       }
     },
@@ -20,7 +25,10 @@
       "function": {
         "name": "proponer_atributos",
         "description": "Arma la propuesta de atributos con lo ya cargado en el producto, lo que dijo el operador y las páginas leídas, y se la muestra para que la revise. Devuelve qué se propuso y qué quedó sin dato.",
-        "parameters": { "type": "object", "properties": {} }
+        "parameters": {
+          "type": "object",
+          "properties": {}
+        }
       }
     },
     {
@@ -31,12 +39,27 @@
         "parameters": {
           "type": "object",
           "properties": {
-            "metodo": { "type": "string", "description": "GET o POST, como figura en la lista" },
-            "ruta": { "type": "string", "description": "Ruta de la lista con sus {parámetros} reemplazados, sin consulta" },
-            "consulta": { "type": "object", "description": "Parámetros de consulta. Si uno admite varios valores, va como lista" },
-            "cuerpo": { "type": "object", "description": "Cuerpo de un POST" }
+            "metodo": {
+              "type": "string",
+              "description": "GET o POST, como figura en la lista"
+            },
+            "ruta": {
+              "type": "string",
+              "description": "Ruta de la lista con sus {parámetros} reemplazados, sin consulta"
+            },
+            "consulta": {
+              "type": "object",
+              "description": "Parámetros de consulta. Si uno admite varios valores, va como lista"
+            },
+            "cuerpo": {
+              "type": "object",
+              "description": "Cuerpo de un POST"
+            }
           },
-          "required": ["metodo", "ruta"]
+          "required": [
+            "metodo",
+            "ruta"
+          ]
         }
       }
     },
@@ -44,17 +67,48 @@
       "type": "function",
       "function": {
         "name": "proponer_accion",
-        "description": "Propone una API de la lista marcada como que cambia datos. No la ejecuta: le muestra al operador una tarjeta para que confirme.",
+        "description": "Propone una acción de la lista marcada como que cambia datos, con una llamada por cada producto afectado. No ejecuta nada: le muestra al operador una sola tarjeta para que confirme.",
         "parameters": {
           "type": "object",
           "properties": {
-            "metodo": { "type": "string", "description": "Método, como figura en la lista" },
-            "ruta": { "type": "string", "description": "Ruta de la lista con sus {parámetros} reemplazados, sin consulta" },
-            "consulta": { "type": "object", "description": "Parámetros de consulta" },
-            "cuerpo": { "type": "object", "description": "Cuerpo del pedido" },
-            "resumen": { "type": "string", "description": "Qué va a pasar, en una frase para el operador. Con nombres de producto y conector, sin términos técnicos" }
+            "llamadas": {
+              "type": "array",
+              "description": "Una llamada por producto, máximo 50",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "metodo": {
+                    "type": "string",
+                    "description": "Método, como figura en la lista"
+                  },
+                  "ruta": {
+                    "type": "string",
+                    "description": "Ruta de la lista con sus {parámetros} reemplazados, sin consulta"
+                  },
+                  "consulta": {
+                    "type": "object",
+                    "description": "Parámetros de consulta"
+                  },
+                  "cuerpo": {
+                    "type": "object",
+                    "description": "Cuerpo del pedido"
+                  }
+                },
+                "required": [
+                  "metodo",
+                  "ruta"
+                ]
+              }
+            },
+            "resumen": {
+              "type": "string",
+              "description": "Qué va a pasar, en una frase para el operador: cuántos productos y qué cambio. Sin términos técnicos"
+            }
           },
-          "required": ["metodo", "ruta", "resumen"]
+          "required": [
+            "llamadas",
+            "resumen"
+          ]
         }
       }
     }
