@@ -2,5 +2,6 @@
   "leyendo_pagina": "Leyendo la página",
   "armando_propuesta": "Armando la propuesta",
   "sin_respuesta": "No pude responder. Probá de nuevo en unos segundos.",
-  "error_modelo": "El servicio de IA no respondió. Probá de nuevo en unos segundos."
+  "error_modelo": "El servicio de IA no respondió. Probá de nuevo en unos segundos.",
+  "sin_mas_herramientas": "No hay más herramientas en este turno. Respondé en texto con lo que ya obtuviste; si falta un dato, decí cuál y qué se puede hacer."
 }
