@@ -91,12 +91,13 @@
                   },
                   "cuerpo": {
                     "type": "object",
-                    "description": "Cuerpo del pedido"
+                    "description": "Cuerpo del pedido, como el ejemplo de la API. Es obligatorio"
                   }
                 },
                 "required": [
                   "metodo",
-                  "ruta"
+                  "ruta",
+                  "cuerpo"
                 ]
               }
             },
