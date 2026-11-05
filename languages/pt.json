@@ -180,5 +180,6 @@
   "error.order.already_synchronized": "O pedido já está sincronizado. Use a opção forçada para trazê-lo novamente.",
   "error.order.no_connector_ref": "O pedido não tem referência no conector %s: não é possível solicitá-lo à plataforma.",
   "Products adv title": "Filtros avançados",
-  "Orders adv title": "Filtros avançados"
+  "Orders adv title": "Filtros avançados",
+  "error.product.attribute_value_in_use": "o valor está associado a produtos: não pode ser excluído"
 }
