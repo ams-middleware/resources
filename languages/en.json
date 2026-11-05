@@ -1101,5 +1101,11 @@
   "Valor interno": "Internal value",
   "Conectores": "Connectors",
   "Mapeo": "Mapping",
-  "Acciones": "Actions"
+  "Acciones": "Actions",
+  "Attribute value delete confirm step": "Confirm delete",
+  "Attribute value hide mappings": "Hide mappings",
+  "Attribute value show mappings": "Show mappings",
+  "Conector": "Connector",
+  "Id externo": "External ID",
+  "Valor externo": "External value"
 }
