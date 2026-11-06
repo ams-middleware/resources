@@ -1104,5 +1104,6 @@
   "Attribute value show mappings": "Ver mapeos",
   "Conector": "Conector",
   "Id externo": "Id externo",
-  "Valor externo": "Valor externo"
+  "Valor externo": "Valor externo",
+  "Characters count": "{{count}} caracteres"
 }
