@@ -182,6 +182,10 @@
   "Products adv title": "Filtros avançados",
   "Orders adv title": "Filtros avançados",
   "error.product.attribute_value_in_use": "o valor está associado a produtos: não pode ser excluído",
+  "error.connector.service_principal": "o connector %s é o principal de %s: altere-o na configuração do cliente antes de excluí-lo",
+  "error.client.service_connector_not_found": "%s: o connector %s não existe",
+  "error.client.service_connector_other_client": "%s: o connector %s não pertence ao cliente %s",
+  "error.client.service_connector_wrong_type": "%s: o connector %s não é de uma integração do tipo %s",
   "Characters count": "{{count}} caracteres",
   "Characters count max": "{{count}} / {{max}} caracteres"
 }
