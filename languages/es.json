@@ -1105,5 +1105,6 @@
   "Conector": "Conector",
   "Id externo": "Id externo",
   "Valor externo": "Valor externo",
-  "Characters count": "{{count}} caracteres"
+  "Characters count": "{{count}} caracteres",
+  "Characters count max": "{{count}} / {{max}} caracteres"
 }

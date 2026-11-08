@@ -182,5 +182,6 @@
   "Products adv title": "Filtros avançados",
   "Orders adv title": "Filtros avançados",
   "error.product.attribute_value_in_use": "o valor está associado a produtos: não pode ser excluído",
-  "Characters count": "{{count}} caracteres"
+  "Characters count": "{{count}} caracteres",
+  "Characters count max": "{{count}} / {{max}} caracteres"
 }
