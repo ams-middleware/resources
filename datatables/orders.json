@@ -183,6 +183,7 @@
         "billing.customer.email",
         "billing.customer.phone",
         "billing.customer.document_type",
+        "billing.customer.document_id",
         "billing.customer.observation"
       ]
     },
