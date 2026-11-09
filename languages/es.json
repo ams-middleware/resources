@@ -1137,5 +1137,8 @@
   "error.multimedia.image_too_large": "La imagen supera el peso máximo de 5 MB",
   "Connector multimedia feature remove_background": "Quitar fondo",
   "Connector multimedia feature remove_background help": "Quita el fondo de las imágenes de producto, desde el editor de multimedia o el asistente. Cada imagen consume cuota.",
-  "Connector JSON invalid": "Hay un JSON inválido en Entorno. Corregilo abajo para poder usar estos campos."
+  "Connector JSON invalid": "Hay un JSON inválido en Entorno. Corregilo abajo para poder usar estos campos.",
+  "error.client.service_connector_not_system": "%s: el connector %s no es de sistema; agregale el tag \"%s\" para usarlo como asistente interno",
+  "Connector system badge": "Sistema",
+  "Connector system badge help": "Connector de sistema: puede ser el asistente interno del cliente y no aparece en su módulo AI."
 }

@@ -1140,5 +1140,8 @@
   "error.multimedia.image_too_large": "The image exceeds the 5 MB maximum size",
   "Connector multimedia feature remove_background": "Remove background",
   "Connector multimedia feature remove_background help": "Removes the background of product images, from the multimedia editor or the assistant. Each image uses quota.",
-  "Connector JSON invalid": "There is invalid JSON in Environment. Fix it below to use these fields."
+  "Connector JSON invalid": "There is invalid JSON in Environment. Fix it below to use these fields.",
+  "error.client.service_connector_not_system": "%s: connector %s is not a system connector; add the \"%s\" tag to use it as the internal assistant",
+  "Connector system badge": "System",
+  "Connector system badge help": "System connector: it can be the client's internal assistant and does not appear in its AI module."
 }

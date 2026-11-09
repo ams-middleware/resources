@@ -199,5 +199,8 @@
   "Connector multimedia feature remove_background help": "Remove o fundo das imagens de produto, pelo editor de multimídia ou pelo assistente. Cada imagem consome cota.",
   "Connector JSON invalid": "Há um JSON inválido em Ambiente. Corrija-o abaixo para usar estes campos.",
   "Connector AI features": "Funções",
-  "Connector AI features help": "Cada função é ativada separadamente. Desativar o conector desliga todas."
+  "Connector AI features help": "Cada função é ativada separadamente. Desativar o conector desliga todas.",
+  "error.client.service_connector_not_system": "%s: o conector %s não é de sistema; adicione a tag \"%s\" para usá-lo como assistente interno",
+  "Connector system badge": "Sistema",
+  "Connector system badge help": "Conector de sistema: pode ser o assistente interno do cliente e não aparece no módulo AI dele."
 }
