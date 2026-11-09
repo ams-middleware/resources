@@ -187,5 +187,17 @@
   "error.client.service_connector_other_client": "%s: o connector %s não pertence ao cliente %s",
   "error.client.service_connector_wrong_type": "%s: o connector %s não é de uma integração do tipo %s",
   "Characters count": "{{count}} caracteres",
-  "Characters count max": "{{count}} / {{max}} caracteres"
+  "Characters count max": "{{count}} / {{max}} caracteres",
+  "api.bad_gateway": "O provedor externo não respondeu corretamente",
+  "error.multimedia.no_connector": "O cliente não tem um conector multimídia principal ativo",
+  "error.multimedia.feature_disabled": "A função não está habilitada no conector multimídia",
+  "error.multimedia.quota_not_configured": "O conector multimídia não tem limites de cota configurados",
+  "error.multimedia.quota_exhausted": "O limite de imagens foi atingido. Tente novamente mais tarde.",
+  "error.multimedia.image_required": "A imagem está faltando",
+  "error.multimedia.image_too_large": "A imagem excede o tamanho máximo de 5 MB",
+  "Connector multimedia feature remove_background": "Remover fundo",
+  "Connector multimedia feature remove_background help": "Remove o fundo das imagens de produto, pelo editor de multimídia ou pelo assistente. Cada imagem consome cota.",
+  "Connector JSON invalid": "Há um JSON inválido em Ambiente. Corrija-o abaixo para usar estes campos.",
+  "Connector AI features": "Funções",
+  "Connector AI features help": "Cada função é ativada separadamente. Desativar o conector desliga todas."
 }

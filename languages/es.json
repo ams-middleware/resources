@@ -1127,5 +1127,15 @@
   "Id externo": "Id externo",
   "Valor externo": "Valor externo",
   "Characters count": "{{count}} caracteres",
-  "Characters count max": "{{count}} / {{max}} caracteres"
+  "Characters count max": "{{count}} / {{max}} caracteres",
+  "api.bad_gateway": "El proveedor externo no respondió correctamente",
+  "error.multimedia.no_connector": "El cliente no tiene un connector multimedia principal activo",
+  "error.multimedia.feature_disabled": "La función no está habilitada en el connector multimedia",
+  "error.multimedia.quota_not_configured": "El connector multimedia no tiene configurados los topes de cuota",
+  "error.multimedia.quota_exhausted": "Se alcanzó el límite de imágenes permitido. Volvé a intentar más tarde.",
+  "error.multimedia.image_required": "Falta la imagen",
+  "error.multimedia.image_too_large": "La imagen supera el peso máximo de 5 MB",
+  "Connector multimedia feature remove_background": "Quitar fondo",
+  "Connector multimedia feature remove_background help": "Quita el fondo de las imágenes de producto, desde el editor de multimedia o el asistente. Cada imagen consume cuota.",
+  "Connector JSON invalid": "Hay un JSON inválido en Entorno. Corregilo abajo para poder usar estos campos."
 }

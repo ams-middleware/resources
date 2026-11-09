@@ -1130,5 +1130,15 @@
   "Id externo": "External ID",
   "Valor externo": "External value",
   "Characters count": "{{count}} characters",
-  "Characters count max": "{{count}} / {{max}} characters"
+  "Characters count max": "{{count}} / {{max}} characters",
+  "api.bad_gateway": "The external provider did not respond correctly",
+  "error.multimedia.no_connector": "The client has no active main multimedia connector",
+  "error.multimedia.feature_disabled": "The feature is not enabled on the multimedia connector",
+  "error.multimedia.quota_not_configured": "The multimedia connector has no quota limits configured",
+  "error.multimedia.quota_exhausted": "The image limit was reached. Try again later.",
+  "error.multimedia.image_required": "The image is missing",
+  "error.multimedia.image_too_large": "The image exceeds the 5 MB maximum size",
+  "Connector multimedia feature remove_background": "Remove background",
+  "Connector multimedia feature remove_background help": "Removes the background of product images, from the multimedia editor or the assistant. Each image uses quota.",
+  "Connector JSON invalid": "There is invalid JSON in Environment. Fix it below to use these fields."
 }
