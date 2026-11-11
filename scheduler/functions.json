@@ -73,6 +73,34 @@
     ]
   },
   {
+    "name": "resume_stalled_orders",
+    "description": "Arranca el workflow de las órdenes de plataformas externas que quedaron en pending sin él",
+    "default_cron": "*/15 * * * *",
+    "args": [
+      {
+        "name": "client_uid",
+        "label": "Cliente (UID)",
+        "type": "string",
+        "required": false,
+        "description": "Vacío = todos los clientes."
+      },
+      {
+        "name": "min_age_minutes",
+        "label": "Antigüedad mínima (min)",
+        "type": "int",
+        "required": false,
+        "description": "Solo órdenes creadas hace más de estos minutos (default 30), para no pisar una ingesta en curso."
+      },
+      {
+        "name": "max_per_client",
+        "label": "Tope por cliente",
+        "type": "int",
+        "required": false,
+        "description": "Órdenes por cliente y corrida (default 100), las más viejas primero."
+      }
+    ]
+  },
+  {
     "name": "archive_orders",
     "description": "Archiva órdenes antiguas (>1 año) a BD por año",
     "default_cron": "0 3 1 * *",
