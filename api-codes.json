@@ -42,5 +42,9 @@
   "ERR500": {
     "name": "internal_error",
     "message_key": "api.internal_error"
+  },
+  "ERR502": {
+    "name": "bad_gateway",
+    "message_key": "api.bad_gateway"
   }
 }

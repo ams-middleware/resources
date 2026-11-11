@@ -52,15 +52,23 @@
     "args": []
   },
   {
-    "name": "sync_stock_weekly",
-    "description": "Sync stock semanal",
-    "default_cron": "0 2 * * 1",
+    "name": "reconcile_platform_stock",
+    "description": "Reenvía a las plataformas el stock de los productos desincronizados",
+    "default_cron": "0 4 * * *",
     "args": [
       {
-        "name": "days",
-        "label": "Días",
+        "name": "client_uid",
+        "label": "Cliente (UID)",
+        "type": "string",
+        "required": false,
+        "description": "Vacío = todos los clientes."
+      },
+      {
+        "name": "max_per_client",
+        "label": "Tope por cliente",
         "type": "int",
-        "required": false
+        "required": false,
+        "description": "Productos por cliente y corrida (default 5000). Primero los desincronizados, después los nunca enviados."
       }
     ]
   },

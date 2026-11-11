@@ -1,0 +1,117 @@
+{
+  "_doc": "Herramientas del asistente de carga de producto (ai-api). Se pueden editar las descripciones; los nombres y parámetros tienen que coincidir con assistantToolParams.",
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "leer_url",
+        "description": "Lee una página pública de producto para usarla en la propuesta. Solo acepta URLs que el operador escribió en esta conversación.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "description": "La URL tal como la escribió el operador"
+            }
+          },
+          "required": [
+            "url"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "proponer_atributos",
+        "description": "Arma la propuesta de atributos con lo ya cargado en el producto, lo que dijo el operador y las páginas leídas, y se la muestra para que la revise. Devuelve qué se propuso y qué quedó sin dato.",
+        "parameters": {
+          "type": "object",
+          "properties": {}
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "consultar_api",
+        "description": "Consulta una API de lectura de la lista, con los permisos del operador.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "metodo": {
+              "type": "string",
+              "description": "GET o POST, como figura en la lista"
+            },
+            "ruta": {
+              "type": "string",
+              "description": "Ruta de la lista con sus {parámetros} reemplazados, sin consulta"
+            },
+            "consulta": {
+              "type": "object",
+              "description": "Parámetros de consulta. Si uno admite varios valores, va como lista"
+            },
+            "cuerpo": {
+              "type": "object",
+              "description": "Cuerpo de un POST"
+            }
+          },
+          "required": [
+            "metodo",
+            "ruta"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "proponer_accion",
+        "description": "Propone una acción de la lista marcada como que cambia datos, con una llamada por cada producto afectado. No ejecuta nada: le muestra al operador una sola tarjeta para que confirme.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "llamadas": {
+              "type": "array",
+              "description": "Una llamada por producto, máximo 50",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "metodo": {
+                    "type": "string",
+                    "description": "Método, como figura en la lista"
+                  },
+                  "ruta": {
+                    "type": "string",
+                    "description": "Ruta de la lista con sus {parámetros} reemplazados, sin consulta"
+                  },
+                  "consulta": {
+                    "type": "object",
+                    "description": "Parámetros de consulta"
+                  },
+                  "cuerpo": {
+                    "type": "object",
+                    "description": "Cuerpo del pedido, como el ejemplo de la API. Es obligatorio"
+                  }
+                },
+                "required": [
+                  "metodo",
+                  "ruta",
+                  "cuerpo"
+                ]
+              }
+            },
+            "resumen": {
+              "type": "string",
+              "description": "Qué va a pasar, en una frase para el operador: cuántos productos y qué cambio. Sin términos técnicos"
+            }
+          },
+          "required": [
+            "llamadas",
+            "resumen"
+          ]
+        }
+      }
+    }
+  ]
+}
