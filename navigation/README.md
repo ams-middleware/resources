@@ -37,6 +37,7 @@ Cada **nodo**:
 | `title` | string | ambos | Texto visible (menú + breadcrumb). Traducible (`t()`). |
 | `icon` | string (opcional) | ambos | Ícono Remix (ej. `ri-store-2-line`). En el menú solo se muestra en el nivel superior; en el breadcrumb va junto al título. |
 | `link` | string (opcional) | ambos | Ruta. Ausente en headers de sección. |
+| `detail_link` | string (opcional) | client-web | Ruta de la ficha de un ítem de la sección, con `{uid}` (`/orders/{uid}`). La usa el Asistente EMW para ofrecer el enlace a un registro puntual. |
 | `permission` | string (opcional) | menú | Permiso requerido (gating). El breadcrumb lo ignora. |
 | `description` | string (opcional) | breadcrumb | Subtítulo breve bajo el título. Traducible (`t()`). |
 | `help_url` | string (opcional) | breadcrumb | **URL completa** de la página del manual (GitBook), con dominio. Renderiza el ícono de ayuda (`HelpButton`). |
