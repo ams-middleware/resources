@@ -34,7 +34,8 @@
             "orders"
           ],
           "help_url": "https://docs.e-middleware.com/operativa/ordenes",
-          "detail_link": "/orders/{uid}"
+          "detail_link": "/orders/{uid}",
+          "filter_module": "order"
         },
         {
           "id": "orders-create",
@@ -118,7 +119,8 @@
             "items"
           ],
           "help_url": "https://docs.e-middleware.com/operativa/productos",
-          "detail_link": "/products/{uid}"
+          "detail_link": "/products/{uid}",
+          "filter_module": "product"
         },
         {
           "id": "products-multimedia",
@@ -127,7 +129,8 @@
           "permission": "MULTIMEDIA_LIST",
           "icon": "ri-image-line",
           "help_url": "https://docs.e-middleware.com/operativa/multimedia",
-          "detail_link": "/products/multimedia/{uid}"
+          "detail_link": "/products/multimedia/{uid}",
+          "filter_module": "product_media"
         },
         {
           "id": "products-attribute-values",
@@ -136,7 +139,8 @@
           "permission": "PRODUCT_UPDATE",
           "icon": "ri-price-tag-3-line",
           "description": "Definí los atributos y sus valores para describir los productos.",
-          "help_url": "https://docs.e-middleware.com/operativa/atributos"
+          "help_url": "https://docs.e-middleware.com/operativa/atributos",
+          "filter_module": "attribute_value"
         },
         {
           "id": "products-category-mapping",
@@ -145,7 +149,8 @@
           "permission": "PRODUCT_UPDATE",
           "icon": "ri-git-merge-line",
           "description": "Relacioná tus categorías con las de cada plataforma.",
-          "help_url": "https://docs.e-middleware.com/operativa/mapeo-de-categorias"
+          "help_url": "https://docs.e-middleware.com/operativa/mapeo-de-categorias",
+          "filter_module": "category_mapping"
         },
         {
           "id": "products-rules",
@@ -205,7 +210,8 @@
             "contactos"
           ],
           "help_url": "https://docs.e-middleware.com/operativa/clientes",
-          "detail_link": "/crm/customers/{uid}"
+          "detail_link": "/crm/customers/{uid}",
+          "filter_module": "client"
         },
         {
           "id": "conversations",
@@ -224,7 +230,8 @@
             "conversaciones"
           ],
           "help_url": "https://docs.e-middleware.com/operativa/conversaciones",
-          "detail_link": "/conversations/{uid}"
+          "detail_link": "/conversations/{uid}",
+          "filter_module": "chat"
         }
       ],
       "description": "Clientes y conversaciones."
@@ -247,7 +254,8 @@
         "inteligencia artificial"
       ],
       "badge_name": "Nuevo",
-      "badge_color": "success"
+      "badge_color": "success",
+      "filter_module": "ai"
     },
     {
       "id": "bulk",
@@ -257,7 +265,8 @@
       "permission": "ORDER_LIST",
       "description": "Importá, exportá y ejecutá acciones masivas (sincronizar, eliminar y más) sobre tus datos.",
       "help_url": "https://docs.e-middleware.com/operativa/cargas-masivas",
-      "detail_link": "/bulk/{uid}"
+      "detail_link": "/bulk/{uid}",
+      "filter_module": "bulk"
     },
     {
       "id": "configuration",
@@ -295,7 +304,8 @@
             "erp"
           ],
           "help_url": "https://docs.e-middleware.com/operativa/conectores",
-          "detail_link": "/connectors/{uid}"
+          "detail_link": "/connectors/{uid}",
+          "filter_module": "connector"
         },
         {
           "id": "scheduler",
@@ -352,7 +362,8 @@
           "permission": "SYSTEM_LIST",
           "icon": "ri-map-pin-line",
           "description": "Códigos postales y regiones para envíos.",
-          "help_url": "https://docs.e-middleware.com/operativa/codigos-postales"
+          "help_url": "https://docs.e-middleware.com/operativa/codigos-postales",
+          "filter_module": "address"
         }
       ]
     },

@@ -1,5 +1,5 @@
 {
-  "_doc": "Herramientas del Asistente EMW (ai-api). Se pueden editar las descripciones; los nombres y parámetros tienen que coincidir con assistantToolParams. leer_url y proponer_atributos solo se ofrecen con un producto abierto.",
+  "_doc": "Herramientas del Asistente EMW (ai-api). Se pueden editar las descripciones; los nombres y parámetros tienen que coincidir con assistantToolParams. leer_url y proponer_atributos solo se ofrecen con un producto abierto. campos_filtro y armar_filtro arman el enlace de filtro avanzado de una sección (las que declaran filter_module en navigation/client-web.json).",
   "tools": [
     {
       "type": "function",
@@ -147,6 +147,78 @@
           },
           "required": [
             "ruta"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "campos_filtro",
+        "description": "Lista los campos por los que se puede filtrar la tabla de una sección del sitio (las marcadas con «filtra por campos»): campo, nombre, tipo, operadores y valores posibles. Usala antes de armar_filtro para elegir campos que existen.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "seccion": {
+              "type": "string",
+              "description": "Ruta de la sección, tal como figura en la lista de secciones, por ejemplo: /orders"
+            }
+          },
+          "required": [
+            "seccion"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "armar_filtro",
+        "description": "Arma el enlace que abre la tabla de una sección con el filtro avanzado ya aplicado. Valida cada condición contra los campos de la sección y devuelve el enlace o qué corregir. Todas las condiciones se aplican juntas.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "seccion": {
+              "type": "string",
+              "description": "Ruta de la sección, por ejemplo: /orders"
+            },
+            "condiciones": {
+              "type": "array",
+              "description": "Condiciones del filtro, todas juntas.",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "campo": {
+                    "type": "string",
+                    "description": "Campo de campos_filtro, por ejemplo: diff_to_pay"
+                  },
+                  "operador": {
+                    "type": "string",
+                    "description": "Uno de los operadores del campo, por ejemplo: gt"
+                  },
+                  "valor": {
+                    "type": "string",
+                    "description": "Valor a comparar. Para in/nin, valores separados por coma. Fechas como AAAA-MM-DD. Vacío para exists, not_exists, null y not_null."
+                  },
+                  "desde": {
+                    "type": "string",
+                    "description": "Solo para el operador range de fechas: primer día, AAAA-MM-DD."
+                  },
+                  "hasta": {
+                    "type": "string",
+                    "description": "Solo para el operador range de fechas: último día, AAAA-MM-DD."
+                  }
+                },
+                "required": [
+                  "campo",
+                  "operador"
+                ]
+              }
+            }
+          },
+          "required": [
+            "seccion",
+            "condiciones"
           ]
         }
       }
