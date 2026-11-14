@@ -1169,5 +1169,11 @@
   "Assistant export started": "Listo, se está exportando. Cuando termine, el archivo se descarga solo.",
   "Bulk template help": "Empezá por la plantilla. Si elegís un conector, trae solo las columnas que ese conector usa en su plataforma.",
   "Bulk template general": "Plantilla general (sin conector)",
-  "Bulk export downloaded": "Exportación descargada: {{name}}"
+  "Bulk export downloaded": "Exportación descargada: {{name}}",
+  "Assistant see in listing": "Ver en el listado",
+  "Assistant export file": "Archivo",
+  "Assistant export review": "Revisá en el listado que sea lo que pediste. Si está bien, generá el Excel.",
+  "Assistant export confirm": "Generar Excel",
+  "Assistant show technical detail": "Ver detalle técnico",
+  "Assistant hide technical detail": "Ocultar detalle técnico"
 }

@@ -1172,5 +1172,11 @@
   "Assistant export started": "Done, it is being exported. When it finishes, the file downloads on its own.",
   "Bulk template help": "Start with the template. If you pick a connector, it only includes the columns that connector uses on its platform.",
   "Bulk template general": "General template (no connector)",
-  "Bulk export downloaded": "Export downloaded: {{name}}"
+  "Bulk export downloaded": "Export downloaded: {{name}}",
+  "Assistant see in listing": "See in listing",
+  "Assistant export file": "File",
+  "Assistant export review": "Check in the listing that it is what you asked for. If it is, generate the Excel file.",
+  "Assistant export confirm": "Generate Excel",
+  "Assistant show technical detail": "Show technical detail",
+  "Assistant hide technical detail": "Hide technical detail"
 }
