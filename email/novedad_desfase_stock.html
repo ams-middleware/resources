@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novedades e-middleware - Control de desfases de stock</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+        .email-header {
+            background-color: #ffffff;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .logo {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .email-tag {
+            display: inline-block;
+            background-color: #405189;
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            padding: 4px 12px;
+            border-radius: 12px;
+        }
+        .email-body {
+            padding: 40px 30px;
+            color: #333333;
+        }
+        .email-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin: 0 0 20px;
+            text-align: center;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #405189;
+            margin: 30px 0 10px;
+        }
+        .email-content {
+            font-size: 16px;
+            color: #555555;
+            margin-bottom: 20px;
+        }
+        .email-content p {
+            margin: 0 0 14px;
+        }
+        .info-box {
+            background-color: #eef1f8;
+            border-left: 6px solid #405189;
+            padding: 18px 20px;
+            margin: 25px 0;
+            border-radius: 6px;
+            color: #2f3b66;
+            font-size: 15px;
+        }
+        .info-box p {
+            margin: 0;
+        }
+        .criteria {
+            margin: 0 0 20px;
+            padding: 0;
+            list-style: none;
+        }
+        .criteria li {
+            background-color: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            padding: 12px 16px;
+            margin-bottom: 8px;
+            font-size: 15px;
+            color: #444444;
+        }
+        .criteria .num {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            border-radius: 50%;
+            background-color: #405189;
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+        .prompt {
+            display: block;
+            background-color: #f8f9fa;
+            border: 1px dashed #405189;
+            border-radius: 6px;
+            padding: 12px 16px;
+            margin: 10px 0 16px;
+            font-style: italic;
+            color: #2f3b66;
+        }
+        .cta {
+            text-align: center;
+            margin: 10px 0 30px;
+        }
+        .cta a {
+            display: inline-block;
+            background-color: #405189;
+            color: #ffffff !important;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 14px 28px;
+            border-radius: 6px;
+        }
+        .cta-note {
+            text-align: center;
+            font-size: 13px;
+            color: #888888;
+            margin: -20px 0 25px;
+        }
+        .tips {
+            margin: 0 0 20px;
+            padding-left: 20px;
+            font-size: 15px;
+            color: #555555;
+        }
+        .tips li {
+            margin-bottom: 8px;
+        }
+        .email-footer {
+            background-color: #f8f9fa;
+            padding: 30px 20px;
+            text-align: center;
+            border-top: 1px solid #e0e0e0;
+            font-size: 14px;
+            color: #666666;
+        }
+        .footer-text {
+            margin: 10px 0;
+        }
+        @media only screen and (max-width: 600px) {
+            .email-body {
+                padding: 30px 20px;
+            }
+            .email-title {
+                font-size: 20px;
+            }
+            .email-content,
+            .criteria li,
+            .tips {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <img src="data:image/png;base64,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" alt="MW Logo" class="logo" />
+            <div><span class="email-tag">Novedades</span></div>
+        </div>
+
+        <div class="email-body">
+            <h1 class="email-title">Detectá a tiempo los desfases de stock</h1>
+
+            <div class="email-content">
+                <p>Estimado/a usuario/a:</p>
+                <p>Incorporamos al MW una nueva herramienta para revisar tu inventario y anticiparte a las sobreventas. Te contamos por qué es importante y cómo usarla.</p>
+            </div>
+
+            <h2 class="section-title">El "efecto bola de nieve"</h2>
+            <div class="email-content">
+                <p>Las sobreventas no suelen aparecer de un día para el otro. Casi siempre empiezan con <strong>pequeñas diferencias</strong> entre el stock que figura en el MW y el stock real del depósito: un movimiento que no se informó, una actualización que no llegó o un producto que el sistema de gestión dejó de reportar.</p>
+                <p>Por separado, cada diferencia pasa inadvertida. Pero si nadie las detecta durante un tiempo, se van sumando, como una bola de nieve que crece mientras rueda. Llamamos a esto <strong>desfase acumulado de stock</strong>. Cuando los canales de venta ofrecen unidades que en realidad no existen, el desfase termina en sobreventas, muchas veces varias en poco tiempo.</p>
+            </div>
+
+            <div class="info-box">
+                <p><strong>La clave es detectarlo temprano:</strong> revisar periódicamente los productos cuyo stock nadie confirmó hace tiempo evita que las pequeñas diferencias se conviertan en un problema.</p>
+            </div>
+
+            <h2 class="section-title">Nuevo filtro: productos con riesgo de sobreventa</h2>
+            <div class="email-content">
+                <p>En <strong>Productos</strong> ahora podés identificar los artículos que conviene revisar. Son los que cumplen las tres condiciones:</p>
+            </div>
+            <ul class="criteria">
+                <li><span class="num">1</span>Tienen <strong>stock disponible</strong> en el MW.</li>
+                <li><span class="num">2</span>Están <strong>a la venta en al menos un canal</strong> (tienda online o marketplace) que está ofreciendo ese stock.</li>
+                <li><span class="num">3</span>Su stock <strong>no se actualizó en los últimos 30 días</strong>, o nunca se cargó desde el sistema de gestión.</li>
+            </ul>
+            <div class="email-content">
+                <p>Que un producto aparezca en el listado <strong>no significa que su stock esté mal</strong>: significa que hace tiempo que nadie lo confirma y que vale la pena revisarlo contra el depósito.</p>
+            </div>
+
+            <div class="cta">
+                <a href="https://admin.e-middleware.ar/products?adv=%5B%7B%22field%22%3A%22stock.available%22%2C%22operator%22%3A%22gt%22%2C%22value%22%3A%220%22%7D%2C%7B%22field%22%3A%22connectors_offering_stock_count%22%2C%22operator%22%3A%22gt%22%2C%22value%22%3A%220%22%7D%2C%7B%22field%22%3A%22stock_days_without_update%22%2C%22operator%22%3A%22gt%22%2C%22value%22%3A%2230%22%7D%5D" target="_blank" style="display: inline-block; background-color: #405189; color: #ffffff; text-decoration: none; font-size: 16px; font-weight: 600; padding: 14px 28px; border-radius: 6px;">Ver mis productos con riesgo de sobreventa</a>
+            </div>
+            <p class="cta-note">Abre el listado de Productos con el filtro ya aplicado. Ingresá primero al MW con tu usuario.</p>
+
+            <h2 class="section-title">Cómo usarlo</h2>
+            <div class="email-content">
+                <p><strong>Con el Asistente EMW:</strong> abrí el asistente desde cualquier pantalla y preguntale:</p>
+                <span class="prompt">"¿Qué productos tienen riesgo de sobreventa?"</span>
+                <p>Te arma el listado con el filtro ya aplicado. También podés pedirle otro plazo (por ejemplo, <em>"sin actualizar en 15 días"</em>) o que te lo exporte a Excel.</p>
+                <p><strong>Desde Productos:</strong> en el filtro avanzado, combiná los campos <em>"días sin actualizar el stock"</em>, <em>"stock disponible"</em> y <em>"conectores activos ofreciendo stock"</em>. Podés guardar el filtro para usarlo cuando quieras.</p>
+            </div>
+
+            <h2 class="section-title">Nuestra recomendación</h2>
+            <ul class="tips">
+                <li>Revisá el listado <strong>una vez por semana</strong>, empezando por los productos con más días sin actualizar.</li>
+                <li>Si encontrás diferencias, corregí el stock en tu sistema de gestión para que se informe al MW, o ajustalo directamente en el producto.</li>
+                <li>Si un producto aparece seguido en el listado, avisanos: puede indicar que tu sistema de gestión no lo está informando.</li>
+            </ul>
+
+            <p style="text-align: center; margin-top: 30px;">
+                <strong>Atentamente,</strong><br>
+                <span style="color: #666666;">Equipo e-middleware</span>
+            </p>
+        </div>
+
+        <div class="email-footer">
+            <p class="footer-text">Este es un mensaje informativo enviado a todos los usuarios del MW.</p>
+            <p class="footer-text" style="margin-top: 15px;">
+                Si tenés alguna consulta, contactá a nuestro equipo de soporte.
+            </p>
+            <p class="footer-text" style="margin-top: 20px; font-size: 12px; color: #999999;">
+                © 2026 e-middleware - Todos los derechos reservados
+            </p>
+        </div>
+    </div>
+</body>
+</html>

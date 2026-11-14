@@ -955,6 +955,7 @@
   "connectors failed count": "connectors with errors",
   "stock days without update": "days without stock update",
   "connectors offering stock count": "active connectors offering stock",
+  "Advanced filter link invalid": "The link has a filter that could not be read, so it was not applied. Ask for the link again or build the filter from the panel.",
   "Connector not found": "Connector not found",
   "Back to connectors": "Back to connectors",
   "Network error": "Network error",
