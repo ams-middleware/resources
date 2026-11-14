@@ -953,6 +953,8 @@
   "Enable connector": "Enable connector",
   "Connectors": "Connectors",
   "connectors failed count": "connectors with errors",
+  "stock days without update": "days without stock update",
+  "connectors offering stock count": "active connectors offering stock",
   "Connector not found": "Connector not found",
   "Back to connectors": "Back to connectors",
   "Network error": "Network error",
@@ -1158,7 +1160,7 @@
   "Bulk export name order": "Orders",
   "Bulk export name product_media": "Media",
   "Bulk export filters hint": "What you are seeing is exported, with the filters applied.",
-  "Bulk export running": "Exporting {{name}}…",
+  "Bulk export running": "Exporting {{name}}. We will let you know when it is ready.",
   "Bulk export ready": "Export ready: {{name}}",
   "Bulk export failed": "Could not export {{name}}",
   "Bulk export error": "Could not start the export",
@@ -1166,5 +1168,8 @@
   "Bulk import action": "Import",
   "Bulk import title": "Import products",
   "Bulk template title": "Import template",
-  "Assistant export started": "Done, it is being exported. The file downloads on its own as soon as it is ready."
+  "Assistant export started": "Done, it is being exported. When it finishes, the file downloads on its own.",
+  "Bulk template help": "Start with the template. If you pick a connector, it only includes the columns that connector uses on its platform.",
+  "Bulk template general": "General template (no connector)",
+  "Bulk export downloaded": "Export downloaded: {{name}}"
 }
