@@ -83,6 +83,17 @@
             "ordenes"
           ],
           "help_url": "https://docs.e-middleware.com/configuracion/reglas"
+        },
+        {
+          "id": "orders-bulk",
+          "title": "Gestión masiva",
+          "link": "/orders/bulk",
+          "permission": "BULK_LIST",
+          "icon": "ri-stack-line",
+          "description": "Exportá tus órdenes a un archivo.",
+          "help_url": "https://docs.e-middleware.com/operativa/cargas-masivas",
+          "detail_link": "/orders/bulk/{uid}",
+          "filter_module": "bulk"
         }
       ]
     },
@@ -188,6 +199,17 @@
           ],
           "help_url": "https://docs.e-middleware.com/operativa/feeds",
           "detail_link": "/products/feeds/{uid}"
+        },
+        {
+          "id": "products-bulk",
+          "title": "Gestión masiva",
+          "link": "/products/bulk",
+          "permission": "BULK_LIST",
+          "icon": "ri-stack-line",
+          "description": "Importá, exportá y ejecutá acciones masivas (sincronizar, eliminar y más) sobre tus productos.",
+          "help_url": "https://docs.e-middleware.com/operativa/cargas-masivas",
+          "detail_link": "/products/bulk/{uid}",
+          "filter_module": "bulk"
         }
       ]
     },
@@ -256,17 +278,6 @@
       "badge_name": "Nuevo",
       "badge_color": "success",
       "filter_module": "ai"
-    },
-    {
-      "id": "bulk",
-      "title": "Gestión masiva",
-      "icon": "ri-stack-line",
-      "link": "/bulk",
-      "permission": "ORDER_LIST",
-      "description": "Importá, exportá y ejecutá acciones masivas (sincronizar, eliminar y más) sobre tus datos.",
-      "help_url": "https://docs.e-middleware.com/operativa/cargas-masivas",
-      "detail_link": "/bulk/{uid}",
-      "filter_module": "bulk"
     },
     {
       "id": "configuration",
