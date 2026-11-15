@@ -1178,5 +1178,12 @@
   "Assistant export review": "Check in the listing that it is what you asked for. If it is, generate the Excel file.",
   "Assistant export confirm": "Generate Excel",
   "Assistant show technical detail": "Show technical detail",
-  "Assistant hide technical detail": "Hide technical detail"
+  "Assistant hide technical detail": "Hide technical detail",
+  "Bulk package only create": "Only create the package",
+  "Bulk package only create hint": "Process it later from its detail page.",
+  "Bulk package scope count": "The package is created with the {{count}} products you are viewing, with the filters applied in the table.",
+  "Bulk package scope": "The package is created with the products you are viewing, with the filters applied in the table.",
+  "Bulk package process question": "What do you want to do with the package?",
+  "Bulk package create and process": "Create and process",
+  "Bulk package create": "Create package"
 }
