@@ -202,5 +202,10 @@
   "Connector AI features help": "Cada função é ativada separadamente. Desativar o conector desliga todas.",
   "error.client.service_connector_not_system": "%s: o conector %s não é de sistema; adicione a tag \"%s\" para usá-lo como assistente interno",
   "Connector system badge": "Sistema",
-  "Connector system badge help": "Conector de sistema: pode ser o assistente interno do cliente e não aparece no módulo AI dele."
+  "Connector system badge help": "Conector de sistema: pode ser o assistente interno do cliente e não aparece no módulo AI dele.",
+  "error.support.invalid_kind": "tipo de pedido inválido (melhoria, erro, consulta ou outro)",
+  "error.support.missing_fields": "faltam o assunto ou a descrição do pedido",
+  "error.support.no_connector": "o cliente não tem um conector de suporte ativo",
+  "error.support.no_address": "não há um endereço de suporte configurado",
+  "error.support.send_failed": "não foi possível enviar o e-mail ao suporte"
 }
