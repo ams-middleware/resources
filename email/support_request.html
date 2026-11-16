@@ -1,0 +1,80 @@
+{{define "subject"}}[Soporte · {{template "kind" .Kind}}] {{.ClientName}} — {{.Subject}}{{end}}
+
+{{define "kind"}}{{if eq . "improvement"}}Mejora sugerida{{else if eq . "error"}}Reporte de error{{else if eq . "question"}}Consulta{{else}}Otro{{end}}{{end}}
+
+{{define "body"}}<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.Subject}}</title>
+    <style>
+        body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #f4f4f4; line-height: 1.5; }
+        .email-container { max-width: 680px; margin: 0 auto; background-color: #ffffff; }
+        .email-header { padding: 16px 20px; border-bottom: 1px solid #e0e0e0; }
+        .email-header td { vertical-align: middle; }
+        .logo { max-width: 90px; height: auto; display: block; }
+        .email-tag { display: inline-block; background-color: #405189; color: #ffffff; font-size: 11px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; padding: 3px 10px; border-radius: 10px; }
+        .email-body { padding: 20px 24px; color: #333333; }
+        .email-title { font-size: 20px; font-weight: 600; color: #1a1a1a; margin: 0 0 14px; }
+        .meta { width: 100%; border-collapse: collapse; background-color: #eef1f8; border-left: 4px solid #405189; border-radius: 4px; margin: 0 0 18px; font-size: 13px; color: #2f3b66; }
+        .meta td { padding: 4px 12px; vertical-align: top; }
+        .meta td.label { width: 90px; font-weight: 600; white-space: nowrap; }
+        .meta tr:first-child td { padding-top: 10px; }
+        .meta tr:last-child td { padding-bottom: 10px; }
+        .section-title { font-size: 15px; font-weight: 600; color: #405189; margin: 18px 0 6px; }
+        .email-content { font-size: 14px; color: #444444; white-space: pre-wrap; margin: 0; }
+        .technical { white-space: pre-wrap; word-break: break-word; background-color: #f8f9fa; border: 1px solid #e0e0e0; border-radius: 6px; padding: 10px 12px; font-family: SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; color: #333333; margin: 0; }
+        .conversation { white-space: pre-wrap; border: 1px dashed #405189; border-radius: 6px; background-color: #f8f9fa; padding: 10px 12px; font-size: 13px; color: #2f3b66; margin: 0; }
+        .email-footer { background-color: #f8f9fa; padding: 12px 20px; text-align: center; border-top: 1px solid #e0e0e0; font-size: 12px; color: #666666; }
+        .footer-text { margin: 4px 0; }
+        @media only screen and (max-width: 600px) {
+            .email-body { padding: 16px 14px; }
+            .email-title { font-size: 18px; }
+            .meta td.label { width: 70px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td><img src="data:image/png;base64,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" alt="MW Logo" class="logo" /></td>
+                    <td style="text-align: right;"><span class="email-tag">{{template "kind" .Kind}}</span></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="email-body">
+            <h1 class="email-title">{{.Subject}}</h1>
+
+            <table class="meta" role="presentation">
+                <tr><td class="label">Cliente</td><td>{{.ClientName}} ({{.ClientUID}})</td></tr>
+                <tr><td class="label">Operador</td><td>{{.OperatorName}} &lt;{{.OperatorEmail}}&gt;</td></tr>
+                {{if .Page}}<tr><td class="label">Pantalla</td><td>{{.Page}}</td></tr>{{end}}
+                {{if .Environment}}<tr><td class="label">Ambiente</td><td>{{.Environment}}</td></tr>{{end}}
+                <tr><td class="label">Fecha</td><td>{{.SentAt}}</td></tr>
+            </table>
+
+            <h2 class="section-title">Descripción</h2>
+            <p class="email-content">{{.Description}}</p>
+
+            {{if .TechnicalDetail}}
+            <h2 class="section-title">Detalle técnico</h2>
+            <pre class="technical">{{.TechnicalDetail}}</pre>
+            {{end}}
+
+            {{if .Conversation}}
+            <h2 class="section-title">Conversación con el asistente</h2>
+            <p class="conversation">{{.Conversation}}</p>
+            {{end}}
+        </div>
+
+        <div class="email-footer">
+            <p class="footer-text">Enviado desde el Asistente EMW a pedido del operador. Respondé este correo para contestarle directamente.</p>
+            <p class="footer-text" style="font-size: 11px; color: #999999;">© 2026 e-middleware - Todos los derechos reservados</p>
+        </div>
+    </div>
+</body>
+</html>{{end}}

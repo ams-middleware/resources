@@ -132,6 +132,49 @@
 			]
 		},
 		{
+			"field": "stock_days_without_update",
+			"data_type": "int",
+			"expression": {
+				"$floor": {
+					"$divide": [
+						{
+							"$subtract": [
+								{ "$toLong": "$$NOW" },
+								{ "$ifNull": [{ "$toLong": "$stock.last_update" }, 0] }
+							]
+						},
+						86400000
+					]
+				}
+			},
+			"input_type": "text",
+			"display_name": "días sin actualizar el stock",
+			"translation_key": "stock days without update",
+			"operators": ["eq", "ne", "gt", "gte", "lt", "lte"]
+		},
+		{
+			"field": "connectors_offering_stock_count",
+			"data_type": "int",
+			"expression": {
+				"$size": {
+					"$filter": {
+						"input": { "$ifNull": ["$connectors", []] },
+						"as": "c",
+						"cond": {
+							"$and": [
+								{ "$eq": ["$$c.active", true] },
+								{ "$gt": ["$$c.synced_stock", 0] }
+							]
+						}
+					}
+				}
+			},
+			"input_type": "text",
+			"display_name": "conectores activos ofreciendo stock",
+			"translation_key": "connectors offering stock count",
+			"operators": ["eq", "ne", "gt", "gte", "lt", "lte"]
+		},
+		{
 			"field": "name",
 			"data_type": "string",
 			"input_type": "text",
