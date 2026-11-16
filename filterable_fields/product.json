@@ -352,6 +352,36 @@
 			"operators": ["eq", "ne", "gt", "gte", "lt", "lte"]
 		},
 		{
+			"field": "connectors_failed",
+			"data_type": "[]string",
+			"expression": {
+				"$map": {
+					"input": {
+						"$filter": {
+							"input": {
+								"$ifNull": ["$connectors", []]
+							},
+							"as": "c",
+							"cond": {
+								"$ne": [
+									{
+										"$ifNull": ["$$c.sync_error", null]
+									},
+									null
+								]
+							}
+						}
+					},
+					"as": "c",
+					"in": "$$c.uid"
+				}
+			},
+			"input_type": "text",
+			"display_name": "conector con error",
+			"translation_key": "connector with error",
+			"operators": ["eq", "ne", "in", "nin"]
+		},
+		{
 			"field": "created_at",
 			"data_type": "datetime",
 			"display_name": "created at",

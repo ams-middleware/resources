@@ -953,6 +953,7 @@
   "Enable connector": "Enable connector",
   "Connectors": "Connectors",
   "connectors failed count": "connectors with errors",
+  "connector with error": "connector with error",
   "stock days without update": "days without stock update",
   "connectors offering stock count": "active connectors offering stock",
   "Advanced filter link invalid": "The link has a filter that could not be read, so it was not applied. Ask for the link again or build the filter from the panel.",

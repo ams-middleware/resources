@@ -950,6 +950,7 @@
   "Enable connector": "Habilitar conector",
   "Connectors": "Conectores",
   "connectors failed count": "conectores con error",
+  "connector with error": "conector con error",
   "stock days without update": "días sin actualizar el stock",
   "connectors offering stock count": "conectores activos ofreciendo stock",
   "Advanced filter link invalid": "El enlace trae un filtro que no se pudo leer: no se aplicó. Pedí el enlace de nuevo o armá el filtro desde el panel.",
