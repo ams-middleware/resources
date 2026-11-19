@@ -1212,5 +1212,11 @@
   "Assistant support recipients": "Le llega al equipo de soporte de tu cuenta, con copia al contacto principal. Te responden a tu email.",
   "Assistant support sent": "Listo, le envié tu pedido a soporte. Te van a responder a tu email.",
   "Client service support": "Soporte",
-  "Client service support help": "Envío de pedidos al equipo de soporte (asistente y botón “Contactar a soporte”). Si el connector no declara dirección, se usa la del ecosistema."
+  "Client service support help": "Envío de pedidos al equipo de soporte (asistente y botón “Contactar a soporte”). Si el connector no declara dirección, se usa la del ecosistema.",
+  "Image margins": "Márgenes",
+  "Image margin top": "Arriba",
+  "Image margin right": "Derecha",
+  "Image margin bottom": "Abajo",
+  "Image margin left": "Izquierda",
+  "Image margins help": "Cada foto se recorta al producto y se encaja en el lienzo; cada margen la deja a esa distancia de su borde, en % del lado más corto (0% = toca el lienzo). Fotos con modelo cortado abajo: margen arriba y 0 abajo. Usá como fondo el color de las fotos."
 }

@@ -1215,5 +1215,11 @@
   "Assistant support recipients": "It goes to your account's support team, copying the main contact. They will reply to your email.",
   "Assistant support sent": "Done, I sent your request to support. They will reply to your email.",
   "Client service support": "Support",
-  "Client service support help": "Sends requests to the support team (assistant and “Contact support” button). If the connector declares no address, the ecosystem one is used."
+  "Client service support help": "Sends requests to the support team (assistant and “Contact support” button). If the connector declares no address, the ecosystem one is used.",
+  "Image margins": "Margins",
+  "Image margin top": "Top",
+  "Image margin right": "Right",
+  "Image margin bottom": "Bottom",
+  "Image margin left": "Left",
+  "Image margins help": "Each photo is trimmed to the product and fitted to the canvas; each margin keeps it that far from its edge, as a % of the shorter side (0% = touches the canvas). Model photos cut at the bottom: top margin and 0 at the bottom. Use the photos' background color."
 }
