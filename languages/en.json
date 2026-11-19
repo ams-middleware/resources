@@ -1226,5 +1226,6 @@
   "Image manual framing help": "Published exactly as left in the editor: no automatic trim and no connector margins. Turned on automatically when cropping.",
   "Image cropper add space help": "To add space, zoom out and stretch the frame beyond the photo: the new area takes the background color (or stays transparent if the photo has no background).",
   "Zoom out": "Zoom out",
-  "Zoom in": "Zoom in"
+  "Zoom in": "Zoom in",
+  "Rules dry run button": "Test rules"
 }

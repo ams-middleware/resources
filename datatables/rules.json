@@ -31,7 +31,9 @@
       "requestOnlyFields": [
         "conditions",
         "logic"
-      ]
+      ],
+      "hideable": true,
+      "width": 300
     },
     {
       "id": "stores",
@@ -65,7 +67,7 @@
       "center": true
     },
     {
-      "id": "row_actions",
+      "id": "actions",
       "labelKey": "",
       "renderer": "ruleRowActions",
       "requestOnlyFields": [
@@ -73,7 +75,6 @@
       ],
       "displayColumn": true,
       "hideable": false,
-      "width": 90,
       "center": true
     }
   ]

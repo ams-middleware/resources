@@ -1223,5 +1223,6 @@
   "Image manual framing help": "Se publica tal como quedó en el editor: sin recorte automático ni márgenes del conector. Se marca solo al recortar.",
   "Image cropper add space help": "Para agregar aire, alejá la imagen y estirá el marco fuera de la foto: el espacio nuevo toma el color del fondo (o queda transparente si la foto no tiene fondo).",
   "Zoom out": "Alejar",
-  "Zoom in": "Acercar"
+  "Zoom in": "Acercar",
+  "Rules dry run button": "Probar reglas"
 }
