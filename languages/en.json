@@ -1221,5 +1221,10 @@
   "Image margin right": "Right",
   "Image margin bottom": "Bottom",
   "Image margin left": "Left",
-  "Image margins help": "Each photo is trimmed to the product and fitted to the canvas; each margin keeps it that far from its edge, as a % of the shorter side (0% = touches the canvas). Model photos cut at the bottom: top margin and 0 at the bottom. Use the photos' background color."
+  "Image margins help": "Each photo is trimmed to the product and fitted to the canvas; each margin keeps it that far from its edge, as a % of the shorter side (0% = touches the canvas). Model photos cut at the bottom: top margin and 0 at the bottom. Use the photos' background color.",
+  "Image manual framing": "Manual framing",
+  "Image manual framing help": "Published exactly as left in the editor: no automatic trim and no connector margins. Turned on automatically when cropping.",
+  "Image cropper add space help": "To add space, zoom out and stretch the frame beyond the photo: the new area takes the background color (or stays transparent if the photo has no background).",
+  "Zoom out": "Zoom out",
+  "Zoom in": "Zoom in"
 }
