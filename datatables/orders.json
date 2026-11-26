@@ -317,6 +317,33 @@
       "width": 160
     },
     {
+      "id": "emitted_by_connector_name",
+      "labelKey": "Order col emitter connector name",
+      "renderer": "text",
+      "path": "emitted_by.connector.name",
+      "width": 150,
+      "defaultHidden": true,
+      "visibilityLabelKey": "Order col emitter connector name vis"
+    },
+    {
+      "id": "emitted_by_connector_uid",
+      "labelKey": "Order col emitter connector uid",
+      "renderer": "clipboard",
+      "path": "emitted_by.connector.uid",
+      "width": 150,
+      "defaultHidden": true,
+      "visibilityLabelKey": "Order col emitter connector uid vis"
+    },
+    {
+      "id": "emitted_by_connector_version",
+      "labelKey": "Order col emitter connector version",
+      "renderer": "clipboard",
+      "path": "emitted_by.connector.version",
+      "width": 150,
+      "defaultHidden": true,
+      "visibilityLabelKey": "Order col emitter connector version"
+    },
+    {
       "id": "created_by",
       "labelKey": "Order col created by",
       "renderer": "createdBy",
