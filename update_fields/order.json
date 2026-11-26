@@ -1,0 +1,12 @@
+{
+  "fields": [
+    {
+      "field": "custom_tags",
+      "data_type": "[]string",
+      "input_type": "tags",
+      "display_name": "custom tags",
+      "translation_key": "custom tags",
+      "dynamic_field": false
+    }
+  ]
+}
