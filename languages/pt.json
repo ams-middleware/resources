@@ -116,6 +116,7 @@
   "Order col emitter connector name vis": "Conector emissor (nome)",
   "Order col emitter connector uid": "UID conector emissor",
   "Order col emitter connector uid vis": "Conector emissor (UID)",
+  "Order col emitter connector version": "Versão conector emissor",
   "Order col shipping zip": "CEP de envio",
   "Order col shipping region": "Estado de envio",
   "Order col shipping region code": "Cód. do estado",
